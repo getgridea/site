@@ -3,7 +3,6 @@ module.exports = {
   description: 'Hve Notes',
   host: 'localhost',
   port: '4000',
-  base: '/hve-notes/',
   docsDir: 'docs',
   head: [
     ['link', { rel: 'icon', href: '/logo.ico' }],
