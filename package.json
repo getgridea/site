@@ -1,0 +1,17 @@
+{
+  "name": "hve-notes-site",
+  "version": "1.0.0",
+  "description": "--- home: true heroImage: /live.png actionText: 快速上手 → actionLink: /components/button footer: MIT Licensed | Copyright © 2018-present EryouHao ---",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "live-ui": "^0.2.0"
+  }
+}
