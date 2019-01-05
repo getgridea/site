@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Hve Notes',
+  title: '𝗛𝘃𝗲 𝗡𝗼𝘁𝗲𝘀',
   description: 'Hve Notes',
   host: 'localhost',
   port: '4000',

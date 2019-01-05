@@ -1,20 +1,20 @@
 <template>
   <div class="home-page">
     <div class="action-container">
-      <l-button size="large" @click="goPage('https://github.com/hve-notes/hve-notes/releases/download/v0.6.1/hve-notes-0.6.1.dmg')">Hve Notes for Mac -v 0.6.1</l-button>
-      <l-button size="large" @click="goPage('https://github.com/hve-notes/hve-notes/releases/download/v0.6.1/hve-notes.Setup.0.6.1.exe')">Hve Notes for Windows -v 0.6.1</l-button>
+      <l-button size="large" @click="goPage('https://github.com/hve-notes/hve-notes/releases/download/v0.6.1/hve-notes-0.6.1.dmg')">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖬𝖺𝖼 -𝗏 𝟢.𝟨.𝟣</l-button>
+      <l-button size="large" @click="goPage('https://github.com/hve-notes/hve-notes/releases/download/v0.6.1/hve-notes.Setup.0.6.1.exe')">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖶𝗂𝗇𝖽𝗈𝗐𝗌 -𝗏 𝟢.𝟨.𝟣</l-button>
     </div>
     <div>
       <img src="../../public/hve-notes-app.png" alt="">
     </div>
     <div class="home-content">
       <div class="star-container">
-        <l-tag class="star-tag" type="info" @click.native="goPage('https://github.com/hve-notes/hve-notes')">Star: {{ stars }}</l-tag>
+        <l-tag class="star-tag" type="info" @click.native="goPage('https://github.com/hve-notes/hve-notes')">𝗦𝘁𝗮𝗿: {{ stars }}</l-tag>
       </div>
-      <p><span class="large-icon">🌱</span> 当然 Hve Notes 还很年轻，有很多不足，但请相信，它会不停向前 <span class="large-icon">🏃</span></p> 
+      <p><span class="large-icon">🌱</span> 当然 𝗛𝘃𝗲 𝗡𝗼𝘁𝗲𝘀 还很年轻，有很多不足，但请相信，它会不停向前 <span class="large-icon">🏃</span></p> 
       <p>未来，它一定会成为你离不开的伙伴</p> 
       <p>尽情发挥你的才华吧！</p> 
-      <p>😘 Enjoy~</p> 
+      <p>😘 𝖤𝗇𝗃𝗈𝗒~</p> 
     </div>
   </div>
 </template>
