@@ -17,7 +17,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: '文档', link: '/docs/' },
-      { text: '示例站点', link: 'http://fehey.com/hve-next/' },
+      { text: '示例站点', link: 'http://fehey.com/' },
     ],
     sidebar: [
       {
