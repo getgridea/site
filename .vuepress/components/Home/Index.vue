@@ -1,8 +1,8 @@
 <template>
   <div class="home-page">
     <div class="action-container">
-      <l-button size="large" @click="goPage('https://github.com/hve-notes/hve-notes/releases/download/v0.6.1/hve-notes-0.6.1.dmg')">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖬𝖺𝖼 -𝗏 𝟢.𝟨.𝟣</l-button>
-      <l-button size="large" @click="goPage('https://github.com/hve-notes/hve-notes/releases/download/v0.6.1/hve-notes.Setup.0.6.1.exe')">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖶𝗂𝗇𝖽𝗈𝗐𝗌 -𝗏 𝟢.𝟨.𝟣</l-button>
+      <l-button size="large" @click="goPage(`https://github.com/hve-notes/hve-notes/releases/download/v${version}/hve-notes-${version}.dmg`)">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖬𝖺𝖼 -𝗏 {{ version }}</l-button>
+      <l-button size="large" @click="goPage(`https://github.com/hve-notes/hve-notes/releases/download/v${version}/hve-notes.Setup.${version}.exe`)">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖶𝗂𝗇𝖽𝗈𝗐𝗌 -𝗏 {{ version }}</l-button>
     </div>
     <div>
       <img src="../../public/hve-notes-app.png" alt="">
@@ -26,10 +26,12 @@ export default {
   data() {
     return {
       stars: 0,
+      version: '0.6.2',
     }
   },
   created() {
     this.fetchStars()
+    this.fetchVersion()
   },
   methods: {
     goPage(url) {
@@ -39,6 +41,12 @@ export default {
       axios.get('https://api.github.com/repos/hve-notes/hve-notes').then((res) => {
         this.stars = res.data.stargazers_count
       })
+    },
+    async fetchVersion() {
+      const res = await axios.get('https://api.github.com/repos/hve-notes/hve-notes/releases/latest')
+      if (res.status === 200) {
+        this.version = res.data.name.substring(1)
+      }
     },
   },
 }
