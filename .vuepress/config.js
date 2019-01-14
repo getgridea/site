@@ -27,6 +27,14 @@ module.exports = {
           '/docs/',
         ],
       },
+      {
+        title: '主题',
+        collapsable: false,
+        children: [
+          '/docs/theme',
+          '/docs/theme-structure',
+        ],
+      },
     ],
     lastUpdated: '最后更新于',
   },
