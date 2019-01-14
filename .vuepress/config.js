@@ -18,6 +18,7 @@ module.exports = {
       { text: '首页', link: '/' },
       { text: '文档', link: '/docs/' },
       { text: '示例站点', link: 'http://fehey.com/' },
+      { text: '更新日志', link: 'https://github.com/hve-notes/hve-notes/blob/master/CHANGELOG.md' },
     ],
     sidebar: [
       {
