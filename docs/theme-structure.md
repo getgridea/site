@@ -56,7 +56,7 @@ fly - 主题文件夹名称 (建议用小写，中划线分隔)
 - `menus`
 - `post`
 - `themeConfig`
-- `gitalkSetting`
+- `commentSetting`
 
 ### tag.ejs
 
@@ -176,17 +176,25 @@ post: {
   } // 若是为最后一篇文章，则无此字段
 ```
 
-#### gitalkSetting
+#### commentSetting
 ``` javascript
 /**
- * gitalkSetting Object类型
+ * commentSetting Object类型
  */
-gitalkSetting: {
-  clientId: '',
-  clientSecret: '',
-  owner: '',
-  repository: '',
-  showComment: false, // 是否显示评论，可根据此字段进行评论的展示与否
+const commentSetting = {
+  commentPlatform: 'disqus',
+  disqusSetting: {
+    api: '',
+    apikey: 'Dme6Hy8bOI2xxxxUtdY8V',
+    shortname: 'hve-notes',
+  },
+  gitalkSetting: {
+    clientId: 'd92dxxxxxxxxxx9b4',
+    clientSecret: '861947exxxx365d33',
+    owner: 'EryouHao',
+    repository: 'EryouHao.github.io'
+  },
+  showComment: false // 是否显示评论，可根据此字段进行评论的展示与否
 }
 ```
 

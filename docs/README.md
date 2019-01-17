@@ -6,13 +6,13 @@
 ### 进行基础配置
 进入应用的配置界面，进行应用的初始化配置。  
 
-域名：Github Pages 对应的域名（例如：`http://fehey.com/hve-next` 或 `http://eryouhao.github.io`）  
+域名：Github Pages 对应的域名（例如：`http://fehey.com/hve-next` 或 `https://eryouhao.github.io`）  
 
 仓库：静态文件存放的仓库（例如：`hve-next`）  
 
 分支：Github Pages 对应的分支（例如：`master`）  
 
-用户名：Git 推送时的用户名，等同于在 Git Repo 中配置 `git config user.name "用户名"`  
+用户名：仓库所属用户的用户名（同时也是 Git Repo 中配置 `git config user.name "用户名"`） 
 
 邮箱：Git 推送时的邮箱，等同于在 Git Repo 中配置 `git config user.email "邮箱"`  
 

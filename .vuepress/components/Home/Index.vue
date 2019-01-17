@@ -4,17 +4,17 @@
       <l-button size="large" @click="goPage(`https://github.com/hve-notes/hve-notes/releases/download/v${version}/hve-notes-${version}.dmg`)">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖬𝖺𝖼 -𝗏 {{ version }}</l-button>
       <l-button size="large" @click="goPage(`https://github.com/hve-notes/hve-notes/releases/download/v${version}/hve-notes.Setup.${version}.exe`)">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖶𝗂𝗇𝖽𝗈𝗐𝗌 -𝗏 {{ version }}</l-button>
     </div>
+    <div class="star-container">
+      <gh-btns-star slug="hve-notes/hve-notes" show-count></gh-btns-star>
+    </div>
     <div>
-      <img src="../../public/hve-notes-app.png" alt="">
+      <img src="https://raw.githubusercontent.com/hve-notes/hve-notes/master/hve-notes-app.png" alt="">
     </div>
     <div class="home-content">
-      <div class="star-container">
-        <l-tag class="star-tag" type="info" @click.native="goPage('https://github.com/hve-notes/hve-notes')">𝗦𝘁𝗮𝗿: {{ stars }}</l-tag>
-      </div>
-      <p><span class="large-icon">🌱</span> 当然 𝗛𝘃𝗲 𝗡𝗼𝘁𝗲𝘀 还很年轻，有很多不足，但请相信，它会不停向前 <span class="large-icon">🏃</span></p> 
-      <p>未来，它一定会成为你离不开的伙伴</p> 
-      <p>尽情发挥你的才华吧！</p> 
-      <p>😘 𝖤𝗇𝗃𝗈𝗒~</p> 
+      <p><span class="large-icon">🌱</span> 当然 𝗛𝘃𝗲 𝗡𝗼𝘁𝗲𝘀 还很年轻，有很多不足，但请相信，它会不停向前 <span class="large-icon">🏃</span></p>
+      <p>未来，它一定会成为你离不开的伙伴</p>
+      <p>尽情发挥你的才华吧！</p>
+      <p>😘 𝖤𝗇𝗃𝗈𝗒~</p>
     </div>
   </div>
 </template>
@@ -62,6 +62,7 @@ export default {
       font-size 28px
   .star-container
     padding-top: 16px;
-    .star-tag
-      cursor pointer
+    text-align center
+  >>> .gh-button-container
+    float none
 </style>
