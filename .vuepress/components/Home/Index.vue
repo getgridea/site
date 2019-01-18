@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       stars: 0,
-      version: '0.6.2',
+      version: '',
     }
   },
   created() {

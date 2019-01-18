@@ -50,6 +50,7 @@ fly - 主题文件夹名称 (建议用小写，中划线分隔)
 - `posts`
 - `pagination`
 - `themeConfig`
+- `site`
 
 ### post.ejs
 
@@ -57,6 +58,7 @@ fly - 主题文件夹名称 (建议用小写，中划线分隔)
 - `post`
 - `themeConfig`
 - `commentSetting`
+- `site`
 
 ### tag.ejs
 
@@ -65,6 +67,7 @@ fly - 主题文件夹名称 (建议用小写，中划线分隔)
 - `pagination`
 - `themeConfig`
 - `tag`
+- `site`
 
 ### 变量值示例
 
@@ -207,6 +210,25 @@ tag: {
   name: 'HveNotes',
   used: true,
   slug: 'hvenotes'
+},
+```
+
+#### site
+``` javascript
+/**
+ * site Object类型
+ */
+site: {
+  posts: 同 posts  // 所有文章数组
+  tags: [          // 所有标签数组
+    {
+      name: 'HveNotes',
+      used: true,
+      slug: 'hvenotes',
+      link: 'tag/hvenotes'
+    },
+    ...
+  ],
 },
 ```
 
