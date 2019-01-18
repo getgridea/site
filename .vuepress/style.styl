@@ -36,15 +36,16 @@
 
     // background: #232526;  /* fallback for old browsers */
     // background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-image: url('/home-bg.jpg')
-    background-position: center
-    background-size: cover
+    background-image: url('/home-bg1.png')
+    background-position: 276%
+    background-size: 80%
+    background-repeat: no-repeat
     position relative
 
     &:before
       content: '';
       display: block;
-      background-color: rgba(0, 0, 0, 0.382);
+      background-color: rgba(223, 228, 231, 0.05);
       position: absolute;
       top: 0;
       left: 0;
@@ -52,20 +53,20 @@
       height: 100%;
 
     h1
-      color: #000
-      text-shadow: 0px 0px 5px #ffffff
+      color: #2c3e50
     .description
-      color #000
+      color #2c3e50
       line-height: 1.5
-      text-shadow: 0px 0px 5px #ffffff
   .features, .content.custom
     margin: 0 auto
     max-width: 960px
-    padding: 0 2rem 0;
+    border-top: none
 
   @media (max-width: 419px)
     .hero
       padding: 3.5rem 1.5rem
+      background-size: 90%
+      background-position: 560%
     .features, .content.custom
       padding-left: 1.5rem
       padding-right: 1.5rem
