@@ -28,8 +28,10 @@ CNAME: 若网站有自定义域名，则可通过此设置（例如：`fehey.com
 首页可同配置中的域名，可以手动输入 `link` 或 选择下拉选择中的 Hompage
 :::
 
-### 更新 Gitalk 配置（可选）
-[Gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)
+### 更新评论配置（可选）
+[Gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)  
+或  
+[DisqusJS](https://github.com/SukkaW/DisqusJS)  
 
 ### 尽情创作
 进入应用的文章界面，进行新文章的创作吧！

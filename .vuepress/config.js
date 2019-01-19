@@ -15,25 +15,32 @@ module.exports = {
   themeConfig: {
     repo: 'hve-notes/hve-notes',
     nav: [
-      { text: '首页', link: '/' },
-      { text: '文档', link: '/docs/' },
+      { text: '首 页', link: '/' },
+      { text: '文 档', link: '/docs/' },
       { text: '示例站点', link: 'http://fehey.com/' },
       { text: '更新日志', link: 'https://github.com/hve-notes/hve-notes/blob/master/CHANGELOG.md' },
     ],
     sidebar: [
       {
-        title: '文档',
+        title: '文 档',
         collapsable: false,
         children: [
           '/docs/',
         ],
       },
       {
-        title: '主题',
+        title: '主 题',
         collapsable: false,
         children: [
           '/docs/theme',
           '/docs/theme-structure',
+        ],
+      },
+      {
+        title: 'FAQ',
+        collapsable: false,
+        children: [
+          '/docs/faq',
         ],
       },
     ],
