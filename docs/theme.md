@@ -2,6 +2,8 @@
 
 **Hve Notes** 采用 [EJS](https://ejs.bootcss.com/) 作为主题的模版引擎。你可以使用我们提供的样板 [hve-notes-theme-starter](https://github.com/hve-notes/hve-notes-theme-starter) 来快速上手主题开发。
 
+或者你可以在这里查看应用的默认主题 [Default Thems](https://github.com/hve-notes/hve-notes/tree/master/public/default-files/themes)
+
 基于 [EJS](https://ejs.bootcss.com/) 简单的语法和 [Gulp](https://www.gulpjs.com.cn/) 强大的自动化构建能力，你可以很快开发出一个心仪的自定义主题。
 
 ## EJS 基础介绍
@@ -26,7 +28,8 @@ EJS 每个标签都是成对使用，即有开则有闭。
       "abstract": "<strong>Hve Notes</strong> 一个静态博客写作客户端 ",
       "content": "<strong>Hve Notes</strong> 一个静态博客写作客户端 <!-- more -->↵↵👏 欢迎使用 <strong>Hve Notes</strong> ！",
       "data": {
-        "date": "December 12o 2018, am",
+        "date": "2019-01-15 08:00:00",
+        "dateFormat": "2019-01-15",
         "feature": "/post-images/hello-hve-notes.png",
         "published": true,
         "tags": ["HveNotes"]

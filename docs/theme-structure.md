@@ -38,10 +38,12 @@ fly - 主题文件夹名称 (建议用小写，中划线分隔)
     │   └── scripts.ejs
     ├── index.ejs - 主页，列表页 (必须，不可更名)
     ├── post.ejs - 文章页 (必须，不可更名)
-    └── tag.ejs - 标签页 (必须，不可更名)
+    ├── archives.ejs - 归档页 (必须，不可更名)
+    ├── tags.ejs - 标签列表页 (必须，不可更名)
+    └── tag.ejs - 标签详情页 (必须，不可更名)
 ```
 
-如你所见，**必须**文件只有 4 个，`main.less`, `index.ejs`, `post.ejs`, `tag.ejs` （需按照对应目录组织）
+如你所见，**必须**文件只有 4 个，`main.less`, `index.ejs`, `post.ejs`, `archives.ejs`, `tags.ejs`, `tag.ejs` （需按照对应目录组织）
 
 ## 页面变量
 ### index.ejs
@@ -58,6 +60,21 @@ fly - 主题文件夹名称 (建议用小写，中划线分隔)
 - `post`
 - `themeConfig`
 - `commentSetting`
+- `site`
+
+### archives.ejs
+
+- `menus`
+- `posts`
+- `pagination`
+- `themeConfig`
+- `site`
+
+### tags.ejs
+
+- `tags`
+- `menus`
+- `themeConfig`
 - `site`
 
 ### tag.ejs
@@ -105,7 +122,8 @@ posts: [
          link: 'tag/hvenotes'
        }
      ],
-     date: 'December 12o 2018, am',
+     date: '2019-01-15 08:00:00',
+     dateFormat: '2019-01-15',
      feature: 'post-images/hello-hve-notes.png',
      link: 'post/hello-hve-notes'
   },
@@ -130,12 +148,16 @@ pagination: {
  */
 themeConfig:{ 
   footerInfo: 'Powered by Hve Notes',
-  pageSize: 10,
   showFeatureImage: true,
   siteDescription: '温故而知新',
   siteName: 'Hve Notes',
   themeName: 'notes',
-  domain: 'http://fehey.com'
+  domain: 'http://fehey.com',
+  archivesPageSize: 50,
+  dateFormat: 'YYYY-MM-DD',
+  postPageSize: 10,
+  postUrlFormat: 'SLUG',
+  tagUrlFormat: 'SHORT_ID',
 }
 ```
 
@@ -173,7 +195,8 @@ post: {
         link: 'tag/hvenotes'
       }
     ],
-    date: 'December 12o 2018, am',
+    date: '2019-01-15 08:00:00',
+    dateFormat: '2019-01-15',
     feature: 'post-images/hello-hve-notes.png',
     link: 'post/hello-hve-notes',
   } // 若是为最后一篇文章，则无此字段
