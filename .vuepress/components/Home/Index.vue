@@ -1,8 +1,8 @@
 <template>
   <div class="home-page">
     <div class="action-container">
-      <l-button size="large" @click="goPage(`https://github.com/hve-notes/hve-notes/releases/download/v${version}/Hve Notes-${version}.dmg`)">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖬𝖺𝖼 -𝗏 {{ version }}</l-button>
-      <l-button size="large" @click="goPage(`https://github.com/hve-notes/hve-notes/releases/download/v${version}/Hve Notes.Setup.${version}.exe`)">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖶𝗂𝗇𝖽𝗈𝗐𝗌 -𝗏 {{ version }}</l-button>
+      <l-button size="large" @click="goPage(`https://github.com/hve-notes/hve-notes/releases/download/v${version}/Hve.Notes-${version}.dmg`)">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖬𝖺𝖼 -𝗏 {{ version }}</l-button>
+      <l-button size="large" @click="goPage(`https://github.com/hve-notes/hve-notes/releases/download/v${version}/Hve.Notes.Setup.${version}.exe`)">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖶𝗂𝗇𝖽𝗈𝗐𝗌 -𝗏 {{ version }}</l-button>
     </div>
     <div class="star-container">
       <gh-btns-star slug="hve-notes/hve-notes" show-count></gh-btns-star>
