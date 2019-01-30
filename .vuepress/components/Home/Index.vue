@@ -1,8 +1,8 @@
 <template>
   <div class="home-page">
     <div class="action-container">
-      <l-button size="large" @click="goPage(`https://github.com/hve-notes/hve-notes/releases/download/v${version}/hve-notes-${version}.dmg`)">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖬𝖺𝖼 -𝗏 {{ version }}</l-button>
-      <l-button size="large" @click="goPage(`https://github.com/hve-notes/hve-notes/releases/download/v${version}/hve-notes.Setup.${version}.exe`)">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖶𝗂𝗇𝖽𝗈𝗐𝗌 -𝗏 {{ version }}</l-button>
+      <l-button size="large" @click="goPage(`https://github.com/hve-notes/hve-notes/releases/download/v${version}/Hve Notes-${version}.dmg`)">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖬𝖺𝖼 -𝗏 {{ version }}</l-button>
+      <l-button size="large" @click="goPage(`https://github.com/hve-notes/hve-notes/releases/download/v${version}/Hve Notes.Setup.${version}.exe`)">𝖧𝗏𝖾 𝖭𝗈𝗍𝖾𝗌 𝖿𝗈𝗋 𝖶𝗂𝗇𝖽𝗈𝗐𝗌 -𝗏 {{ version }}</l-button>
     </div>
     <div class="star-container">
       <gh-btns-star slug="hve-notes/hve-notes" show-count></gh-btns-star>
@@ -15,6 +15,8 @@
       <p>未来，它一定会成为你离不开的伙伴</p>
       <p>尽情发挥你的才华吧！</p>
       <p>😘 𝖤𝗇𝗃𝗈𝗒~</p>
+      <a href="https://t.me/joinchat/IDY0ahRqb8NPodv95BNpBg" target="_blank">Telegram 群组</a>
+      <l-button type="text">QQ 群：970332209</l-button>
     </div>
   </div>
 </template>
@@ -58,6 +60,7 @@ export default {
     text-align center
   .home-content
     text-align center
+    padding-bottom 32px
     .large-icon
       font-size 28px
   .star-container

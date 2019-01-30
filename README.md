@@ -22,7 +22,7 @@ features:
 - title: 🌁 多主题
   details: 你可以任意使用应用内默认主题或任意第三方主题
 pageClass: hve-home
-
+footer: MIT Licensed | Copyright © 2019-present EryouHao
 ---
 <div>
   <Home-Index></Home-Index>
