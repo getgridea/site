@@ -1,9 +1,10 @@
 module.exports = {
   title: '𝗛𝘃𝗲 𝗡𝗼𝘁𝗲𝘀',
-  description: 'Hve Notes',
+  description: 'Hve Notes | ✍️一个静态博客写作客户端',
   host: 'localhost',
   port: '4000',
   docsDir: 'docs',
+  ga: 'UA-97296506-2',
   head: [
     ['link', { rel: 'icon', href: '/logo.ico' }],
   ],
