@@ -4,7 +4,7 @@ module.exports = {
   host: 'localhost',
   port: '4000',
   docsDir: 'docs',
-  ga: 'UA-97296506-2',
+  ga: 'UA-113307620-2',
   head: [
     ['link', { rel: 'icon', href: '/logo.ico' }],
   ],
