@@ -6,7 +6,7 @@ module.exports = {
   docsDir: 'docs',
   ga: 'UA-113307620-2',
   head: [
-    ['link', { rel: 'icon', href: '/logo.ico' }],
+    ['link', { rel: 'icon', href: '/gridea.ico' }],
   ],
   siteConfig: {
     links: {
@@ -19,7 +19,7 @@ module.exports = {
       { text: '首 页', link: '/' },
       { text: '文 档', link: '/docs/' },
       { text: '示例站点', link: 'http://fehey.com/' },
-      { text: '更新日志', link: 'https://github.com/hve-notes/hve-notes/blob/master/CHANGELOG.md' },
+      { text: '更新日志', link: 'https://github.com/getgridea/gridea/blob/master/CHANGELOG.md' },
     ],
     sidebar: [
       {
@@ -35,6 +35,7 @@ module.exports = {
         children: [
           '/docs/theme',
           '/docs/theme-structure',
+          '/docs/theme-custom',
         ],
       },
       {

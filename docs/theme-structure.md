@@ -30,20 +30,22 @@ fly - 主题文件夹名称 (建议用小写，中划线分隔)
 │       │   └── github.less
 │       └── main.less - 主样式文件 (必须，不可更名)
 └── templates - 页面模版文件夹（必须，不可更名）
-    ├── _blocks - 页面模版文件夹（可选，可自定义命名）
-    │   ├── footer.ejs
-    │   ├── head.ejs
-    │   ├── header.ejs
-    │   ├── post-list.ejs
-    │   └── scripts.ejs
-    ├── index.ejs - 主页，列表页 (必须，不可更名)
-    ├── post.ejs - 文章页 (必须，不可更名)
-    ├── archives.ejs - 归档页 (必须，不可更名)
-    ├── tags.ejs - 标签列表页 (必须，不可更名)
-    └── tag.ejs - 标签详情页 (必须，不可更名)
+│   ├── _blocks - 页面模版文件夹（可选，可自定义命名）
+│   │   ├── footer.ejs
+│   │   ├── head.ejs
+│   │   ├── header.ejs
+│   │   ├── post-list.ejs
+│   │   └── scripts.ejs
+│   ├── index.ejs - 主页，列表页 (必须，不可更名)
+│   ├── post.ejs - 文章页 (必须，不可更名)
+│   ├── archives.ejs - 归档页 (必须，不可更名)
+│   ├── tags.ejs - 标签列表页 (必须，不可更名)
+│   └── tag.ejs - 标签详情页 (必须，不可更名)
+└── config.json - 主题配置文件 (可选，> 0.7.7)
+└── style-override.js - 主题样式自定义文件 (可选，> 0.7.7)
 ```
 
-如你所见，**必须**文件只有 4 个，`main.less`, `index.ejs`, `post.ejs`, `archives.ejs`, `tags.ejs`, `tag.ejs` （需按照对应目录组织）
+如你所见，**必须**文件只有 **6** 个，`main.less`, `index.ejs`, `post.ejs`, `archives.ejs`, `tags.ejs`, `tag.ejs` （需按照对应目录组织）
 
 ## 页面变量
 ### index.ejs
