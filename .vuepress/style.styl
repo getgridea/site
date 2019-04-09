@@ -14,12 +14,19 @@
       margin-bottom: 24px;
   .navbar
     border-bottom 0px solid!important;
-    box-shadow: 0 2px 3px rgba(21, 39, 57, 0.12);
+    // box-shadow: 0 2px 3px rgba(21, 39, 57, 0.12);
+    background: #f9d654;
+    color #434343;
+    .links
+      background: #f9d654
+
+  .nav-links a:hover, .nav-links a.router-link-active
+    color #000000
 
   .hero
     img
-      width 80px
-      height 80px
+      width 120px
+      height 120px
 
   .feature
     h2
@@ -31,8 +38,9 @@
   max-width none
   .hero
     padding 7.6rem 2rem
-    background: #f9f7f3;  /* fallback for old browsers */
-    background: linear-gradient(to bottom, #f3f7f9, #f9f7f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background: #f9f7f3;  /* fallback for old browsers */
+    // background: linear-gradient(to bottom, #f3f7f9, #f9f7f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background #fcd73b
 
     &:before
       content: '';
@@ -45,9 +53,9 @@
       height: 100%;
 
     h1
-      color: #2c3e50
+      color: #434343
     .description
-      color #2c3e50
+      color #434343
       line-height: 1.5
   .features, .content.custom
     margin: 0 auto
@@ -66,5 +74,8 @@
 .search-box input
   border-radius: 4px
   border: none
-  background-color: #f3f7f9
+  background-color: #f9f7f3
+
+.navbar .site-name
+  color #434343
 

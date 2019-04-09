@@ -1,6 +1,6 @@
 module.exports = {
-  title: '𝗛𝘃𝗲 𝗡𝗼𝘁𝗲𝘀',
-  description: 'Hve Notes | ✍️一个静态博客写作客户端',
+  title: 'Gridea',
+  description: 'Gridea | ✍️一个静态博客写作客户端',
   host: 'localhost',
   port: '4000',
   docsDir: 'docs',
@@ -10,11 +10,11 @@ module.exports = {
   ],
   siteConfig: {
     links: {
-      github: 'https://github.com/hve-notes/hve-notes',
+      github: 'https://github.com/getgridea/gridea',
     },
   },
   themeConfig: {
-    repo: 'hve-notes/hve-notes',
+    repo: 'getgridea/gridea',
     nav: [
       { text: '首 页', link: '/' },
       { text: '文 档', link: '/docs/' },

@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.png
+heroImage: /gridea.png
 tagline: ✍️ 一个静态博客写作客户端。你可以用它来记录生活、心情、知识、笔记、创意...
 features:
 - title: 📝 Markdown
