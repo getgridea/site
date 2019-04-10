@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
+    "css-doodle": "^0.6.1",
     "live-ui": "^0.2.0",
     "vue-github-buttons": "^2.1.1"
   }

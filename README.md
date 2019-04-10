@@ -23,6 +23,7 @@ features:
   details: 你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力
 pageClass: hve-home
 footer: MIT Licensed | Copyright © 2019-present EryouHao
+layout: HomeLayout
 ---
 <div>
   <Home-Index></Home-Index>

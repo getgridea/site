@@ -24,7 +24,7 @@
       margin-bottom: 24px;
   .navbar
     border-bottom 0px solid!important;
-    // box-shadow: 0 2px 3px rgba(21, 39, 57, 0.12);
+    box-shadow: 0 2px 3px rgba(21, 39, 57, 0.12);
     background: #f9d654;
     color #434343;
     .links
@@ -78,6 +78,17 @@
 
 .navbar .site-name
   color #434343
-
+  position relative
+  transform: translateX(46px)
+  &:after
+    content ''
+    display: block
+    width 40px
+    height 40px
+    background-image url('/gridea.png')
+    background-size 100%
+    position: absolute
+    left: -46px
+    top: -3px
 .sidebar
   background-color #f9f7f3
