@@ -3,7 +3,7 @@
     <div class="hero-container">
       <css-doodle class="hero-bg">
         :doodle {
-          @grid: 24 / 100vmax;
+          @grid: 24 / 120vmax;
           background: #f9d654;
           font-family: sans-serif;
         }
@@ -17,7 +17,7 @@
         <div class="left">
           <div class="slogon">一个静态博客写作客户端</div>
           <div class="description">记录生活、心情、知识、笔记、创意...</div>
-          <div>
+          <div class="btn-container">
             <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`)">Gridea for Mac -𝗏 {{ version }}</l-button>
             <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea.Setup.${version}.exe`)">Gridea for Windows -𝗏 {{ version }}</l-button>
           </div>
@@ -232,8 +232,11 @@ export default {
         font-size 40px
         color #000
         font-weight 600
+        text-shadow 2px 2px 0px #f9f7f3
       .description
         font-size 24px
+      .btn-container
+        padding 32px 0
       >>> .live-btn-primary
         background #434343
         transition all 0.382s
@@ -315,7 +318,7 @@ footer
         text-align center
       .left
         .slogon
-          font-size 32px
+          font-size 28px
         .description
           font-size 18px
         .live-btn-primary
