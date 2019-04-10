@@ -21,7 +21,7 @@ features:
   details: 你可以使用中文简体或英语
 - title: 🌁 多主题
   details: 你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力
-pageClass: hve-home
+pageClass: gridea-home
 footer: MIT Licensed | Copyright © 2019-present EryouHao
 layout: HomeLayout
 ---

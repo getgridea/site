@@ -112,22 +112,22 @@ menus: [
 posts: [
   { 
     content:
-      '<p><strong>Hve Notes</strong> 一个静态博客写作客户端 <!-- more --></p>\n<p>👏 欢迎使用 <strong>Hve Notes</strong> ！  </p>\n<p>🌈 <strong>Hve Notes</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... </p>',
-     fileName: 'hello-hve-notes',
-     abstract: '<p><strong>Hve Notes</strong> 一个静态博客写作客户端 </p>\n',
-     title: 'Hello Hve Notes',
+      '<p><strong>Gridea</strong> 一个静态博客写作客户端 <!-- more --></p>\n<p>👏 欢迎使用 <strong>Gridea</strong> ！  </p>\n<p>🌈 <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... </p>',
+     fileName: 'hello-gridea',
+     abstract: '<p><strong>Gridea</strong> 一个静态博客写作客户端 </p>\n',
+     title: 'Hello Gridea',
      tags: [
        {
-         name: 'HveNotes',
+         name: 'Gridea',
          used: true,
-         slug: 'hvenotes',
-         link: 'tag/hvenotes'
+         slug: 'gridea',
+         link: 'tag/gridea'
        }
      ],
      date: '2019-01-15 08:00:00',
      dateFormat: '2019-01-15',
-     feature: 'post-images/hello-hve-notes.png',
-     link: 'post/hello-hve-notes'
+     feature: 'post-images/hello-gridea.png',
+     link: 'post/hello-gridea'
   },
 ]
 ```
@@ -149,12 +149,12 @@ pagination: {
  * themeConfig Object类型
  */
 themeConfig:{ 
-  footerInfo: 'Powered by Hve Notes',
+  footerInfo: 'Powered by Gridea',
   showFeatureImage: true,
   siteDescription: '温故而知新',
-  siteName: 'Hve Notes',
+  siteName: 'Gridea',
   themeName: 'notes',
-  domain: 'http://fehey.com',
+  domain: 'http://gridea.dev',
   archivesPageSize: 50,
   dateFormat: 'YYYY-MM-DD',
   postPageSize: 10,
@@ -169,38 +169,38 @@ themeConfig:{
  * post Object类型
  */
 post: { 
-  content: '<p><strong>Hve Notes</strong> 一个静态博客写作客户端 <!-- more --></p>\n<p>👏 欢迎使用 <strong>Hve Notes</strong> ！  </p>\n<p>🌈 <strong>Hve Notes</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... </p>',
-  fileName: 'hello-hve-notes',
-  abstract: '<p><strong>Hve Notes</strong> 一个静态博客写作客户端 </p>\n',
-  title: 'Hello Hve Notes',
+  content: '<p><strong>Gridea</strong> 一个静态博客写作客户端 <!-- more --></p>\n<p>👏 欢迎使用 <strong>Gridea</strong> ！  </p>\n<p>🌈 <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... </p>',
+  fileName: 'hello-gridea',
+  abstract: '<p><strong>Gridea</strong> 一个静态博客写作客户端 </p>\n',
+  title: 'Hello Gridea',
   tags: [
     {
-      name: 'HveNotes',
+      name: 'Gridea',
       used: true,
-      slug: 'hvenotes',
-      link: 'tag/hvenotes'
+      slug: 'gridea',
+      link: 'tag/gridea'
     }
   ],
   date: 'December 12o 2018, am',
-  feature: 'post-images/hello-hve-notes.png',
-  link: 'post/hello-hve-notes',
+  feature: 'post-images/hello-gridea.png',
+  link: 'post/hello-gridea',
   nextPost: {
     content: '<p>第二篇文章</p>',
     fileName: 'other-post',
     abstract: '',
-    title: 'Hello Hve Notes',
+    title: 'Hello Gridea',
     tags: [
       {
-        name: 'HveNotes',
+        name: 'Gridea',
         used: true,
-        slug: 'hvenotes',
-        link: 'tag/hvenotes'
+        slug: 'gridea',
+        link: 'tag/gridea'
       }
     ],
     date: '2019-01-15 08:00:00',
     dateFormat: '2019-01-15',
-    feature: 'post-images/hello-hve-notes.png',
-    link: 'post/hello-hve-notes',
+    feature: 'post-images/hello-gridea.png',
+    link: 'post/hello-gridea',
   } // 若是为最后一篇文章，则无此字段
 ```
 
@@ -214,7 +214,7 @@ const commentSetting = {
   disqusSetting: {
     api: '',
     apikey: 'Dme6Hy8bOI2xxxxUtdY8V',
-    shortname: 'hve-notes',
+    shortname: 'gridea',
   },
   gitalkSetting: {
     clientId: 'd92dxxxxxxxxxx9b4',
@@ -232,9 +232,9 @@ const commentSetting = {
  * tag Object类型
  */
 tag: {
-  name: 'HveNotes',
+  name: 'Gridea',
   used: true,
-  slug: 'hvenotes'
+  slug: 'gridea'
 },
 ```
 
@@ -247,10 +247,10 @@ site: {
   posts: 同 posts  // 所有文章数组
   tags: [          // 所有标签数组
     {
-      name: 'HveNotes',
+      name: 'Gridea',
       used: true,
-      slug: 'hvenotes',
-      link: 'tag/hvenotes'
+      slug: 'gridea',
+      link: 'tag/gridea'
     },
     ...
   ],
@@ -277,8 +277,8 @@ site: {
 
 ### 如何查看主题在应用中的效果
 
-你可以将开发好的主题文件夹，复制到应用目录 `~/Documents/hve-notes/themes` 
+你可以将开发好的主题文件夹，复制到应用目录 `~/Documents/gridea/themes` 
 
-**文档**文件夹中有个 `/hve-notes` 文件夹是使用应用时自动创建的应用文件夹，里面有**Hve Notes**提供的默认主题
+**文档**文件夹中有个 `/gridea` 文件夹是使用应用时自动创建的应用文件夹，里面有**Gridea**提供的默认主题
 
 你可以将自己开发的主题或其他开发者开发的主题放入此文件夹中使用即可，配合应用中的预览功能可在本地预览效果，记得预览之前，将主题选择切换成新主题哦

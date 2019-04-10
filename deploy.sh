@@ -10,7 +10,7 @@ npm run build
 cd .vuepress/dist
 
 # 如果是发布到自定义域名
-echo 'hvenotes.fehey.com' > CNAME
+echo 'gridea.dev' > CNAME
 
 git init
 git add -A
@@ -22,6 +22,6 @@ git commit -m 'docs: update docs'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:hve-notes/site.git master:gh-pages
+git push -f git@github.com:getgridea/site.git master:gh-pages
 
 cd -

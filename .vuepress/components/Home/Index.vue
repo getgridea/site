@@ -18,8 +18,8 @@
           <div class="slogon">一个静态博客写作客户端</div>
           <div class="description">记录生活、心情、知识、笔记、创意...</div>
           <div>
-            <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Hve.Notes-${version}.dmg`)">Gridea for Mac -𝗏 {{ version }}</l-button>
-            <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Hve.Notes.Setup.${version}.exe`)">Gridea for Windows -𝗏 {{ version }}</l-button>
+            <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`)">Gridea for Mac -𝗏 {{ version }}</l-button>
+            <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea.Setup.${version}.exe`)">Gridea for Windows -𝗏 {{ version }}</l-button>
           </div>
           <div class="star">
             <gh-btns-star slug="getgridea/gridea" show-count></gh-btns-star>
@@ -62,8 +62,8 @@
           除了这些，还有一些你可能期待的（主题包含）：Katex 公式、Google Analytics、社交链接、TOC...，心动了吗？快快下载体验吧！
         </div>
         <div class="action-container">
-          <l-button size="large" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Hve.Notes-${version}.dmg`)">Gridea for Mac -𝗏 {{ version }}</l-button>
-          <l-button size="large" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Hve.Notes.Setup.${version}.exe`)">Gridea for Windows -𝗏 {{ version }}</l-button>
+          <l-button size="large" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`)">Gridea for Mac -𝗏 {{ version }}</l-button>
+          <l-button size="large" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea.Setup.${version}.exe`)">Gridea for Windows -𝗏 {{ version }}</l-button>
         </div>
         <div class="star-container">
           <div class="star-tip">🌟Star 支持作者！👇</div>

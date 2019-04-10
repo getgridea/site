@@ -1,14 +1,14 @@
 # 快速开始
 
 ### 下载安装
-目前 Hve Notes 还处于比较早期阶段，建议直接下载最新版以使用最新功能  
+目前 Gridea 还处于比较早期阶段，建议直接下载最新版以使用最新功能  
 
 ### 基础配置
 进入应用的配置界面，进行应用的初始化配置。下面以 Github Page 为例。  
 
-域名：Github Pages 对应的域名（例如：`http://fehey.com/hve-next` 或 `https://eryouhao.github.io`）  
+域名：Github Pages 对应的域名（例如：`https://eryouhao.github.io` 或 `http://fehey.com/girdea`）  
 
-仓库：静态文件存放的仓库（例如：`hve-next` 或 `EryouHao.github.io`）  
+仓库：静态文件存放的仓库（例如：`EryouHao.github.io` 或 `blog`）  
 
 分支：Github Pages 对应的分支（例如：`master`）  
 
