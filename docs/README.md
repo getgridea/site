@@ -1,5 +1,9 @@
 # 快速开始
 
+**原（Hve Notes）** 
+
+[Gridea 小白上手教程](https://fehey.com/post/hve-notes-start/)
+
 ### 下载安装
 目前 Gridea 还处于比较早期阶段，建议直接下载最新版以使用最新功能  
 
