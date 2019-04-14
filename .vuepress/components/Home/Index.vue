@@ -57,6 +57,12 @@
     </div>
     <div class="container-wrapper white">
       <div class="container">
+        <h2 class="section-title">内置主题</h2>
+        <img class="theme-img" src="/themes.png" alt="">
+      </div>
+    </div>
+    <div class="container-wrapper">
+      <div class="container">
         <h2 class="section-title">不止这些</h2>
         <div class="content-container">
           除了这些，还有一些你可能期待的（主题包含）：Katex 公式、Google Analytics、社交链接、TOC...，心动了吗？快快下载体验吧！
@@ -130,19 +136,19 @@ export default {
         },
         {
           title: '封面图',
-          desc: '快去为文章搭配一张精心挑选的封面图，为文章添彩，外链图也没问题哦',
+          desc: '快去挑选一张漂亮的封面图，为文章添彩，外链图也没问题哦',
         },
         {
           title: '自定义标签',
-          desc: '用标签来为文章进行归类，以你喜欢的方式：编程、旅行、读书笔记...，是时候按分类来整理文章了',
+          desc: '用标签来为文章进行归类，以你喜欢的方式：编程、旅行、读书笔记...，化繁为简、不必纠结',
         },
         {
           title: '自定义菜单',
-          desc: '我们提供了自定义菜单功能，同时候选菜单中提供了主页、归档和标签列表快捷选择。当然了，你也可以创建外部菜单到任何地方',
+          desc: '我们提供了自定义菜单功能，同时贴心地准备了主页、归档和标签列表快捷选择。当然，你也可以创建外部菜单到任何地方',
         },
         {
           title: '跨设备',
-          desc: '或许你工作使用 Mac，生活使用 Windows，这都不是事儿，Gridea 全都支持！什么，你喜欢用 Linux？再等等，稍后就来',
+          desc: '或许你工作使用 Mac，生活使用 Windows，这都不是事儿，Gridea 全都支持！什么，你喜欢用 Linux？再等等，稍后就来。同时支持更改源文件夹，利用 OneDrive、Dropbox 等同步工具，跨设备管理博客轻而易举！',
         },
         {
           title: '多平台',
@@ -154,11 +160,11 @@ export default {
         },
         {
           title: '多主题',
-          desc: '我们目前提供了 4 款内置主题，总有一款会获得你的芳心，更有趣的是，我们为每款主题提供了丰富的自定义配置，稍加配置，邂逅大不同',
+          desc: '我们目前提供了 4 款内置主题，总有一款会获得你的芳心，更有趣的是，我们为每款主题提供了丰富的自定义配置，稍加配置，遇见大不同',
         },
         {
           title: '多语言',
-          desc: '我们贴心地为您内置了中文简体和 English 两种语言',
+          desc: '是的，我们贴心地为您内置了中文简体和 English 两种语言',
         },
       ],
     }
@@ -192,6 +198,15 @@ export default {
     padding 16px 0 32px
   .action-container
     text-align center
+    .live-btn-large
+      margin-bottom 8px
+      background #f9d654
+      box-shadow 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06)!important
+      color #000000
+      transition all 0.382s
+      &:hover
+        box-shadow 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04)!important
+        transform translateY(-4px)
   .home-content
     text-align center
     padding-bottom 32px
@@ -290,6 +305,14 @@ export default {
         color #000
       .desc
         line-height 1.5
+
+.theme-img
+  display block
+  width 100%
+  max-width 800px
+  margin 32px auto
+  border-radius 8px
+  box-shadow 0 25px 50px -12px rgba(0, 0, 0, .25)
 
 .content-container
   text-align: center
