@@ -6,6 +6,8 @@
 
 基于 [EJS](https://ejs.bootcss.com/) 简单的语法和 [Gulp](https://www.gulpjs.com.cn/) 强大的自动化构建能力，你可以很快开发出一个心仪的自定义主题。
 
+🎉 是的，我们为你准备了一个主题开发样板，[快去看看吧](https://github.com/getgridea/gridea-theme-starter)！
+
 ## EJS 基础介绍
 
 这里只列举了你开发主题时最常用的几个语法，当然，如果想了解最全面的语法，可以去查看 [EJS文档](https://ejs.bootcss.com/)

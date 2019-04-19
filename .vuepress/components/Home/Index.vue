@@ -122,7 +122,7 @@
 
 <script>
 import axios from 'axios'
-import 'css-doodle'
+// import 'css-doodle'
 
 export default {
   data() {
@@ -148,7 +148,7 @@ export default {
         },
         {
           title: '跨设备',
-          desc: '或许你工作使用 Mac，生活使用 Windows，这都不是事儿，Gridea 全都支持！什么，你喜欢用 Linux？再等等，稍后就来。同时支持更改源文件夹，利用 OneDrive、Dropbox 等同步工具，跨设备管理博客轻而易举！',
+          desc: '或许你工作使用 Mac，生活使用 Windows，这都不是事儿，Gridea 全都支持！同时支持更改源文件夹，利用 OneDrive、Dropbox 等同步工具，跨设备管理博客轻而易举！什么，你喜欢用 Linux？再等等，稍后就来。',
         },
         {
           title: '多平台',

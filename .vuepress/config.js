@@ -1,12 +1,13 @@
 module.exports = {
   title: 'Gridea',
-  description: 'Gridea | ✍️一个静态博客写作客户端',
+  description: 'Gridea | ✍️一个静态博客写作客户端 | 记录生活、心情、知识、笔记、创意...',
   host: 'localhost',
   port: '4000',
   docsDir: 'docs',
   ga: 'UA-113307620-2',
   head: [
     ['link', { rel: 'icon', href: '/gridea.ico' }],
+    ['script', { src: 'https://unpkg.com/css-doodle@0.6.1/css-doodle.min.js' }],
   ],
   siteConfig: {
     links: {
