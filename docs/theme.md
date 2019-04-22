@@ -8,6 +8,13 @@
 
 🎉 是的，我们为你准备了一个主题开发样板，[快去看看吧](https://github.com/getgridea/gridea-theme-starter)！
 
+## 约定
+
+我们建议你将主题命名为 **gridea-theme-主题名** 以便用户可以更好地搜索，例如 **gridea-theme-notes**，同时建议将主题提交至 Github 仓库，并设置 `gridea` 和 `gridea-theme` topic，以便用户可以直接点击 topic 即可搜索到你的主题
+
+示例：
+![Gridea Theme Starter](/gridea-theme-starter.png)
+
 ## EJS 基础介绍
 
 这里只列举了你开发主题时最常用的几个语法，当然，如果想了解最全面的语法，可以去查看 [EJS文档](https://ejs.bootcss.com/)
