@@ -11,6 +11,7 @@
 进入应用的配置界面，进行应用的初始化配置。下面以 Github Page 为例。  
 
 域名：Github Pages 对应的域名（例如：`https://eryouhao.github.io` 或 `http://fehey.com/girdea`）  
+**⚠️注意要加 `https` 或 `http` 哦**
 
 仓库：静态文件存放的仓库（例如：`EryouHao.github.io` 或 `blog`）  
 
