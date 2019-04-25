@@ -19,6 +19,7 @@ module.exports = {
     nav: [
       { text: '首 页', link: '/' },
       { text: '文 档', link: '/docs/' },
+      { text: '主题市场', link: '/themes/' },
       { text: '示例站点', link: 'http://fehey.com/' },
       { text: '更新日志', link: 'https://github.com/getgridea/gridea/blob/master/CHANGELOG.md' },
     ],
@@ -48,5 +49,11 @@ module.exports = {
       },
     ],
     lastUpdated: '最后更新于',
+  },
+  postcss: {
+    plugins: [
+      require('tailwindcss')('./tailwind.js'),
+      require('autoprefixer')
+    ],
   },
 }
