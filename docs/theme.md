@@ -113,4 +113,6 @@ a {
   }
 }
 ```
-
+<div class="disqus-container">
+  <vue-disqus shortname="gridea"></vue-disqus>
+</div>

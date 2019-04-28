@@ -25,3 +25,7 @@
 ## 网页样式显示异常怎么办
 
 这是由于域名设置的时候未添加 `https` 或 `http`（自定义域名且无证书时填 `http`），添加后保存，重新同步一下就好了
+
+<div class="disqus-container">
+  <vue-disqus shortname="gridea"></vue-disqus>
+</div>

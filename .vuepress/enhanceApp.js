@@ -4,6 +4,7 @@ import 'live-ui/dist/live.css'
 import VueGitHubButtons from '../node_modules/vue-github-buttons'
 import '../node_modules/vue-github-buttons/dist/vue-github-buttons.css'
 import HomeLayout from './components/HomeLayout.vue'
+import VueDisqus from 'vue-disqus'
 
 export default ({
   Vue,
@@ -14,4 +15,5 @@ export default ({
   Vue.use(Live)
   Vue.use(VueGitHubButtons, { useCache: false })
   Vue.use(HomeLayout)
+  Vue.use(VueDisqus)
 }

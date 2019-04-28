@@ -226,3 +226,6 @@ module.exports = generateOverride
 若还是不清楚，可参考应用内置主题代码结构：
 [Github themes folder](https://github.com/getgridea/gridea/tree/master/public/default-files/themes)
 
+<div class="disqus-container">
+  <vue-disqus shortname="gridea"></vue-disqus>
+</div>

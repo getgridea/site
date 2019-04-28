@@ -45,3 +45,6 @@ CNAME: 若网站有自定义域名，则可通过此设置（例如：`fehey.com
 
 😘Enjoy！
 
+<div class="disqus-container">
+  <vue-disqus shortname="gridea"></vue-disqus>
+</div>

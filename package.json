@@ -14,12 +14,14 @@
     "axios": "^0.18.0",
     "css-doodle": "^0.6.1",
     "live-ui": "^0.2.0",
+    "vue-disqus": "^3.0.5",
     "vue-github-buttons": "^2.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
-    "tailwindcss": "^0.7.4"
+    "tailwindcss": "^0.7.4",
+    "vuepress-plugin-disqus": "^0.1.1"
   }
 }

@@ -8,6 +8,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/gridea.ico' }],
     ['script', { src: 'https://unpkg.com/css-doodle@0.6.1/css-doodle.min.js' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/vue-disqus@3/dist/vue-disqus.js' }],
   ],
   siteConfig: {
     links: {
@@ -55,5 +56,8 @@ module.exports = {
       require('tailwindcss')('./tailwind.js'),
       require('autoprefixer')
     ],
+  },
+  plugins: {
+    'disqus': { /* options */ }
   },
 }

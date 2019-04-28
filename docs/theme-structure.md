@@ -282,3 +282,7 @@ site: {
 **文档**文件夹中有个 `/gridea` 文件夹是使用应用时自动创建的应用文件夹，里面有**Gridea**提供的默认主题
 
 你可以将自己开发的主题或其他开发者开发的主题放入此文件夹中使用即可，配合应用中的预览功能可在本地预览效果，记得预览之前，将主题选择切换成新主题哦
+
+<div class="disqus-container">
+  <vue-disqus shortname="gridea"></vue-disqus>
+</div>
