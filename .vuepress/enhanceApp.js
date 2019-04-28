@@ -4,7 +4,7 @@ import 'live-ui/dist/live.css'
 import VueGitHubButtons from '../node_modules/vue-github-buttons'
 import '../node_modules/vue-github-buttons/dist/vue-github-buttons.css'
 import HomeLayout from './components/HomeLayout.vue'
-import VueDisqus from 'vue-disqus'
+import VueDisqus from '../node_modules/vue-disqus'
 
 export default ({
   Vue,
