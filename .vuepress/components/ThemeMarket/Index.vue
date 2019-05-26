@@ -12,7 +12,10 @@
         <div class="theme-item shadow-md rounded bg-white hover:shadow-lg" :style="{ 'background-image': `url(${item.image})` }" @click="download(item)">
         </div>
         <div class="theme-info">
-          <span class="theme-title">{{ item.name }}</span>
+          <span class="theme-title">
+            {{ item.name }}
+            <l-tag type="warning" v-if="item.include">内置</l-tag>
+          </span>
           <l-button type="text" @click="download(item)">Download</l-button>
         </div>
       </l-col>
@@ -30,24 +33,40 @@ export default {
           github: 'https://github.com/getgridea/gridea-theme-notes',
           demo: 'https://fehey.com',
           image: '/images/themes/theme-notes.jpg',
+          include: true,
         },
         {
           name: 'Simple',
           github: 'https://github.com/getgridea/gridea-theme-simple',
           image: '/images/themes/theme-simple.jpg',
           demo: 'https://fehey.com',
+          include: true,
         },
         {
           name: 'Fly',
           github: 'https://github.com/getgridea/gridea-theme-fly',
           image: '/images/themes/theme-fly.jpg',
           demo: 'https://fehey.com',
+          include: true,
         },
         {
           name: 'Paper',
           github: 'https://github.com/getgridea/gridea-theme-paper',
           image: '/images/themes/theme-paper.jpg',
           demo: 'https://fehey.com',
+          include: true,
+        },
+        {
+          name: 'Nederburg',
+          github: 'https://github.com/Suremotoo/gridea-theme-nederburg',
+          image: '/images/themes/theme-nederburg.jpg',
+          demo: 'https://suremotoo.site/blog/',
+        },
+        {
+          name: 'Space',
+          github: 'https://github.com/GalaxySuze/gridea-theme-space',
+          image: '/images/themes/theme-space.jpg',
+          demo: 'https://zhangajian.com/',
         },
       ],
     }

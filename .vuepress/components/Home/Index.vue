@@ -20,6 +20,7 @@
           <div class="btn-container">
             <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`)">Gridea for Mac -𝗏 {{ version }}</l-button>
             <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea.Setup.${version}.exe`)">Gridea for Windows -𝗏 {{ version }}</l-button>
+            <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases`)">Gridea for Linux -𝗏 {{ version }}</l-button>
           </div>
           <div class="star">
             <gh-btns-star slug="getgridea/gridea" show-count></gh-btns-star>
@@ -70,6 +71,7 @@
         <div class="action-container">
           <l-button size="large" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`)">Gridea for Mac -𝗏 {{ version }}</l-button>
           <l-button size="large" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea.Setup.${version}.exe`)">Gridea for Windows -𝗏 {{ version }}</l-button>
+          <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases`)">Gridea for Linux -𝗏 {{ version }}</l-button>
         </div>
         <div class="star-container">
           <div class="star-tip">🌟Star 支持作者！👇</div>
@@ -252,6 +254,8 @@ export default {
         font-size 24px
       .btn-container
         padding 32px 0
+        .live-btn
+          margin-bottom 8px
       >>> .live-btn-primary
         background #434343
         transition all 0.382s
