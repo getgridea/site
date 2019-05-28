@@ -26,6 +26,16 @@
 
 这是由于域名设置的时候未添加 `https` 或 `http`（自定义域名且无证书时填 `http`），添加后保存，重新同步一下就好了
 
+## Mac 检测远程失败怎么办
+
+- 首先确保您已经安装了 git
+- 若还是不行，点击应用菜单栏 Edit -> Toggle Developer Tools，然后切换到开发者工具的 Console 栏，再次点击检测远程连接，看是否有报错信息。
+  若出现 `xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools),
+missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
+ 则打开 Terminal，执行 `xcode-select --install` 之后，再使用即可。
+
+这是由于域名设置的时候未添加 `https` 或 `http`（自定义域名且无证书时填 `http`），添加后保存，重新同步一下就好了
+
 <div class="disqus-container">
   <vue-disqus shortname="gridea"></vue-disqus>
 </div>
