@@ -4,11 +4,13 @@
 
 [Gridea 小白上手教程](https://fehey.com/post/hve-notes-start/)
 
-**Gridea 上手视频教程（新）**
+### Gridea 上手视频教程
 
-1. [Gridea快速上手-1-前言](https://www.bilibili.com/video/av52587722)
-2. [Gridea快速上手-2-git安装](https://www.bilibili.com/video/av52587927)
-2. [Gridea快速上手-3-与github配置](https://www.bilibili.com/video/av53809039)
+[📺Gridea快速上手-1-前言](https://www.bilibili.com/video/av54010923)  
+[📺Gridea快速上手-2-Git安装](https://www.bilibili.com/video/av54010965)  
+[📺Gridea快速上手-3-Gridea与Github配置](https://www.bilibili.com/video/av54011033)  
+...  
+后面的即将到来！
 
 ### 下载安装
 目前 Gridea 还处于比较早期阶段，建议直接下载最新版以使用最新功能  
