@@ -185,10 +185,11 @@ export default {
       })
     },
     async fetchVersion() {
-      const res = await axios.get('https://api.github.com/repos/getgridea/gridea/releases/latest')
-      if (res.status === 200) {
-        this.version = res.data.name.substring(1)
-      }
+      // const res = await axios.get('https://api.github.com/repos/getgridea/gridea/releases/latest')
+      // if (res.status === 200) {
+      //   this.version = res.data.name.substring(1)
+      // }
+      this.version = '0.8.1'
     },
   },
 }
