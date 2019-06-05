@@ -1,6 +1,12 @@
 <template>
   <div class="home-page">
     <div class="hero-container">
+      <l-alert color="#5f3dc4" closable v-show="!close" @close="closeHandler">
+        <div class="alert-content">👨🏻‍🏫学无止境，高考加油！祝各位要高考的小伙伴金榜题名！</div>
+        <template v-slot:close>
+          <l-button size="small">关闭</l-button>
+        </template>
+      </l-alert>
       <css-doodle class="hero-bg">
         :doodle {
           @grid: 24 / 120vmax;
@@ -173,11 +179,16 @@ export default {
           desc: 'RSS 也是一个不错的信息订阅方式',
         },
       ],
+      close: true,
     }
   },
   created() {
     this.fetchStars()
     this.fetchVersion()
+  },
+  mounted() {
+    const close = localStorage.getItem('gridea_alert_close')
+    this.close = !!close
   },
   methods: {
     goPage(url) {
@@ -194,6 +205,10 @@ export default {
       //   this.version = res.data.name.substring(1)
       // }
       this.version = '0.8.1'
+    },
+    closeHandler() {
+      localStorage.setItem('gridea_alert_close', true)
+      console.log('run...')
     },
   },
 }
@@ -335,7 +350,9 @@ footer
   position: relative;
   overflow: hidden;
   text-align center
-
+.alert-content
+  text-align center
+  font-size 16px
 @media (max-width: 800px)
   .hero-container
     .hero-content
