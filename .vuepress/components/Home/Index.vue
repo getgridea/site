@@ -66,7 +66,7 @@
       <div class="container">
         <h2 class="section-title">不止这些</h2>
         <div class="content-container">
-          除了这些，还有一些你可能期待的（主题包含）：Katex 公式、Google Analytics、社交链接、TOC...，心动了吗？快快下载体验吧！
+          除了这些，还有一些你可能期待的（主题包含）：KaTeX 公式、Google Analytics、社交链接、TOC...，心动了吗？快快下载体验吧！
         </div>
         <div class="action-container">
           <l-button size="large" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`)">Gridea for Mac -𝗏 {{ version }}</l-button>
@@ -150,7 +150,7 @@ export default {
         },
         {
           title: '跨设备',
-          desc: '或许你工作使用 Mac，生活使用 Windows，这都不是事儿，Gridea 全都支持！同时支持更改源文件夹，利用 OneDrive、Dropbox 等同步工具，跨设备管理博客轻而易举！什么，你喜欢用 Linux？再等等，稍后就来。',
+          desc: '或许你工作使用 Mac，生活使用 Windows，又或许你是使用 Linux 的极客，这都不是事儿，Gridea 全都支持！同时支持更改源文件夹，利用 OneDrive、Dropbox 等同步工具，跨设备管理博客轻而易举！',
         },
         {
           title: '多平台',
@@ -167,6 +167,10 @@ export default {
         {
           title: '多语言',
           desc: '是的，我们贴心地为您内置了中文简体和 English 两种语言',
+        },
+        {
+          title: 'RSS',
+          desc: 'RSS 也是一个不错的信息订阅方式',
         },
       ],
     }
