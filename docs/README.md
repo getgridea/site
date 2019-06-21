@@ -8,7 +8,8 @@
 
 [📺Gridea快速上手-1-前言](https://www.bilibili.com/video/av54010923)  
 [📺Gridea快速上手-2-Git安装](https://www.bilibili.com/video/av54010965)  
-[📺Gridea快速上手-3-Gridea与Github配置](https://www.bilibili.com/video/av54011033)  
+[📺Gridea快速上手-3-Gridea与Github的配置](https://www.bilibili.com/video/av54011033)  
+[📺Gridea快速上手-4-Gridea与Coding的配置](https://www.bilibili.com/video/av54298548)  
 ...  
 后面的即将到来！
 
