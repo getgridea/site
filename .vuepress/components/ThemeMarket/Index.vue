@@ -68,6 +68,12 @@ export default {
           image: '/images/themes/theme-space.jpg',
           demo: 'https://zhangajian.com/',
         },
+        {
+          name: 'Lemon',
+          github: 'https://github.com/Mrcxt/gridea-theme-lemon',
+          image: '/images/themes/theme-lemon.jpg',
+          demo: '',
+        },
       ],
     }
   },
