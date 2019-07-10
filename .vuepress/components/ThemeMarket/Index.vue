@@ -74,6 +74,12 @@ export default {
           image: '/images/themes/theme-lemon.jpg',
           demo: '',
         },
+        {
+          name: 'Bitcron',
+          github: 'https://github.com/alterfang/gridea-theme-bitcron',
+          image: '/images/themes/theme-bitcron.jpg',
+          demo: '',
+        },
       ],
     }
   },
