@@ -193,7 +193,7 @@ export default {
       // if (res.status === 200) {
       //   this.version = res.data.name.substring(1)
       // }
-      this.version = '0.8.1'
+      this.version = '0.8.2'
     },
   },
 }

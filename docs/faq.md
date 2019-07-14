@@ -34,8 +34,6 @@
 missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
  则打开 Terminal，执行 `xcode-select --install` 之后，再使用即可。
 
-这是由于域名设置的时候未添加 `https` 或 `http`（自定义域名且无证书时填 `http`），添加后保存，重新同步一下就好了
-
 <div class="disqus-container">
   <vue-disqus shortname="gridea"></vue-disqus>
 </div>
