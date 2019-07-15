@@ -1,6 +1,4 @@
 module.exports = {
-  title: 'Gridea',
-  description: 'Gridea | ✍️一个静态博客写作客户端 | 记录生活、心情、知识、笔记、创意...',
   host: 'localhost',
   port: '4000',
   docsDir: 'docs',
@@ -16,41 +14,96 @@ module.exports = {
       github: 'https://github.com/getgridea/gridea',
     },
   },
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: 'Gridea',
+      description: 'Gridea | ✍️ 一个静态博客写作客户端 | 记录生活、心情、知识、笔记、创意...',
+    },
+    '/en/': {
+      lang: 'en-US',
+      title: 'Gridea',
+      description: 'Gridea | ✍️ A static blog writing client. | record your life, mood, knowledge, notes and ideas...',
+    },
+  },
   themeConfig: {
     repo: 'getgridea/gridea',
-    nav: [
-      { text: '首 页', link: '/' },
-      { text: '文 档', link: '/docs/' },
-      { text: '主题市场', link: '/themes/' },
-      { text: '示例站点', link: 'http://fehey.com/' },
-      { text: '更新日志', link: 'https://github.com/getgridea/gridea/blob/master/CHANGELOG.md' },
-    ],
-    sidebar: [
-      {
-        title: '文 档',
-        collapsable: false,
-        children: [
-          '/docs/',
+    locales: {
+      '/': {
+        selectText: '选择语言',
+        label: '简体中文',
+        nav: [
+          { text: '首 页', link: '/' },
+          { text: '文 档', link: '/docs/' },
+          { text: '主题市场', link: '/themes/' },
+          { text: '示例站点', link: 'http://fehey.com/' },
+          { text: '更新日志', link: 'https://github.com/getgridea/gridea/blob/master/CHANGELOG.md' },
         ],
-      },
-      {
-        title: '主 题',
-        collapsable: false,
-        children: [
-          '/docs/theme',
-          '/docs/theme-structure',
-          '/docs/theme-custom',
+        sidebar: [
+          {
+            title: '文 档',
+            collapsable: false,
+            children: [
+              '/docs/',
+            ],
+          },
+          {
+            title: '主 题',
+            collapsable: false,
+            children: [
+              '/docs/theme',
+              '/docs/theme-structure',
+              '/docs/theme-custom',
+            ],
+          },
+          {
+            title: 'FAQ',
+            collapsable: false,
+            children: [
+              '/docs/faq',
+            ],
+          },
         ],
+        lastUpdated: '最后更新于',
       },
-      {
-        title: 'FAQ',
-        collapsable: false,
-        children: [
-          '/docs/faq',
+      '/en/': {
+        selectText: 'Languages',
+        label: 'English',
+        nav: [
+          { text: 'Home', link: '/en/' },
+          { text: 'Documents', link: '/en/docs/' },
+          { text: 'Theme market', link: '/en/themes/' },
+          { text: 'Example', link: 'http://fehey.com/' },
+          { text: 'Changelog', link: 'https://github.com/getgridea/gridea/blob/master/CHANGELOG.md' },
         ],
+        sidebar: [
+          {
+            title: 'Documents',
+            collapsable: false,
+            children: [
+              '/en/docs/',
+            ],
+          },
+          {
+            title: 'Theme',
+            collapsable: false,
+            children: [
+              '/en/docs/theme',
+              '/en/docs/theme-structure',
+              '/en/docs/theme-custom',
+            ],
+          },
+          {
+            title: 'FAQ',
+            collapsable: false,
+            children: [
+              '/en/docs/faq',
+            ],
+          },
+        ],
+        lastUpdated: 'Last updated on',
       },
-    ],
-    lastUpdated: '最后更新于',
+    },
   },
   postcss: {
     plugins: [

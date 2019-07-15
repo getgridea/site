@@ -15,8 +15,8 @@
       </css-doodle>
       <div class="hero-content">
         <div class="left">
-          <div class="slogon">一个静态博客写作客户端</div>
-          <div class="description">记录生活、心情、知识、笔记、创意...</div>
+          <div class="slogon">A static blog writing client.</div>
+          <div class="description">record your life, mood, knowledge, notes and ideas...</div>
           <div class="btn-container">
             <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`)">Gridea for Mac -𝗏 {{ version }}</l-button>
             <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea.Setup.${version}.exe`)">Gridea for Windows -𝗏 {{ version }}</l-button>
@@ -24,7 +24,7 @@
           </div>
           <div class="star">
             <gh-btns-star slug="getgridea/gridea" show-count></gh-btns-star>
-            <span class="star-tip">🌟Star 支持作者！</span>
+            <span class="star-tip">🌟Give us a star!</span>
           </div>
           <div class="shields-container">
             <a href="https://github.com/getgridea/gridea/releases/latest">
@@ -41,13 +41,13 @@
           </div>
         </div>
         <div class="right">
-          <img src="https://raw.githubusercontent.com/getgridea/gridea/master/gridea-app.png" alt="Gridea" class="app-img">
+          <img src="https://raw.githubusercontent.com/getgridea/gridea/master/gridea-app-en.png" alt="Gridea" class="app-img">
         </div>
       </div>
     </div>
     <div class="container-wrapper">
       <div class="container">
-        <h2 class="section-title">你最需要的，我们都准备了</h2>
+        <h2 class="section-title">We have all the things you need most.</h2>
         <div class="item-container">
           <div class="item" v-for="(item, index) in featureList" :key="index">
             <div class="title">{{ item.title }}</div>
@@ -58,15 +58,15 @@
     </div>
     <div class="container-wrapper white">
       <div class="container">
-        <h2 class="section-title">内置主题</h2>
+        <h2 class="section-title">Themes Support</h2>
         <img class="theme-img" src="/themes.png" alt="">
       </div>
     </div>
     <div class="container-wrapper">
       <div class="container">
-        <h2 class="section-title">不止这些</h2>
+        <h2 class="section-title">More than these.</h2>
         <div class="content-container">
-          除了这些，还有一些你可能期待的（主题包含）：KaTeX 公式、Google Analytics、社交链接、TOC...，心动了吗？快快下载体验吧！
+          In addition to these, there are some things you might expect (topics include): KaTeX formula, Google Analytics, social links, TOC ..., are you excited? Download quickly!
         </div>
         <div class="action-container">
           <l-button size="large" @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`)">Gridea for Mac -𝗏 {{ version }}</l-button>
@@ -74,19 +74,19 @@
           <l-button size="large" type="primary" @click="goPage(`https://github.com/getgridea/gridea/releases`)">Gridea for Linux -𝗏 {{ version }}</l-button>
         </div>
         <div class="star-container">
-          <div class="star-tip">🌟Star 支持作者！👇</div>
+          <div class="star-tip">🌟Give us a star!👇</div>
           <gh-btns-star slug="getgridea/gridea" show-count></gh-btns-star>
         </div>
       </div>
     </div>
     <div class="home-content">
-      <p><span class="large-icon">🌱</span> 当然 Gridea 还很年轻，有很多不足，但请相信，它会不停向前 <span class="large-icon">🏃</span></p>
-      <p>未来，它一定会成为你离不开的伙伴</p>
-      <p>尽情发挥你的才华吧！</p>
+      <p><span class="large-icon">🌱</span> Of course Gridea is still very basic, but please believe that it will keep moving forward. <span class="large-icon">🏃</span></p>
+      <p>In the future, it will definitely become your inseparable partner.</p>
+      <p>Give full play to your talent!</p>
       <p>😘 𝖤𝗇𝗃𝗈𝗒~</p>
-      <a href="https://t.me/joinchat/AAAAAEj82_lma0Y1wmyqUQ" target="_blank">Telegram 频道</a> |
-      <a href="https://t.me/joinchat/IDY0ahRqb8NPodv95BNpBg" target="_blank">Telegram 群组</a>
-      <l-button type="text">QQ 群：970332209</l-button>
+      <a href="https://t.me/joinchat/AAAAAEj82_lma0Y1wmyqUQ" target="_blank">Telegram Channel</a> |
+      <a href="https://t.me/joinchat/IDY0ahRqb8NPodv95BNpBg" target="_blank">Telegram Group(Chinese)</a>
+      <l-button type="text">QQ Group(Chinese)：970332209</l-button>
       <div class="shields-container">
         <a href="https://github.com/getgridea/gridea/releases/latest">
           <img src="https://img.shields.io/github/release/getgridea/gridea.svg?style=flat-square" alt="">
@@ -134,43 +134,43 @@ export default {
       featureList: [
         {
           title: 'Markdown',
-          desc: '使用最酷的 Markdown 进行创作，专注内容，其他的交给 Gridea',
+          desc: 'Use the coolest Markdown to create, focus on content, and leave the rest to Gridea',
         },
         {
-          title: '封面图',
-          desc: '快去挑选一张漂亮的封面图，为文章添彩，外链图也没问题哦',
+          title: 'Cover Picture',
+          desc: 'Go and pick a beautiful cover picture to add color to the article. The outer chain picture is no problem.',
         },
         {
-          title: '自定义标签',
-          desc: '用标签来为文章进行归类，以你喜欢的方式：编程、旅行、读书笔记...，化繁为简、不必纠结',
+          title: 'Custom tag',
+          desc: 'Use tag to classify articles, and use your favorite methods: programming, traveling, reading notes, etc. to simplify the complex and do not have to struggle with it.',
         },
         {
-          title: '自定义菜单',
-          desc: '我们提供了自定义菜单功能，同时贴心地准备了主页、归档和标签列表快捷选择。当然，你也可以创建外部菜单到任何地方',
+          title: 'Custom menu',
+          desc: 'We provide custom menu function, and at the same time, we prepare home page, archive and label list for quick selection. Of course, you can also create external menus anywhere.',
         },
         {
-          title: '跨设备',
-          desc: '或许你工作使用 Mac，生活使用 Windows，又或许你是使用 Linux 的极客，这都不是事儿，Gridea 全都支持！同时支持更改源文件夹，利用 OneDrive、Dropbox 等同步工具，跨设备管理博客轻而易举！',
+          title: 'Cross equipment',
+          desc: 'Maybe you use Mac in your work, Windows in your life, or you are a geek using Linux. this is not a matter. Gridea supports all of them! At the same time, it supports changing the source folder, and it is easy to manage blogs across devices by using synchronization tools such as OneDrive and Dropbox.',
         },
         {
-          title: '多平台',
-          desc: '大部分情况下你用 Github Pages 来托管博客就够了，但我们同时提供了 Coding Pages 的支持',
+          title: 'Multiple platforms',
+          desc: 'In most cases, it is enough for you to use Github Pages to host blogs, but we also provide Coding Pages support.',
         },
         {
-          title: '多评论',
-          desc: 'Gridea 内置了 Gitalk 和 DisqusJS 两个评论系统，你可以任选其一，利用评论结交更多朋友吧！',
+          title: 'Comments support',
+          desc: 'Gridea provides two comment systems Gitalk and DisqusJS. You can choose one of them. Make more friends with comments!',
         },
         {
-          title: '多主题',
-          desc: '我们目前提供了 4 款内置主题，总有一款会获得你的芳心，更有趣的是，我们为每款主题提供了丰富的自定义配置，稍加配置，遇见大不同',
+          title: 'Theme support',
+          desc: 'At present, we provide 4 built-in themes, one of which will win your heart. What is more interesting is that we provide a wealth of custom configurations for each theme. With a little configuration, we meet a big difference.',
         },
         {
-          title: '多语言',
-          desc: '是的，我们贴心地为您内置了中文简体和 English 两种语言',
+          title: 'Languages support',
+          desc: 'Yes, we have kindly provided you with simplified Chinese, traditional Chinese and English',
         },
         {
           title: 'RSS',
-          desc: 'RSS 也是一个不错的信息订阅方式',
+          desc: 'RSS is also a good way to subscribe information.',
         },
       ],
     }

@@ -80,6 +80,12 @@ export default {
           image: '/images/themes/theme-bitcron.jpg',
           demo: '',
         },
+        {
+          name: 'Pan',
+          github: 'https://github.com/alterfang/gridea-theme-pan',
+          image: '/images/themes/theme-pan.jpg',
+          demo: '',
+        },
       ],
     }
   },

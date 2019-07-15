@@ -219,7 +219,7 @@ post: {
       words: 3000,
       minutes: 3
     },
-  }, // 若是为第一篇文章，则无此字段
+  }, // 若是第一篇文章，则无此字段
   nextPost: {
     content: '<p>第二篇文章</p>',
     fileName: 'other-post',
