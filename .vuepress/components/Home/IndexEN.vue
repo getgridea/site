@@ -84,6 +84,7 @@
       <p>In the future, it will definitely become your inseparable partner.</p>
       <p>Give full play to your talent!</p>
       <p>😘 𝖤𝗇𝗃𝗈𝗒~</p>
+      <a href="https://discord.gg/jnXrZj" target="_blank">Discord Channel</a> | 
       <a href="https://t.me/joinchat/AAAAAEj82_lma0Y1wmyqUQ" target="_blank">Telegram Channel</a> |
       <a href="https://t.me/joinchat/IDY0ahRqb8NPodv95BNpBg" target="_blank">Telegram Group(Chinese)</a>
       <l-button type="text">QQ Group(Chinese)：970332209</l-button>
