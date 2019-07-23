@@ -14,9 +14,14 @@
         <div class="theme-info">
           <span class="theme-title">
             {{ item.name }}
+            <l-tag type="primary" v-if="item.price">{{ item.price }}</l-tag>
+            <l-tag type="success" v-if="item.isNew">NEW</l-tag>
             <l-tag type="warning" v-if="item.include">内置</l-tag>
           </span>
-          <l-button type="text" @click="download(item)">Download</l-button>
+          <span>
+            <l-button type="text" v-if="item.showDemo" @click="view(item)">VIEW</l-button>
+            <l-button type="text" @click="download(item)">DOWNLOAD</l-button>
+          </span>
         </div>
       </l-col>
     </l-row>
@@ -28,6 +33,17 @@ export default {
   data() {
     return {
       list: [
+        {
+          name: 'Walker',
+          github: 'https://github.com/EryouHao/gridea-theme-walker',
+          link: 'https://mianbaoduo.com/product/show/mbd-aJqU',
+          demo: 'https://fehey.com',
+          image: '/images/themes/theme-walker.jpg',
+          include: false,
+          showDemo: true,
+          isNew: true,
+          price: '¥ 6'
+        },
         {
           name: 'Notes',
           github: 'https://github.com/getgridea/gridea-theme-notes',
@@ -91,7 +107,10 @@ export default {
   },
   methods: {
     download(item) {
-      window.open(item.github)
+      window.open(item.link || item.github)
+    },
+    view(item) {
+      window.open(item.demo)
     },
     newTheme() {
       window.open('https://github.com/getgridea/site/issues/new')
