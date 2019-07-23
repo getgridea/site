@@ -63,6 +63,13 @@ module.exports = {
               '/docs/faq',
             ],
           },
+          {
+            title: '赞 赏',
+            collapsable: false,
+            children: [
+              '/docs/donate',
+            ],
+          },
         ],
         lastUpdated: '最后更新于',
       },
