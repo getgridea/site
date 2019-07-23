@@ -109,8 +109,12 @@
           >Gridea for Linux -𝗏 {{ version }}</l-button>
         </div>
         <div class="star-container">
-          <div class="star-tip">🌟Star 支持作者！👇</div>
+          <div class="star-tip">🌟Star，支持作者！👇</div>
           <gh-btns-star slug="getgridea/gridea" show-count></gh-btns-star>
+        </div>
+        <div class="star-container">
+          <div class="star-tip">💰赞助，助力作者！👇</div>
+          <img src="https://raw.githubusercontent.com/getgridea/gridea/master/files/wechat.png" width="160px" style="border-radius: 16px;" />
         </div>
       </div>
     </div>
@@ -315,6 +319,10 @@ export default {
   >>> .gh-button-container {
     float: none;
     margin: 0;
+  }
+
+  >>> .live-btn {
+    border-radius: 8px;
   }
 }
 
