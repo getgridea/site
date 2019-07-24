@@ -89,6 +89,22 @@
     </div>
     <div class="container-wrapper">
       <div class="container">
+        <h2 class="section-title">哪些朋友在使用</h2>
+        <div class="user-list">
+          <div v-for="user in userList" class="user-item">
+            <a :href="user.link" target="_blank">
+              <img class="avatar" :src="user.avatar" alt="">
+              <h3 class="username">{{ user.username }}</h3>
+            </a>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <a href="https://github.com/getgridea/gridea/issues/126" target="_blank">提交我的博客</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-wrapper white">
+      <div class="container">
         <h2 class="section-title">不止这些</h2>
         <div
           class="content-container"
@@ -118,7 +134,7 @@
         </div>
       </div>
     </div>
-    <div class="home-content">
+    <div class="home-content container-wrapper">
       <p>
         <span class="large-icon">🌱</span> 当然 Gridea 还很年轻，有很多不足，但请相信，它会不停向前
         <span class="large-icon">🏃</span>
@@ -243,7 +259,39 @@ export default {
           title: "RSS",
           desc: "RSS 也是一个不错的信息订阅方式"
         }
-      ]
+      ],
+      userList: [
+        {
+          link: 'https://www.y3pm.com/',
+          avatar: 'https://www.y3pm.com/images/avatar.png',
+          username: 'Y3.PM',
+        },
+        {
+          link: 'https://chiahsien.github.io/',
+          avatar: 'https://chiahsien.github.io/images/avatar.png',
+          username: 'Nelson',
+        },
+        {
+          link: 'https://zhangajian.com/',
+          avatar: 'https://zhangajian.com/media/images/avatar.png',
+          username: '张阿简博客',
+        },
+        {
+          link: 'https://miracol.cn/',
+          avatar: 'https://miracol.cn/images/avatar.png',
+          username: 'Miracol',
+        },
+        {
+          link: 'https://www.aliyaowan.com/',
+          avatar: 'https://www.aliyaowan.com/images/avatar.png',
+          username: '啊哩药丸',
+        },
+        {
+          link: 'https://qinjinhuan.github.io/',
+          avatar: 'https://qinjinhuan.github.io/images/avatar.png',
+          username: '黄粱一梦',
+        },
+      ],
     };
   },
   created() {
@@ -428,7 +476,6 @@ export default {
       padding: 16px;
       margin: 16px;
       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-      // border-radius 4px
       background: #fff;
       border-bottom-left-radius: 25px 115px;
       border-bottom-right-radius: 155px 25px;
@@ -473,6 +520,7 @@ footer {
   position: relative;
   overflow: hidden;
   text-align: center;
+  background: #f9f7f3;
 }
 
 @media (max-width: 800px) {
@@ -525,4 +573,35 @@ footer {
 .content-container {
   padding: 16px 0 32px;
 }
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 0 24px;
+  .user-item {
+    padding: 8px 16px;
+    text-align: center;
+    width: 180px;
+    flex-shrink: 0;
+    .avatar {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)!important;
+      transition: all 0.35s cubic-bezier(0.5, 0, 0.5, 1);
+      background: #fff;
+      &:hover {
+        box-shadow: 0 25px 50px -12px rgba(0,0,0,.25)!important;
+      }
+    }
+    .username {
+      font-size: 16px;
+      padding: 16px 0;
+      font-weight: lighter;
+    }
+  }
+}
+
 </style>
