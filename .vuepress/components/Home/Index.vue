@@ -291,6 +291,36 @@ export default {
           avatar: 'https://qinjinhuan.github.io/images/avatar.png',
           username: '黄粱一梦',
         },
+        {
+          link: 'https://www.suremotoo.site/',
+          avatar: 'https://www.suremotoo.site/images/avatar.png',
+          username: 'SUREMOTOO',
+        },
+        {
+          link: 'https://kveln.cn/',
+          avatar: 'https://kveln.cn/favicon.ico',
+          username: 'Kveln\'Blog',
+        },
+        {
+          link: 'https://chenmei.xyz/',
+          avatar: 'https://chenmei.xyz/images/avatar.png',
+          username: '呆呆是槑',
+        },
+        {
+          link: 'https://moyu.life/',
+          avatar: 'https://brick713.github.io/images/avatar.png',
+          username: 'Brick713 的小黑屋',
+        },
+        {
+          link: 'https://thegayhub.github.io/',
+          avatar: 'https://TheGayhub.github.io/images/avatar.png',
+          username: 'Guapi',
+        },
+        {
+          link: 'https://blog.ixiao9.com/',
+          avatar: 'https://ixiao9.github.io/images/avatar.png',
+          username: 'iXiAo9',
+        },
       ],
     };
   },
