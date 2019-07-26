@@ -181,6 +181,21 @@
           />
         </a>
       </div>
+      <form
+        class="subscribe-form"
+        action="https://tinyletter.com/gridea"
+        method="post"
+        target="popupwindow"
+        onsubmit="window.open('https://tinyletter.com/gridea', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+        <p>
+          <label class="subscribe-label" for="tlemail">✉️订阅更新</label>
+        </p>
+        <div class="live-input-container subscribe-input">
+          <input class="live-input" placeholder="邮箱" type="text" name="email" id="tlemail" />
+        </div>
+        <input type="hidden" value="1" name="embed"/>
+        <input class="live-btn live-btn-primary subscribe-button" type="submit" value="订阅" />
+      </form>
     </div>
     <footer>
       <css-doodle class="footer-bg">
@@ -197,7 +212,8 @@
         @rand(-10em, 10em),
         @rand(-10em, 10em)
         )
-      </css-doodle>Made with ❤️ by
+      </css-doodle>
+      Made with ❤️ by
       <a href="https://github.com/EryouHao" target="_blank">EryouHao</a>
     </footer>
   </div>
@@ -634,4 +650,19 @@ footer {
   }
 }
 
+.subscribe-form {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.subscribe-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+.subscribe-input {
+  margin: 16px 0;
+}
+.subscribe-button {
+  background: #434343;
+  transition: all .382s;
+}
 </style>
