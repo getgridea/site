@@ -1,4 +1,5 @@
 # 常见问题
+> 大部分问题都可以通过打开开发者工具（点击菜单：编辑->开发者工具->Console栏）查看具体报错信息解决
 ## 如何同步博客文件（如何多设备管理博客）
 目前，你可以通过将博客源文件夹（默认是 `~/Documents/Gridea`）通过 **OneDrive** 或其他类似网盘同步工具进行文件备份与同步
 
@@ -37,3 +38,6 @@ missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
 <div class="disqus-container">
   <vue-disqus shortname="gridea"></vue-disqus>
 </div>
+
+## 同步失败怎么办？
+点击菜单栏 编辑 -> 开发者工具，然后切换到 Console 栏，点击同步，查看报错信息解决。
