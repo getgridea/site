@@ -35,9 +35,13 @@
 missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
  则打开 Terminal，执行 `xcode-select --install` 之后，再使用即可。
 
+## 同步失败怎么办？
+点击菜单栏 编辑 -> 开发者工具，然后切换到 Console 栏，点击同步，查看报错信息解决。
+
+## Gitalk 提示 Error: Not Found
+描述：Gitalk 提示 Error: Not Found,点击 GitHub 登录会返回首页。
+解答：这是因为 GitHub OAuth Application 中的 Homepage URL 和 Authoration callback URL 有误，若是有自定义域名需填写自定义域名。
+
 <div class="disqus-container">
   <vue-disqus shortname="gridea"></vue-disqus>
 </div>
-
-## 同步失败怎么办？
-点击菜单栏 编辑 -> 开发者工具，然后切换到 Console 栏，点击同步，查看报错信息解决。
