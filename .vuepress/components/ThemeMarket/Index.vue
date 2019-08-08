@@ -102,6 +102,12 @@ export default {
           image: '/images/themes/theme-pan.jpg',
           demo: '',
         },
+        {
+          name: 'Anatole',
+          github: 'https://github.com/alterfang/gridea-theme-Anatole',
+          image: '/images/themes/theme-anatole.jpg',
+          demo: '',
+        },
       ],
     }
   },
