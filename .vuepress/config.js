@@ -17,7 +17,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'Gridea | 一个静态博客写作客户端',
+      title: 'Gridea',
       description: 'Gridea | ✍️ 一个静态博客写作客户端 | 记录生活、心情、知识、笔记、创意...',
     },
     '/en/': {

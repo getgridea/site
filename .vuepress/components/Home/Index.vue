@@ -344,10 +344,6 @@ export default {
     this.fetchStars();
     this.fetchVersion();
   },
-  mounted() {
-    const title = window.document.querySelector('.site-name')
-    title.innerHTML = 'Gridea'
-  },
   methods: {
     goPage(url) {
       window.open(url, "_blank");
