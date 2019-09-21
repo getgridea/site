@@ -1,6 +1,12 @@
 <template>
   <div class="home-page">
     <div class="hero-container">
+      <l-alert color="#5f3dc4" closable v-show="!close" @close="closeHandler">
+        <div class="alert-content">🤫新版即将到来，全新体验，助你妙笔生花，敬请期待！预计发布日期：2019-9-23</div>
+        <template v-slot:close>
+          <l-button size="small">关闭</l-button>
+        </template>
+      </l-alert>
       <css-doodle class="hero-bg">
         :doodle {
         @grid: 24 / 120vmax;
@@ -338,11 +344,16 @@ export default {
           username: 'iXiAo9',
         },
       ],
+      close: true,
     };
   },
   created() {
     this.fetchStars();
     this.fetchVersion();
+  },
+  mounted() {
+    const close = localStorage.getItem('gridea_update_close')
+    this.close = !!close
   },
   methods: {
     goPage(url) {
@@ -359,7 +370,10 @@ export default {
       //   this.version = res.data.name.substring(1)
       // }
       this.version = "0.8.2";
-    }
+    },
+    closeHandler() {
+      localStorage.setItem('gridea_update_close', true)
+    },
   }
 };
 </script>
@@ -664,5 +678,10 @@ footer {
 .subscribe-button {
   background: #434343;
   transition: all .382s;
+}
+
+.alert-content {
+  text-align: center;
+  font-size: 16px;
 }
 </style>
