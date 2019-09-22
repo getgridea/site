@@ -34,6 +34,17 @@ export default {
     return {
       list: [
         {
+          name: 'Tech',
+          github: 'https://github.com/EryouHao/gridea-theme-tech',
+          link: 'https://mianbaoduo.com/o/bread/mbd-ZZ2clA==',
+          demo: 'https://gridea-theme-tech.netlify.com',
+          image: '/images/themes/theme-tech.jpg',
+          include: false,
+          showDemo: true,
+          isNew: true,
+          price: '¥ 6'
+        },
+        {
           name: 'Walker',
           github: 'https://github.com/EryouHao/gridea-theme-walker',
           link: 'https://mianbaoduo.com/product/show/mbd-aJqU',
@@ -41,7 +52,6 @@ export default {
           image: '/images/themes/theme-walker.jpg',
           include: false,
           showDemo: true,
-          isNew: true,
           price: '¥ 6'
         },
         {
