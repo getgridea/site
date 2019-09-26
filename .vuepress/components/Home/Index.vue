@@ -223,7 +223,7 @@
         )
       </css-doodle>
       Made with ❤️ by
-      <a href="https://github.com/EryouHao" target="_blank">EryouHao</a>
+      <a href="https://github.com/EryouHao" target="_blank">EryouHao</a> | Twitter: <a href="https://twitter.com/EryouHao" target="_blank">@EryouHao</a> | Weibo: <a href="https://weibo.com/u/3799576961" target="_blank">海岛心hey</a>
     </footer>
   </div>
 </template>
