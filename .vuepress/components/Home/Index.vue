@@ -135,8 +135,11 @@
           <gh-btns-star slug="getgridea/gridea" show-count></gh-btns-star>
         </div>
         <div class="star-container">
-          <div class="star-tip">💰赞助，助力作者！👇</div>
+          <div class="star-tip">💰赞赏，助力作者！👇</div>
           <img src="https://raw.githubusercontent.com/getgridea/gridea/master/files/wechat.png" width="160px" style="border-radius: 16px;" />
+          <div style="text-align: center; margin-top: 16px;">
+            <a href="https://github.com/getgridea/gridea/issues/126" target="_blank">赞赏列表</a>
+          </div>
         </div>
       </div>
     </div>
@@ -220,7 +223,7 @@
         )
       </css-doodle>
       Made with ❤️ by
-      <a href="https://github.com/EryouHao" target="_blank">EryouHao</a>
+      <a href="https://github.com/EryouHao" target="_blank">EryouHao</a> | Twitter: <a href="https://twitter.com/EryouHao" target="_blank">@EryouHao</a> | Weibo: <a href="https://weibo.com/u/3799576961" target="_blank">海岛心hey</a>
     </footer>
   </div>
 </template>
