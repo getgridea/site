@@ -34,6 +34,17 @@ export default {
     return {
       list: [
         {
+          name: 'Line',
+          github: 'https://github.com/EryouHao/gridea-theme-line',
+          link: 'https://mianbaoduo.com/o/bread/mbd-Zp6Ulg==',
+          demo: 'https://gridea-theme-line.netlify.com',
+          image: '/images/themes/theme-line.jpg',
+          include: false,
+          showDemo: true,
+          isNew: true,
+          price: '¥ 6'
+        },
+        {
           name: 'Tech',
           github: 'https://github.com/EryouHao/gridea-theme-tech',
           link: 'https://mianbaoduo.com/o/bread/mbd-ZZ2clA==',
