@@ -302,9 +302,9 @@ export default {
           username: '张阿简博客',
         },
         {
-          link: 'https://miracol.cn/',
-          avatar: 'https://miracol.cn/images/avatar.png',
-          username: 'Miracol',
+          link: 'https://shanbu.fun/',
+          avatar: 'https://i.loli.net/2019/09/28/IGFY8Ug5Pft9hWX.jpg',
+          username: '山卜方',
         },
         {
           link: 'https://www.aliyaowan.com/',
