@@ -8,6 +8,7 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: 'https://unpkg.com/splitting@1.0.0/dist/splitting.css' }],
     ['script', { src: 'https://unpkg.com/css-doodle@0.6.1/css-doodle.min.js' }],
     ['script', { src: 'https://cdn.jsdelivr.net/npm/vue-disqus@3/dist/vue-disqus.js' }],
+    ['script', { src: 'https://unpkg.com/splitting/dist/splitting.min.js' }],
     ['script', { src: '//code.tidio.co/yfyqmf3qhf36fgy4ywxutegrywwvh35c.js' }],
   ],
   siteConfig: {
