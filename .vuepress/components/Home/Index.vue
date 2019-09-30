@@ -21,28 +21,39 @@
       </css-doodle>
       <div class="hero-content">
         <div class="left">
-          <div class="slogon">一个静态博客写作客户端</div>
+          <main class="hero-title">
+            <h1 data-splitting class="headline headline--hide">Gridea</h1>
+          </main>
+          <div>
+            <div class="slogon">一个静态博客写作客户端</div>
+          </div>
           <div class="description">记录生活、心情、知识、笔记、创意...</div>
           <div class="btn-container">
-            <l-button
-              size="large"
-              type="primary"
-              @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`)"
-            >Gridea for Mac -𝗏 {{ version }}</l-button>
-            <l-button
-              size="large"
-              type="primary"
-              @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea.Setup.${version}.exe`)"
-            >Gridea for Windows -𝗏 {{ version }}</l-button>
-            <l-button
-              size="large"
-              type="primary"
-              @click="goPage(`https://github.com/getgridea/gridea/releases`)"
-            >Gridea for Linux -𝗏 {{ version }}</l-button>
+            <l-tooltip placement="bottom" content="Mac OS" style="margin-right: 24px;">
+              <l-button
+                size="large"
+                shape="circle"
+                @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`)"
+              ><i class="ri-mac-line"></i></l-button>
+            </l-tooltip>
+            <l-tooltip placement="bottom" content="Windows" style="margin-right: 24px;">
+              <l-button
+                size="large"
+                shape="circle"
+                @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea.Setup.${version}.exe`)"
+              ><i class="ri-windows-line"></i></l-button>
+            </l-tooltip>
+            <l-tooltip placement="bottom" content="Linux">
+              <l-button
+                size="large"
+                shape="circle"
+                @click="goPage(`https://github.com/getgridea/gridea/releases`)"
+              ><i class="ri-ubuntu-line"></i></l-button>
+            </l-tooltip>
           </div>
           <div class="star">
             <gh-btns-star slug="getgridea/gridea" show-count></gh-btns-star>
-            <span class="star-tip">🌟Star 支持作者！</span>
+            <span class="star-tip"> 🌟Star 支持作者！</span>
           </div>
           <div class="shields-container">
             <a href="https://github.com/getgridea/gridea/releases/latest">
@@ -116,19 +127,28 @@
           class="content-container"
         >除了这些，还有一些你可能期待的（主题包含）：KaTeX 公式、Google Analytics、社交链接、TOC...，心动了吗？快快下载体验吧！</div>
         <div class="action-container">
-          <l-button
-            size="large"
-            @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`)"
-          >Gridea for Mac -𝗏 {{ version }}</l-button>
-          <l-button
-            size="large"
-            @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea.Setup.${version}.exe`)"
-          >Gridea for Windows -𝗏 {{ version }}</l-button>
-          <l-button
-            size="large"
-            type="primary"
-            @click="goPage(`https://github.com/getgridea/gridea/releases`)"
-          >Gridea for Linux -𝗏 {{ version }}</l-button>
+          <l-tooltip placement="bottom" content="Mac OS" style="margin-right: 24px;">
+            <l-button
+              size="large"
+              shape="circle"
+              style="background:"
+              @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`)"
+            ><i class="ri-mac-line"></i></l-button>
+          </l-tooltip>
+          <l-tooltip placement="bottom" content="Windows" style="margin-right: 24px;">
+            <l-button
+              size="large"
+              shape="circle"
+              @click="goPage(`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea.Setup.${version}.exe`)"
+            ><i class="ri-windows-line"></i></l-button>
+          </l-tooltip>
+          <l-tooltip placement="bottom" content="Linux">
+            <l-button
+              size="large"
+              shape="circle"
+              @click="goPage(`https://github.com/getgridea/gridea/releases`)"
+            ><i class="ri-ubuntu-line"></i></l-button>
+          </l-tooltip>
         </div>
         <div class="star-container">
           <div class="star-tip">🌟Star，支持作者！👇</div>
@@ -230,6 +250,12 @@
 
 <script>
 import axios from "axios";
+// import "splitting/dist/splitting.css";
+// import "splitting/dist/splitting-cells.css";
+import Splitting from "splitting";
+
+// Splitting();
+
 // import 'css-doodle'
 
 export default {
@@ -317,9 +343,9 @@ export default {
           username: '黄粱一梦',
         },
         {
-          link: 'https://www.suremotoo.site/',
-          avatar: 'https://www.suremotoo.site/images/avatar.png',
-          username: 'SUREMOTOO',
+          link: 'https://luziyang.cn/',
+          avatar: 'https://s2.ax1x.com/2019/09/20/nOyAts.jpg',
+          username: '彼岸临窗',
         },
         {
           link: 'https://kveln.cn/',
@@ -357,6 +383,10 @@ export default {
   mounted() {
     const close = localStorage.getItem('gridea_update_close')
     this.close = !!close
+    // if (window.Splitting) {
+    //   window.Splitting()
+    // }
+    Splitting()
   },
   methods: {
     goPage(url) {
@@ -432,9 +462,9 @@ export default {
     margin: 0;
   }
 
-  >>> .live-btn {
-    border-radius: 8px;
-  }
+  // >>> .live-btn {
+  //  border-radius: 8px;
+  // }
 }
 
 .hero-container {
@@ -465,11 +495,29 @@ export default {
         font-size: 40px;
         color: #000;
         font-weight: 600;
-        text-shadow: 2px 2px 0px #f9f7f3;
+        // text-shadow: 2px 2px 0px #f9f7f3;
+        position: relative;
+        display: inline-block;
+        &:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 24px;
+          background: rgba(250, 216, 73, 0.61);
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          z-index: -1;
+          border-top-left-radius: 16%;
+          border-top-right-radius: 12%;
+          border-bottom-left-radius: 12%;
+          border-bottom-right-radius: 16%;
+        }
       }
 
       .description {
         font-size: 24px;
+        font-weight: 300;
       }
 
       .btn-container {
