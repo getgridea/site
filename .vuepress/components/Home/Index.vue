@@ -173,7 +173,8 @@
       <p>😘 𝖤𝗇𝗃𝗈𝗒~</p>
       <a href="https://t.me/joinchat/AAAAAEj82_lma0Y1wmyqUQ" target="_blank">Telegram 频道</a> |
       <a href="https://t.me/joinchat/IDY0ahRqb8NPodv95BNpBg" target="_blank">Telegram 群组</a>
-      <l-button type="text">QQ 群：970332209</l-button>
+      <l-button type="text">QQ 1 群：970332209 (已满)</l-button>
+      <l-button type="text">QQ 2 群：923131213</l-button>
       <div style="text-align: center; padding: 24px 8px;">
         <a
           href="https://www.producthunt.com/posts/gridea?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-gridea"
