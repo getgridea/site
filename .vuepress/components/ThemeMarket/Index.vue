@@ -59,7 +59,7 @@ export default {
           name: 'Walker',
           github: 'https://github.com/EryouHao/gridea-theme-walker',
           link: 'https://mianbaoduo.com/product/show/mbd-aJqU',
-          demo: 'https://fehey.com',
+          demo: 'https://gridea-theme-walker.netlify.com',
           image: '/images/themes/theme-walker.jpg',
           include: false,
           showDemo: true,
