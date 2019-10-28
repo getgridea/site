@@ -66,6 +66,15 @@ export default {
           price: '¥ 6'
         },
         {
+          name: 'Clean',
+          github: 'https://github.com/Alanrk/Gridea-theme-clean',
+          demo: 'https://kveln.cn/',
+          image: '/images/themes/theme-clean.jpg',
+          include: false,
+          isNew: true,
+          showDemo: true,
+        },
+        {
           name: 'Notes',
           github: 'https://github.com/getgridea/gridea-theme-notes',
           demo: 'https://fehey.com',
