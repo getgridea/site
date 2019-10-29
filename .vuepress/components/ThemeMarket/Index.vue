@@ -7,16 +7,24 @@
         <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
       </div>
     </div>
-    <l-row :gutter="24">
-      <l-col :xs="24" :sm="24" :md="12" :lg="8" :xl="8" v-for="(item, index) in list" :key="index">
-        <div class="theme-item shadow-md rounded bg-white hover:shadow-lg" :style="{ 'background-image': `url(${item.image})` }" @click="download(item)">
+    <l-row :gutter="48">
+      <l-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12" v-for="(item, index) in list" :key="index">
+        <div class="theme-item shadow-md rounded bg-white hover:shadow-lg relative" :style="{ 'background-image': `url(${item.image})` }" @click="download(item)">
+          <vs-chip color="#6B46C1" class="new-tag" v-if="item.isNew">
+            NEW
+          </vs-chip>
         </div>
         <div class="theme-info">
-          <span class="theme-title">
-            {{ item.name }}
-            <l-tag type="primary" v-if="item.price">{{ item.price }}</l-tag>
-            <l-tag type="success" v-if="item.isNew">NEW</l-tag>
-            <l-tag type="warning" v-if="item.include">内置</l-tag>
+          <span>
+            <span class="theme-title">
+              {{ item.name }}
+            </span>
+            <vs-chip color="#38A169" v-if="item.include">
+              内置
+            </vs-chip>
+            <vs-chip color="#D69E2E" v-if="item.price">
+              {{ item.price }}
+            </vs-chip>
           </span>
           <span>
             <l-button type="text" v-if="item.showDemo" @click="view(item)">VIEW</l-button>
@@ -52,7 +60,7 @@ export default {
           image: '/images/themes/theme-tech.jpg',
           include: false,
           showDemo: true,
-          isNew: true,
+          isNew: false,
           price: '¥ 6'
         },
         {
@@ -64,6 +72,15 @@ export default {
           include: false,
           showDemo: true,
           price: '¥ 6'
+        },
+        {
+          name: '佳',
+          github: 'https://github.com/alterfang/gridea-theme-jia',
+          demo: 'https://day.fands.top/',
+          image: '/images/themes/theme-jia.jpg',
+          include: false,
+          isNew: true,
+          showDemo: true,
         },
         {
           name: 'Clean',
@@ -169,6 +186,10 @@ export default {
     transition all 0.5s
     &:hover
       transform translateY(-4px)
+    .new-tag
+      position absolute
+      left -8px
+      top -12px
 
   .theme-info
     display flex
@@ -178,7 +199,9 @@ export default {
     margin-bottom 32px
     .theme-title
       font-size 18px
-      font-weight lighter
+      float left
+      line-height 28px
+      margin-right 8px
 
 @media (max-width 600px)
   .theme-market

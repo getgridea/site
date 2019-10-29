@@ -1,5 +1,7 @@
 import Live from 'live-ui'
 import 'live-ui/dist/live.css'
+import Vuesax from 'vuesax'
+import 'vuesax/dist/vuesax.css'
 import 'remixicon/fonts/remixicon.css'
 // import 'css-doodle'
 import VueGitHubButtons from '../node_modules/vue-github-buttons'
@@ -14,6 +16,7 @@ export default ({
   siteData
 }) => {
   Vue.use(Live)
+  Vue.use(Vuesax)
   Vue.use(VueGitHubButtons, { useCache: false })
   Vue.use(HomeLayout)
   Vue.use(VueDisqus)
