@@ -45,3 +45,8 @@ missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
 <div class="disqus-container">
   <vue-disqus shortname="gridea"></vue-disqus>
 </div>
+
+## 如何使用非内置主题
+
+点击 Gridea 左侧「系统」菜单，查看源文件夹目录，进入目录，然后将主题文件夹放入 themes 文件夹，重启应用即可
+![image.png](https://i.loli.net/2019/10/30/rnoZu6zWJ43hiYF.png)
