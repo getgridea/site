@@ -74,6 +74,15 @@ export default {
           price: '¥ 6'
         },
         {
+          name: '十三',
+          github: 'https://github.com/alterfang/shishan',
+          demo: 'https://gridea-theme-shisan.netlify.com/',
+          image: '/images/themes/theme-shisan.jpg',
+          include: false,
+          isNew: true,
+          showDemo: true,
+        },
+        {
           name: '佳',
           github: 'https://github.com/alterfang/gridea-theme-jia',
           demo: 'https://day.fands.top/',
