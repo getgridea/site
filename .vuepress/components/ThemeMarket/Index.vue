@@ -74,6 +74,15 @@ export default {
           price: '¥ 6'
         },
         {
+          name: '宋',
+          github: 'https://github.com/alterfang/gridea-theme-song',
+          demo: 'https://shanbu.fun/',
+          image: '/images/themes/theme-song.jpg',
+          include: false,
+          isNew: true,
+          showDemo: true,
+        },
+        {
           name: '十三',
           github: 'https://github.com/alterfang/shishan',
           demo: 'https://gridea-theme-shisan.netlify.com/',
