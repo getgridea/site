@@ -158,7 +158,7 @@
           <div class="star-tip">💰赞赏，助力作者！👇</div>
           <img src="https://raw.githubusercontent.com/getgridea/gridea/master/files/wechat.png" width="160px" style="border-radius: 16px;" />
           <div style="text-align: center; margin-top: 16px;">
-            <a href="https://github.com/getgridea/gridea/issues/126" target="_blank">赞赏列表</a>
+            <a href="https://gridea.dev/docs/donate.html" target="_blank">赞赏列表</a>
           </div>
         </div>
       </div>
