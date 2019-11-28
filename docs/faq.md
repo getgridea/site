@@ -42,11 +42,13 @@ missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
 描述：Gitalk 提示 Error: Not Found,点击 GitHub 登录会返回首页。
 解答：这是因为 GitHub OAuth Application 中的 Homepage URL 和 Authoration callback URL 有误，若是有自定义域名需填写自定义域名。
 
+## 如何使用非内置主题
+点击 Gridea 左侧「系统」菜单，查看源文件夹目录，进入目录，然后将主题文件夹放入 themes 文件夹，重启应用即可
+![image.png](https://i.loli.net/2019/10/30/rnoZu6zWJ43hiYF.png)
+
+## 如何添加 Valine 评论
+若主题没有提供 Valine 评论的自定义设置功能，可自行修改模版代码进行添加，参考文章：「[为你的Gridea博客加上Valine评论系统](https://kveln.cn/post/qE678A4ce/)」
+
 <div class="disqus-container">
   <vue-disqus shortname="gridea"></vue-disqus>
 </div>
-
-## 如何使用非内置主题
-
-点击 Gridea 左侧「系统」菜单，查看源文件夹目录，进入目录，然后将主题文件夹放入 themes 文件夹，重启应用即可
-![image.png](https://i.loli.net/2019/10/30/rnoZu6zWJ43hiYF.png)
