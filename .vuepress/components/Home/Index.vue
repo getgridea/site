@@ -344,7 +344,7 @@ export default {
           username: '黄粱一梦',
         },
         {
-          link: 'https://luziyang.cn/',
+          link: 'https://jiaoluo.co/',
           avatar: 'https://s2.ax1x.com/2019/09/20/nOyAts.jpg',
           username: '彼岸临窗',
         },
