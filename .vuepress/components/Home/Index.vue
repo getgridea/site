@@ -339,9 +339,9 @@ export default {
           username: '啊哩药丸',
         },
         {
-          link: 'https://qinjinhuan.github.io/',
-          avatar: 'https://qinjinhuan.github.io/images/avatar.png',
-          username: '黄粱一梦',
+          link: 'https://nuoea.com/',
+          avatar: 'https://nuoea.com/media/images/site_avatar.png',
+          username: 'NUOEA',
         },
         {
           link: 'https://jiaoluo.co/',
@@ -697,9 +697,9 @@ footer {
     width: 180px;
     flex-shrink: 0;
     .avatar {
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
+      // border-radius: 50%;
+      // width: 80px;
+      height: 64px;
       display: inline-block;
       box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)!important;
       transition: all 0.35s cubic-bezier(0.5, 0, 0.5, 1);
