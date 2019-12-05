@@ -182,7 +182,7 @@
         @rand(-10em, 10em)
         )
       </css-doodle>Made with ❤️ by
-      <a href="https://github.com/EryouHao" target="_blank">EryouHao</a>
+      <a href="https://github.com/EryouHao" target="_blank">EryouHao</a> | Twitter: <a href="https://twitter.com/EryouHao" target="_blank">@EryouHao</a>
     </footer>
   </div>
 </template>
@@ -267,7 +267,7 @@ export default {
       // if (res.status === 200) {
       //   this.version = res.data.name.substring(1)
       // }
-      this.version = "0.8.2";
+      this.version = "0.8.3";
     }
   }
 };
