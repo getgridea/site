@@ -49,6 +49,10 @@ missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
 ## 如何添加 Valine 评论
 若主题没有提供 Valine 评论的自定义设置功能，可自行修改模版代码进行添加，参考文章：「[为你的Gridea博客加上Valine评论系统](https://kveln.cn/post/qE678A4ce/)」
 
+## 仓库展示内容为 Documents/Gridea/output 文件夹怎么办？
+
+这是由于 output 文件夹外层有 .git 文件夹，将外层的 .git 文件夹移除即可（记得看下是什么 repo 使用了 git）
+
 <div class="disqus-container">
   <vue-disqus shortname="gridea"></vue-disqus>
 </div>
