@@ -80,7 +80,7 @@
         </div>
         <div class="right">
           <img
-            src="https://raw.githubusercontent.com/getgridea/gridea/master/gridea-app.png"
+            src="https://cdn.jsdelivr.net/gh/getgridea/gridea@master/gridea-app.png"
             alt="Gridea"
             class="app-img"
           />
