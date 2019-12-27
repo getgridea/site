@@ -80,7 +80,7 @@
         </div>
         <div class="right">
           <img
-            src="https://raw.githubusercontent.com/getgridea/gridea/master/gridea-app.png"
+            src="https://cdn.jsdelivr.net/gh/getgridea/gridea@master/gridea-app.png"
             alt="Gridea"
             class="app-img"
           />
@@ -101,7 +101,7 @@
     <div class="container-wrapper white">
       <div class="container">
         <h2 class="section-title">内置主题</h2>
-        <img class="theme-img" src="/themes.png" alt />
+        <img class="theme-img" src="/themes.jpg" alt />
       </div>
     </div>
     <div class="container-wrapper">
@@ -156,7 +156,7 @@
         </div>
         <div class="star-container">
           <div class="star-tip">💰赞赏，助力作者！👇</div>
-          <img src="https://raw.githubusercontent.com/getgridea/gridea/master/files/wechat.png" width="160px" style="border-radius: 16px;" />
+          <img src="https://cdn.jsdelivr.net/gh/getgridea/gridea@master/files/wechat.png" width="160px" style="border-radius: 16px;" />
           <div style="text-align: center; margin-top: 16px;">
             <a href="https://gridea.dev/docs/donate.html" target="_blank">赞赏列表</a>
           </div>
@@ -325,7 +325,7 @@ export default {
         },
         {
           link: 'https://zhangajian.com/',
-          avatar: 'https://zhangajian.com/media/images/avatar.png',
+          avatar: '/images/avatars/zhangajian.jpg',
           username: '张阿简博客',
         },
         {
@@ -340,7 +340,7 @@ export default {
         },
         {
           link: 'https://nuoea.com/',
-          avatar: 'https://nuoea.com/media/images/site_avatar.png',
+          avatar: '/images/avatars/nuoea.jpg',
           username: 'NUOEA',
         },
         {
@@ -360,7 +360,7 @@ export default {
         },
         {
           link: 'https://moyu.life/',
-          avatar: 'https://brick713.github.io/images/avatar.png',
+          avatar: '/images/avatars/moyu.jpg',
           username: 'Brick713 的小黑屋',
         },
         {
@@ -697,9 +697,9 @@ footer {
     width: 180px;
     flex-shrink: 0;
     .avatar {
-      // border-radius: 50%;
-      // width: 80px;
-      height: 64px;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
       display: inline-block;
       box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)!important;
       transition: all 0.35s cubic-bezier(0.5, 0, 0.5, 1);
