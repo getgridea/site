@@ -80,7 +80,7 @@
         </div>
         <div class="right">
           <img
-            src="https://cdn.jsdelivr.net/gh/getgridea/gridea@master/gridea-app.png"
+            src="/gridea-app.jpg"
             alt="Gridea"
             class="app-img"
           />
@@ -555,6 +555,10 @@ export default {
 
       .app-img {
         width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        border: 2px solid #434343;
       }
     }
   }
