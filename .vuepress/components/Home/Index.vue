@@ -164,13 +164,16 @@
       </div>
     </div>
     <div class="home-content container-wrapper">
-      <p>
-        <span class="large-icon">🌱</span> 当然 Gridea 还很年轻，有很多不足，但请相信，它会不停向前
-        <span class="large-icon">🏃</span>
-      </p>
-      <p>未来，它一定会成为你离不开的伙伴</p>
-      <p>尽情发挥你的才华吧！</p>
-      <p>😘 𝖤𝗇𝗃𝗈𝗒~</p>
+      <div class="container">
+        <h2 class="section-title">可以，写博客的那个劲儿又回来了</h2>
+        <p>
+          <span class="large-icon">🌱</span> 当然 Gridea 还很年轻，有很多不足，但请相信，它会不停向前
+          <span class="large-icon">🏃</span>
+        </p>
+        <p>未来，它一定会成为你离不开的伙伴</p>
+        <p>尽情发挥你的才华吧！</p>
+        <p>😘 𝖤𝗇𝗃𝗈𝗒~</p>
+      </div>
       <a href="https://t.me/joinchat/AAAAAEj82_lma0Y1wmyqUQ" target="_blank">Telegram 频道</a> |
       <a href="https://t.me/joinchat/IDY0ahRqb8NPodv95BNpBg" target="_blank">Telegram 群组</a>
       <l-button type="text">QQ 1 群：970332209 (已满)</l-button>
