@@ -32,7 +32,8 @@ fly - 主题文件夹名称 (建议用小写，中划线分隔)
 │   ├── post.ejs - 文章页 (必须，不可更名)
 │   ├── archives.ejs - 归档页 (必须，不可更名)
 │   ├── tags.ejs - 标签列表页 (必须，不可更名)
-│   └── tag.ejs - 标签详情页 (必须，不可更名)
+│   ├── tag.ejs - 标签详情页 (必须，不可更名)
+│   └── friends.ejs - 自定义模版 (可选，任意命名)
 └── config.json - 主题配置文件 (可选，推荐)
 └── style-override.js - 主题样式自定义文件 (可选)
 ```
@@ -79,6 +80,17 @@ fly - 主题文件夹名称 (建议用小写，中划线分隔)
 - [pagination](#pagination)
 - [themeConfig](#themeconfig)
 - [site](#site)
+
+### 自定义模版
+可以在 templates 文件夹创建自定义模版，例如 `friends.ejs`, `about.ejs`, `projects.ejs`, `404.ejs` 等等，最终生成的访问路径为 `http(s)://域名/friends`, `http(s)://域名/about`, `http(s)://域名/projects`, `http(s)://域名/404` 可使用的变量值如下：
+
+- [menus](#menus)
+- [themeConfig](#themeconfig)
+- [commentSetting](#commentsetting)
+- [site](#site)
+
+> 注：若主题包含自定义模版，且文章渲染选择了精简 URL，若产生 URL 冲突，自定义渲染模版优先级高于文章 URL。
+
 
 ### 变量值示例
 
