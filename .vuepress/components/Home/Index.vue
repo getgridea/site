@@ -89,6 +89,7 @@
     </div>
     <div class="container-wrapper">
       <div class="container">
+        <div class="round-shape-one"></div>
         <h2 class="section-title">你最需要的，我们都准备了</h2>
         <div class="item-container">
           <div class="item" v-for="(item, index) in featureList" :key="index">
@@ -102,6 +103,7 @@
       <div class="container">
         <h2 class="section-title">内置主题</h2>
         <img class="theme-img" src="/themes.jpg" alt />
+        <div class="section-shape-one"></div>
       </div>
     </div>
     <div class="container-wrapper">
@@ -118,6 +120,10 @@
         <div style="text-align: center;">
           <a href="https://github.com/getgridea/gridea/issues/126" target="_blank">提交我的博客</a>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="23.156" height="22.97" viewBox="0 0 23.156 22.97" class="shape-three">
+          <path id="Stroke_7" data-name="Stroke 7" class="cls-1" d="M442.672,2430.12v20.66" transform="translate(-431.094 -2428.97)"/>
+          <path id="Stroke_8" data-name="Stroke 8" class="cls-1" d="M453.088,2440.45h-20.83" transform="translate(-431.094 -2428.97)"/>
+        </svg>
       </div>
     </div>
     <div class="container-wrapper white">
@@ -294,7 +300,7 @@ export default {
         {
           title: "多平台",
           desc:
-            "大部分情况下你用 Github Pages 来托管博客就够了，但我们同时提供了 Coding Pages 的支持"
+            "大部分情况下你用 Github Pages 来托管博客就够了，但我们同时提供了 Coding Pages、SFTP 的支持"
         },
         {
           title: "多评论",
@@ -584,6 +590,7 @@ export default {
 .container {
   max-width: 1200px;
   margin: 48px auto;
+  position: relative;
 
   .item-container {
     display: flex;
@@ -742,5 +749,44 @@ footer {
 .alert-content {
   text-align: center;
   font-size: 16px;
+}
+
+.round-shape-one {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fe8f8f;
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  animation: animationFramesOne 15s infinite linear;
+}
+
+.section-shape-one {
+  width: 8px;
+  height: 8px;
+  background: #fce3ba;
+  border-radius: 50%;
+  position: absolute;
+  right: 8%;
+  top: 11%;
+  animation: animationFramesOne 15s alternate infinite linear;
+}
+
+.cls-1 {
+  fill: none;
+  stroke: #ff969c;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-width: 2.328px;
+  fill-rule: evenodd;
+}
+
+.shape-three {
+  position: absolute;
+  bottom: 0%;
+  left: 45%;
+  animation: animationFramesTwo 15s infinite linear alternate;
 }
 </style>
