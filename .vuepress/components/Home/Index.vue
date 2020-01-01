@@ -412,7 +412,7 @@ export default {
       // if (res.status === 200) {
       //   this.version = res.data.name.substring(1)
       // }
-      this.version = "0.9.0";
+      this.version = "0.9.1";
     },
     closeHandler() {
       localStorage.setItem('gridea_update_close', true)
