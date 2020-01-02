@@ -162,9 +162,6 @@ const generateOverride = (params = {}) => {
     `
   }
 
-
-  console.log('result', result)
-
   return result
 }
 
@@ -174,17 +171,17 @@ module.exports = generateOverride
 是的，如你所见，自定义配置就是这么简单，清晰。下面让我们详细了解一下具体字段和使用方法：  
 
 ### config.json
-此文件中包含了主题的基本信息如：`name`, `version`, `author` 等等，其中有一个特殊的字段 **`customConfig`**，这便是自定义配置字段数组了，格式如下：
+每个主题的根目录可包含一个 `config.json` 的文件。此文件中包含了主题的基本信息如：`name`, `version`, `author`, `repository` 等，其中有一个特殊的字段 **`customConfig`**，这便是自定义配置字段了，类型为数组，每项元素的格式如下：
 ``` json
 {
   "name": "字段变量名称，可在模版或样式覆盖文件中使用",
   "label": "字段展示名称，在软件中显示的名称",
   "group": "字段所属分组，在软件中显示的分组名称",
   "value": "字段默认值",
-  "type": "字段输入类型，目前有`input`, `select`, `textarea`可选",
-  "note": "输入框 placeholder 提示文案，type 为 `input`, `textarea` 时可用",
-  "card": "字段附属 Card，目前只可用 `color`，type 为 `input` 时可用",
-  "options": { // type 为 `select` 时可用
+  "type": "字段输入类型，可选值：'input'，'select'，'textarea'，'radio', 'switch', 'picture-upload', 'markdown'（可提供一个 markdown 的输入框）, 'array'",
+  "note": "输入框 placeholder 提示文案，type 为 'input'，'textarea' 时可用，若为其他type 类型，则展示在表单空间下面",
+  "card": "字段附属 Card，可选值：'color'（提供一个推荐颜色卡片快捷选择），'post'（提供文章数据卡片提供选择），type 为 'input' 时可用",
+  "options": { // type 为 'select'， 'radio' 时可用
     {
       "label": "选项显示名称",
       "value": "选项对应值",
@@ -193,12 +190,55 @@ module.exports = generateOverride
 }
 ```
 
-大部分情况下，使用 input 类型的就够用了。我们额外提供了其他的类型如 `textarea`，`select` 等的支持，还有 `card` 快捷选择颜色支持，当然，未来将会有更丰富的支持。  
-是的，这些字段都可以在模版中（对应：`site.customConfig.自定义字段`）或样式覆盖文件中使用。
+### 图片类型配置
+```json
+{
+    "name": "sidebarBgImage",
+    "label": "侧边栏背景图",
+    "group": "图片",
+    "value": "/media/images/sidebar-bg.jpg",
+    "type": "picture-upload",
+    "note": ""
+}
+```
+
+### 数组类型配置
+```json
+{
+    "name": "friends",
+    "label": "友链",
+    "group": "友链",
+    "type": "array",
+    "value": [
+    {
+        "siteName": "海岛心hey",
+        "siteLink": "https://fehey.com",
+        "siteLogo": "",
+        "description": "一个前端，Gridea 作者"
+    },
+    {
+        "siteName": "Gridea 官网",
+        "siteLink": "https://gridea.dev",
+        "siteLogo": "",
+        "description": "一个静态博客写作客户端"
+    }
+    ], // 若无默认数据，可写成 []
+    "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "picture-upload", "value": "" },
+        { "label": "描述", "name": "description", "type": "textarea", "value": "" }
+    ], // 数组中每一项数据对象的字段定义
+    "note": ""
+},
+```
+
+大部分情况下，使用 input 类型的就够用了。
+是的，这些字段都可以在模版中（对应：`site.customConfig.自定义字段`）或样式覆盖文件（对应：入参）中使用。
 
 在模版中使用时，你可以尽情发挥你的想象，社交、统计、友链、外链背景图、背景音乐...
 
-### style-override.js
+### 提供样式覆盖文件 style-override.js
 当然，在样式覆盖文件中也可以使用：
 
 ``` javascript

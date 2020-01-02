@@ -80,7 +80,7 @@
         </div>
         <div class="right">
           <img
-            src="https://cdn.jsdelivr.net/gh/getgridea/gridea@master/gridea-app.png"
+            src="/gridea-app.jpg"
             alt="Gridea"
             class="app-img"
           />
@@ -89,6 +89,7 @@
     </div>
     <div class="container-wrapper">
       <div class="container">
+        <div class="round-shape-one"></div>
         <h2 class="section-title">你最需要的，我们都准备了</h2>
         <div class="item-container">
           <div class="item" v-for="(item, index) in featureList" :key="index">
@@ -101,7 +102,8 @@
     <div class="container-wrapper white">
       <div class="container">
         <h2 class="section-title">内置主题</h2>
-        <img class="theme-img" src="/themes.png" alt />
+        <img class="theme-img" src="/themes.jpg" alt />
+        <div class="section-shape-one"></div>
       </div>
     </div>
     <div class="container-wrapper">
@@ -118,6 +120,10 @@
         <div style="text-align: center;">
           <a href="https://github.com/getgridea/gridea/issues/126" target="_blank">提交我的博客</a>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="23.156" height="22.97" viewBox="0 0 23.156 22.97" class="shape-three">
+          <path id="Stroke_7" data-name="Stroke 7" class="cls-1" d="M442.672,2430.12v20.66" transform="translate(-431.094 -2428.97)"/>
+          <path id="Stroke_8" data-name="Stroke 8" class="cls-1" d="M453.088,2440.45h-20.83" transform="translate(-431.094 -2428.97)"/>
+        </svg>
       </div>
     </div>
     <div class="container-wrapper white">
@@ -156,7 +162,7 @@
         </div>
         <div class="star-container">
           <div class="star-tip">💰赞赏，助力作者！👇</div>
-          <img src="https://raw.githubusercontent.com/getgridea/gridea/master/files/wechat.png" width="160px" style="border-radius: 16px;" />
+          <img src="https://cdn.jsdelivr.net/gh/getgridea/gridea@master/files/wechat.png" width="160px" style="border-radius: 16px;" />
           <div style="text-align: center; margin-top: 16px;">
             <a href="https://gridea.dev/docs/donate.html" target="_blank">赞赏列表</a>
           </div>
@@ -164,13 +170,16 @@
       </div>
     </div>
     <div class="home-content container-wrapper">
-      <p>
-        <span class="large-icon">🌱</span> 当然 Gridea 还很年轻，有很多不足，但请相信，它会不停向前
-        <span class="large-icon">🏃</span>
-      </p>
-      <p>未来，它一定会成为你离不开的伙伴</p>
-      <p>尽情发挥你的才华吧！</p>
-      <p>😘 𝖤𝗇𝗃𝗈𝗒~</p>
+      <div class="container">
+        <h2 class="section-title">可以，写博客的那个劲儿又回来了</h2>
+        <p>
+          <span class="large-icon">🌱</span> 当然 Gridea 还很年轻，有很多不足，但请相信，它会不停向前
+          <span class="large-icon">🏃</span>
+        </p>
+        <p>未来，它一定会成为你离不开的伙伴</p>
+        <p>尽情发挥你的才华吧！</p>
+        <p>😘 𝖤𝗇𝗃𝗈𝗒~</p>
+      </div>
       <a href="https://t.me/joinchat/AAAAAEj82_lma0Y1wmyqUQ" target="_blank">Telegram 频道</a> |
       <a href="https://t.me/joinchat/IDY0ahRqb8NPodv95BNpBg" target="_blank">Telegram 群组</a>
       <l-button type="text">QQ 1 群：970332209 (已满)</l-button>
@@ -291,7 +300,7 @@ export default {
         {
           title: "多平台",
           desc:
-            "大部分情况下你用 Github Pages 来托管博客就够了，但我们同时提供了 Coding Pages 的支持"
+            "大部分情况下你用 Github Pages 来托管博客就够了，但我们同时提供了 Coding Pages、SFTP 的支持"
         },
         {
           title: "多评论",
@@ -325,7 +334,7 @@ export default {
         },
         {
           link: 'https://zhangajian.com/',
-          avatar: 'https://zhangajian.com/media/images/avatar.png',
+          avatar: '/images/avatars/zhangajian.jpg',
           username: '张阿简博客',
         },
         {
@@ -340,7 +349,7 @@ export default {
         },
         {
           link: 'https://nuoea.com/',
-          avatar: 'https://nuoea.com/media/images/site_avatar.png',
+          avatar: '/images/avatars/nuoea.jpg',
           username: 'NUOEA',
         },
         {
@@ -360,7 +369,7 @@ export default {
         },
         {
           link: 'https://moyu.life/',
-          avatar: 'https://brick713.github.io/images/avatar.png',
+          avatar: '/images/avatars/moyu.jpg',
           username: 'Brick713 的小黑屋',
         },
         {
@@ -403,7 +412,7 @@ export default {
       // if (res.status === 200) {
       //   this.version = res.data.name.substring(1)
       // }
-      this.version = "0.8.3";
+      this.version = "0.9.1";
     },
     closeHandler() {
       localStorage.setItem('gridea_update_close', true)
@@ -555,6 +564,10 @@ export default {
 
       .app-img {
         width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        border: 2px solid #434343;
       }
     }
   }
@@ -577,6 +590,7 @@ export default {
 .container {
   max-width: 1200px;
   margin: 48px auto;
+  position: relative;
 
   .item-container {
     display: flex;
@@ -697,9 +711,9 @@ footer {
     width: 180px;
     flex-shrink: 0;
     .avatar {
-      // border-radius: 50%;
-      // width: 80px;
-      height: 64px;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
       display: inline-block;
       box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)!important;
       transition: all 0.35s cubic-bezier(0.5, 0, 0.5, 1);
@@ -735,5 +749,44 @@ footer {
 .alert-content {
   text-align: center;
   font-size: 16px;
+}
+
+.round-shape-one {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fe8f8f;
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  animation: animationFramesOne 15s infinite linear;
+}
+
+.section-shape-one {
+  width: 8px;
+  height: 8px;
+  background: #fce3ba;
+  border-radius: 50%;
+  position: absolute;
+  right: 8%;
+  top: 11%;
+  animation: animationFramesOne 15s alternate infinite linear;
+}
+
+.cls-1 {
+  fill: none;
+  stroke: #ff969c;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-width: 2.328px;
+  fill-rule: evenodd;
+}
+
+.shape-three {
+  position: absolute;
+  bottom: 0%;
+  left: 45%;
+  animation: animationFramesTwo 15s infinite linear alternate;
 }
 </style>
