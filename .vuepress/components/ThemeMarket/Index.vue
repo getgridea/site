@@ -49,7 +49,7 @@ export default {
           image: '/images/theme-images/theme-line.jpg',
           include: false,
           showDemo: true,
-          isNew: true,
+          isNew: false,
           price: '¥ 6'
         },
         {
@@ -72,6 +72,24 @@ export default {
           include: false,
           showDemo: true,
           price: '¥ 6'
+        },
+        {
+          name: 'Breek',
+          github: 'https://github.com/lmm214/gridea-theme-breek/',
+          demo: 'https://i.immmmm.com/',
+          image: '/images/theme-images/theme-breek.jpg',
+          include: false,
+          isNew: true,
+          showDemo: true,
+        },
+        {
+          name: 'Chic',
+          github: 'https://github.com/ITJoker233/Gridea-theme-Chic',
+          demo: 'https://blog.itjoker.cn/',
+          image: '/images/theme-images/theme-chic.jpg',
+          include: false,
+          isNew: true,
+          showDemo: true,
         },
         {
           name: 'NexT',
@@ -97,16 +115,7 @@ export default {
           demo: 'https://shanbu.fun/',
           image: '/images/theme-images/theme-song.jpg',
           include: false,
-          isNew: true,
-          showDemo: true,
-        },
-        {
-          name: '宋',
-          github: 'https://github.com/alterfang/gridea-theme-song',
-          demo: 'https://shanbu.fun/',
-          image: '/images/theme-images/theme-song.jpg',
-          include: false,
-          isNew: true,
+          isNew: false,
           showDemo: true,
         },
         {
@@ -115,7 +124,7 @@ export default {
           demo: 'https://gridea-theme-shisan.netlify.com/',
           image: '/images/theme-images/theme-shisan.jpg',
           include: false,
-          isNew: true,
+          isNew: false,
           showDemo: true,
         },
         {
@@ -124,7 +133,7 @@ export default {
           demo: 'https://day.fands.top/',
           image: '/images/theme-images/theme-jia.jpg',
           include: false,
-          isNew: true,
+          isNew: false,
           showDemo: true,
         },
         {
@@ -133,7 +142,7 @@ export default {
           demo: 'https://kveln.cn/',
           image: '/images/theme-images/theme-clean.jpg',
           include: false,
-          isNew: true,
+          isNew: false,
           showDemo: true,
         },
         {
