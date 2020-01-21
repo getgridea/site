@@ -74,6 +74,15 @@ export default {
           price: '¥ 6'
         },
         {
+          name: 'Pure',
+          github: 'https://github.com/imhanjie/gridea-theme-pure',
+          demo: 'https://imhanjie.com/',
+          image: '/images/theme-images/theme-pure.jpg',
+          include: false,
+          isNew: true,
+          showDemo: true,
+        },
+        {
           name: 'Breek',
           github: 'https://github.com/lmm214/gridea-theme-breek/',
           demo: 'https://i.immmmm.com/',
@@ -97,7 +106,7 @@ export default {
           demo: 'https://hsxyhao.github.io/',
           image: '/images/theme-images/theme-next.jpg',
           include: false,
-          isNew: true,
+          isNew: false,
           showDemo: true,
         },
         {
