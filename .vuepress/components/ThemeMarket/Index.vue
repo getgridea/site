@@ -42,6 +42,17 @@ export default {
     return {
       list: [
         {
+          name: 'Rocky',
+          github: 'https://github.com/EryouHao/gridea-theme-rocky',
+          link: 'https://mianbaoduo.com/o/bread/YpWYlJ0=',
+          demo: 'https://gridea-theme-rocky.netlify.com',
+          image: '/images/theme-images/theme-rocky.jpg',
+          include: false,
+          showDemo: true,
+          isNew: true,
+          price: '¥ 6'
+        },
+        {
           name: 'Line',
           github: 'https://github.com/EryouHao/gridea-theme-line',
           link: 'https://mianbaoduo.com/o/bread/mbd-Zp6Ulg==',
