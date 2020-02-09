@@ -1,0 +1,202 @@
+<html lang="en">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Gridea v0.9.0｜可以，写博客的那个劲儿又回来了 | Gridea | 一个静态博客写作客户端</title>
+<meta name="description" content="Gridea | 一个静态博客写作客户端 | 记录生活、心情、知识、笔记、创意..." />
+<link rel="shortcut icon" href="https://getgridea.github.io/favicon.ico">
+<link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
+<link rel="stylesheet" href="https://getgridea.github.io/media/tailwind.css">
+<link rel="stylesheet" href="https://getgridea.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Gridea v0.9.0｜可以，写博客的那个劲儿又回来了 | Gridea | 一个静态博客写作客户端 - Atom Feed" href="https://getgridea.github.io/atom.xml">
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-113307620-2');
+  </script>
+    
+
+<body>
+  <div class="antialiased flex flex-col min-h-screen md:bg-gray-100" id="app">
+    <header class="border-b border-gray-200 bg-white">
+  <div class="max-w-6xl mx-auto sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+    <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+      <a href="/" class="flex items-center">
+        <img class="h-8 mr-2" src="/media/gridea.png" alt="Gridea" style="transform: scale(1.2);"> <span class="font-medium text-xl">Gridea</span>
+      </a>
+      <div class="sm:hidden">
+        <button @click="isOpen = !isOpen" type="button" class="block text-gray-500 hover:text-gray-500 focus:text-gray-500 focus:outline-none">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <path v-if="isOpen" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+            <path v-if="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+      
+        <a href="/" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 ">
+          首页
+        </a>  
+      
+        <a href="/docs" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          文档
+        </a>  
+      
+        <a href="/themes" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          主题市场
+        </a>  
+      
+        <a href="/blog" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          博客
+        </a>  
+      
+    </nav>
+  </div>
+</header>
+
+    <div class="max-w-6xl w-full mx-auto px-4 py-8 my-8 flex-1">
+
+      <h1 class="text-3xl text-center">Gridea v0.9.0｜可以，写博客的那个劲儿又回来了</h1>
+      
+      
+        <div class="my-4 text-gray-400 flex justify-center">
+          <span class="flex items-center mr-4 text-sm"><i class="ri-timer-2-line mr-2"></i>2019-12-25</span>
+          <span class="flex items-center text-sm"><i class="ri-book-read-line mr-2"></i>4 min read</span> 
+        </div>
+      
+
+      
+        <img class="max-w-full mt-6 rounded" src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/BDp6Dy.jpg" alt="">
+      
+      
+      <div class="flex relative bg-white mt-0 md:-mt-24 md:rounded md:shadow pb-24">
+        <div v-pre class="markdown mt-10 flex-1 w-full px-0 md:px-12">
+          <blockquote>
+<p>可以，写博客的那个劲儿又回来了～<br>
+——来自一位使用 Gridea 的朋友</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/9dYsJ8.png" alt="Gridea v0.9.0" loading="lazy"></figure>
+<p>这里是 <a href="https://gridea.dev">Gridea</a> v0.9.0 版本的发布日志，如果你还没听说过它，不妨点击下面链接一探究竟吧！</p>
+<p><a href="https://gridea.dev">Gridea - 一个静态博客写作客户端</a></p>
+<p>本次更新中，我们增加了 <strong>SFTP 部署</strong>（许愿成功🎋），增加了一系列新功能与强化了自定义主题自定义能力，拓展了更多的可能性。</p>
+<p>如果你想立即尝鲜，可以直接去下载了 <a href="https://gridea.dev">Gridea 下载</a>。但是，如果你想知道更新了什么，继续阅读吧...</p>
+<p><strong>⚠️注意：若你之前有手动放置文件或文件夹到构建后文件夹（output 文件夹）本次升级有非兼容升级，请看下升级说明，若没有，可直接升级啦</strong></p>
+<p>升级说明：<br>
+需手动复制到博客源文件夹的 static 文件夹（若无此文件夹可新建一个，新版使用时会自动生成，有静态文件需求的可放在此文件夹，构建时会直接复制到 output 文件夹）</p>
+<h2 id="懒人目录">懒人目录</h2>
+<ul>
+<li>新增 <strong>SFTP 部署</strong></li>
+<li>新增<strong>文章置顶</strong>功能</li>
+<li>自定义配置支持<strong>图片</strong>类型和<strong>数组</strong>类型，增加<strong>文章数据卡片</strong>类型</li>
+<li>自定义<strong>归档路径前缀</strong></li>
+<li>文章页与标签页支持<strong>精简</strong> URL 与默认 URL</li>
+<li>新增<strong>菜单拖动</strong>排序</li>
+<li>支持<strong>自定义模板渲染</strong>，具体可见<a href="https://gridea.dev/docs">Gridea 文档</a></li>
+<li>新增<strong>默认 404 页面</strong></li>
+<li>修复更改文章 URL 大小写会删除文章的 bug</li>
+<li><strong>修复编辑器超出一屏后回车不会滚动的 bug</strong></li>
+<li>修复 Linux（Ubuntu）初始化配置时，检测远程链接失败的 BUG</li>
+<li>文章内<strong>图片支持懒加载</strong>（基于 chrome 的lazy loading）</li>
+<li>升级 Electron 至 7.x</li>
+<li>标签页支持渲染列表隐藏文章（<strong>break change⚠️</strong>）</li>
+<li>增加预览唤出快捷键（Ctrl + P）</li>
+<li>优化<strong>编辑器文字主题颜色</strong>与 <strong>Windows 下字体显示</strong></li>
+<li>增加渲染过程错误日志弹窗</li>
+<li>增加应用内通知系统</li>
+</ul>
+<p>选几个重要的说一下吧。</p>
+<h2 id="sftp-部署许愿成功">🎋SFTP 部署，许愿成功</h2>
+<p>针对有自己服务器的小伙伴，可以使用自己的服务器来部署站点啦！提供一个配置的示例截图，以做参照。<br>
+<img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/XtiYXi.png" alt="Gridea SFTP" loading="lazy"></p>
+<h2 id="文章置顶手动推荐">🔝文章置顶，手动推荐</h2>
+<p>增加了文章置顶功能，置顶之后，文章会在文章列表页优先展示，同时可以配合文章的 <code>isTop</code> 字段进行主题样式的丰富，例如加一个 【TOP】 的小标记。<br>
+<img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/top.jpg" alt="Gridea top" loading="lazy"></p>
+<h2 id="支持自定义模版渲染与支持图片类型和数组类型增加文章数据卡片类型">🔥支持自定义模版渲染与支持图片类型和数组类型，增加文章数据卡片类型</h2>
+<p>这几个更新有什么使用场景呢？举几个例子：</p>
+<ul>
+<li>若主题有图片类型资源，如侧边栏背景图，顶部背景图等，之前若是想替换，需要手动去找到对应资源文件夹，然后手工替换，现在可以主题直接提供替换的自定义配置了<br>
+<img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/IZQpcT.jpg" alt="Theme upload" loading="lazy"></li>
+<li>创建单独的友链页面。创建一个自定义模版 <code>friends.ejs</code>，然后配合数组类型的自定义配置即可。下面是一个自定义文档页面的示例。<br>
+<img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/wp6FBm.png" alt="Theme array" loading="lazy"><br>
+细心的你一定发现了，竟然有个文章数据卡片。对的，你可以使用卡片来提供文章数据 URL 的选择。</li>
+</ul>
+<blockquote>
+<p>更多关于主题自定义内容请查看文档：<a href="https://gridea.dev/docs/">https://gridea.dev/docs/</a></p>
+</blockquote>
+<h2 id="新增默认-404-页面">新增默认 404 页面</h2>
+<p>当使用新版本 Gridea 进行部署后，会自动生成一个 <code>404.html</code> 的页面，若想自定义，可使用自定义模版 <code>404.ejs</code> 或直接修改 <code>static/404.html</code> 即可。</p>
+<p>另外还更新了很多应用的 UI 细节，具体都有哪些，<a href="https://gridea.dev/">下载</a>一下便知道啦～</p>
+<h2 id="写在后面">写在后面</h2>
+<p>更新了这么多，为了能够让你找回当年写博客的那个劲儿，又或者在这个快、短社交时代，能够有一个独立的地方，一个属于自己的地方来记录下一些内容。能够让自己的声音不会随着各种信息流而流逝。</p>
+<p>Made with ❤️</p>
+
+        </div>
+        <!-- <div class="hidden md:block w-48 sticky top-0 pt-10 post-toc self-start">
+          <div class="uppercase py-4 font-normal text-gray-400 text-sm">On this page</div>
+          <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%87%92%E4%BA%BA%E7%9B%AE%E5%BD%95">懒人目录</a></li>
+<li><a href="#sftp-%E9%83%A8%E7%BD%B2%E8%AE%B8%E6%84%BF%E6%88%90%E5%8A%9F">🎋SFTP 部署，许愿成功</a></li>
+<li><a href="#%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6%E6%89%8B%E5%8A%A8%E6%8E%A8%E8%8D%90">🔝文章置顶，手动推荐</a></li>
+<li><a href="#%E6%94%AF%E6%8C%81%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E7%89%88%E6%B8%B2%E6%9F%93%E4%B8%8E%E6%94%AF%E6%8C%81%E5%9B%BE%E7%89%87%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%95%B0%E7%BB%84%E7%B1%BB%E5%9E%8B%E5%A2%9E%E5%8A%A0%E6%96%87%E7%AB%A0%E6%95%B0%E6%8D%AE%E5%8D%A1%E7%89%87%E7%B1%BB%E5%9E%8B">🔥支持自定义模版渲染与支持图片类型和数组类型，增加文章数据卡片类型</a></li>
+<li><a href="#%E6%96%B0%E5%A2%9E%E9%BB%98%E8%AE%A4-404-%E9%A1%B5%E9%9D%A2">新增默认 404 页面</a></li>
+<li><a href="#%E5%86%99%E5%9C%A8%E5%90%8E%E9%9D%A2">写在后面</a></li>
+</ul>
+</li>
+</ul>
+
+        </div> -->
+      </div>
+
+      
+    </div>
+
+    <div class="border-t border-gray-200 bg-white">
+  <div class="max-w-6xl flex md:justify-between flex-col md:flex-row items-center mx-auto py-24">
+    <form
+      class="flex items-center mb-0"
+      action="https://tinyletter.com/gridea"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://tinyletter.com/gridea', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+      <input class="border border-gray-200 w-full text-gray-700 h-10 py-2 px-2 focus:outline-none" placeholder="你的邮箱" type="text" name="email" id="tlemail" />
+      <input type="hidden" value="1" name="embed"/>
+      <button class="text-sm flex items-center flex-shrink-0 py-3 h-10 px-4 bg-gray-800 hover:bg-gray-900 text-white" type="submit">
+        <i class="ri-mail-line mr-2"></i>
+        订阅更新
+      </button>
+    </form>
+    <div class="text-gray-400 font-light my-8 md:my-0">
+      Powered by <a class="text-gray-800 font-normal" href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> · Made with ❤️ by <a class="text-gray-800 font-normal" href="https://github.com/EryouHao" target="_blank">EryouHao</a>
+    </div>
+    <div class="flex md:self-start justify-center">
+      <a href="https://github.com/getgridea/gridea" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center mr-3 hover:bg-gray-900 hover:text-white">
+        <i class="ri-github-line"></i>
+      </a>
+      <a href="https://twitter.com/EryouHao" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center mr-3 hover:bg-gray-900 hover:text-white">
+        <i class="ri-twitter-line"></i>
+      </a>
+      <a href="https://t.me/joinchat/AAAAAEj82_lma0Y1wmyqUQ" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center hover:bg-gray-900 hover:text-white">
+        <i class="ri-telegram-line"></i>
+      </a>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="/media/scripts/main.js"></script>
+  <script src="/media/prism.js"></script>
+  <script>
+    Prism.highlightAll()
+  </script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<html lang="en">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>🏗 主题开发 | Gridea | 一个静态博客写作客户端</title>
+<meta name="description" content="Gridea | 一个静态博客写作客户端 | 记录生活、心情、知识、笔记、创意..." />
+<link rel="shortcut icon" href="https://getgridea.github.io/favicon.ico">
+<link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
+<link rel="stylesheet" href="https://getgridea.github.io/media/tailwind.css">
+<link rel="stylesheet" href="https://getgridea.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="🏗 主题开发 | Gridea | 一个静态博客写作客户端 - Atom Feed" href="https://getgridea.github.io/atom.xml">
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-113307620-2');
+  </script>
+    
+
+<body>
+  <div class="antialiased flex flex-col min-h-screen md:bg-gray-100" id="app">
+    <header class="border-b border-gray-200 bg-white">
+  <div class="max-w-6xl mx-auto sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+    <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+      <a href="/" class="flex items-center">
+        <img class="h-8 mr-2" src="/media/gridea.png" alt="Gridea" style="transform: scale(1.2);"> <span class="font-medium text-xl">Gridea</span>
+      </a>
+      <div class="sm:hidden">
+        <button @click="isOpen = !isOpen" type="button" class="block text-gray-500 hover:text-gray-500 focus:text-gray-500 focus:outline-none">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <path v-if="isOpen" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+            <path v-if="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+      
+        <a href="/" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 ">
+          首页
+        </a>  
+      
+        <a href="/docs" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          文档
+        </a>  
+      
+        <a href="/themes" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          主题市场
+        </a>  
+      
+        <a href="/blog" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          博客
+        </a>  
+      
+    </nav>
+  </div>
+</header>
+
+    <div class="max-w-6xl w-full mx-auto px-4 py-8 my-8 flex-1">
+
+      <h1 class="text-3xl text-center">🏗 主题开发</h1>
+      
+      
+
+      
+      
+      <div class="flex relative bg-white mt-8 md:mt-16 md:rounded md:shadow pb-24">
+        <div v-pre class="markdown mt-10 flex-1 w-full px-0 md:px-12">
+          <p><strong>Gridea</strong> 采用 <a href="https://ejs.bootcss.com/">EJS</a> 作为主题的模版引擎。</p>
+<p>你可以在这里查看应用的默认主题 <a href="https://github.com/getgridea/gridea/tree/master/public/default-files/themes">Default Thems</a></p>
+<p>基于 <a href="https://ejs.bootcss.com/">EJS</a> 简单的语法和 <a href="https://www.gulpjs.com.cn/">Gulp</a> 强大的自动化构建能力，你可以很快开发出一个心仪的自定义主题。</p>
+<p>🎉 是的，我们为你准备了一个主题开发样板，<a href="https://github.com/getgridea/gridea-theme-starter">快去看看吧</a>！</p>
+<h2 id="约定">约定</h2>
+<p>我们建议你将主题命名为 <strong>gridea-theme-主题名</strong> 以便用户可以更好地搜索，例如 <strong>gridea-theme-notes</strong>，同时建议将主题提交至 Github 仓库，并设置 <code>gridea</code> 和 <code>gridea-theme</code> topic，以便用户可以直接点击 topic 即可搜索到你的主题</p>
+<p>示例：<br>
+<img src="https://i.loli.net/2019/12/20/jGdXWKIvtPfc5pY.png" alt="Gridea Theme Starter" loading="lazy"></p>
+<h2 id="ejs-基础介绍">EJS 基础介绍</h2>
+<p>这里只列举了你开发主题时最常用的几个语法，当然，如果想了解最全面的语法，可以去查看 <a href="https://ejs.bootcss.com/">EJS文档</a></p>
+<p>EJS 每个标签都是成对使用，即有开则有闭。</p>
+<p>示例数据：</p>
+<pre><code class="language-JSON">{
+  &quot;themeConfig&quot;: {
+    &quot;footerInfo&quot;: &quot;Powered by Gridea&quot;,
+    &quot;pageSize&quot;: 10,
+    &quot;showFeatureImage&quot;: true,
+    &quot;siteDescription&quot;: &quot;温故而知新&quot;,
+    &quot;siteName&quot;: &quot;Gridea&quot;,
+    &quot;themeName&quot;: &quot;notes&quot;
+  },
+  &quot;posts&quot;: [
+    {
+      &quot;abstract&quot;: &quot;&lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端 &quot;,
+      &quot;content&quot;: &quot;&lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端 &lt;!-- more --&gt;↵↵👏 欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&quot;,
+      &quot;data&quot;: {
+        &quot;date&quot;: &quot;2019-01-15 08:00:00&quot;,
+        &quot;dateFormat&quot;: &quot;2019-01-15&quot;,
+        &quot;feature&quot;: &quot;/post-images/hello-gridea.png&quot;,
+        &quot;published&quot;: true,
+        &quot;tags&quot;: [&quot;Gridea&quot;]
+      },
+      &quot;fileName&quot;: &quot;hello-gridea&quot;
+    }
+  ]
+}
+</code></pre>
+<h3 id="标签">标签</h3>
+<ul>
+<li><code>&lt;%=</code> 输出数据到模板（输出是转义 HTML 标签）。适用于普通的数据输出</li>
+</ul>
+<pre><code class="language-javascript">&lt;%= themeConfig.siteName %&gt;
+</code></pre>
+<ul>
+<li><code>&lt;%-</code> 输出非转义的数据到模板。适用于 <code>HTML</code> 类型的数据输出</li>
+</ul>
+<pre><code class="language-javascript">&lt;%- posts[0].abstract %&gt;
+</code></pre>
+<h3 id="包含">包含</h3>
+<p><code>EJS</code> 中没有 Block 的概念，但是提供了 <code>include</code> 语法。通过 <code>include</code> 指令将相对于模板路径中的模板片段包含进来。</p>
+<p>比如，简单包含:</p>
+<pre><code class="language-javascript">&lt;%- include('_blocks/head') %&gt;
+</code></pre>
+<p>包含的同时，传入指定的字段(若不指定，默认取父模版中字段对应值)</p>
+<pre><code class="language-javascript">&lt;%- include('./_blocks/head', { siteTitle: `${post.title} | ${themeConfig.siteName}` }) %&gt;
+</code></pre>
+<h3 id="循环-和-条件判断">循环 和 条件判断</h3>
+<p>同 <code>JavaScript</code> 中的用法</p>
+<pre><code class="language-javascript">&lt;% posts.forEach(function(post) { %&gt;
+  &lt;h2 class=&quot;post-title&quot;&gt;&lt;%= post.title %&gt;&lt;/h2&gt;
+  ...
+&lt;% }); %&gt;
+
+&lt;% if (pagination.prev) { %&gt;
+  &lt;a href=&quot;&lt;%= pagination.prev %&gt;&quot; class=&quot;prev&quot;&gt;上一页&lt;/a&gt;
+&lt;% } %&gt;
+</code></pre>
+<h2 id="less-基础介绍">Less 基础介绍</h2>
+<p>你可以使用 <a href="http://lesscss.cn/">Less</a> 来进行样式的编写。若你不熟悉 Less 或没有使用过其他 <code>CSS</code> 预处理器，你当然可以在 Less 文件中使用普通 CSS 来进行编写，因为它是完全兼容的。</p>
+<p>Less 是一门 CSS 预处理语言，它扩展了 CSS 语言，增加了变量、Mixin、函数等特性，使 CSS 更易维护和扩展。</p>
+<p>一般比较常用的是<a href="http://lesscss.cn/features/#variables-feature">变量</a>和<a href="http://lesscss.cn/features/#features-overview-feature-nested-rules">嵌套规则</a></p>
+<h3 id="变量">变量</h3>
+<pre><code class="language-css">// Variables
+@link-color: #428bca; // sea blue
+a {
+  color: @link-color;
+}
+</code></pre>
+<h3 id="嵌套规则">嵌套规则</h3>
+<pre><code class="language-css">// Nested Rules
+#header {
+  color: black;
+  .navigation {
+    font-size: 12px;
+  }
+}
+</code></pre>
+<p>更多关于主题开发的内容可参见：<br>
+<a href="https://gridea.dev/theme-structure/">主题目录结构与页面变量</a><br>
+<a href="https://gridea.dev/theme-custom/">主题自定义</a></p>
+
+        </div>
+        <!-- <div class="hidden md:block w-48 sticky top-0 pt-10 post-toc self-start">
+          <div class="uppercase py-4 font-normal text-gray-400 text-sm">On this page</div>
+          <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%BA%A6%E5%AE%9A">约定</a></li>
+<li><a href="#ejs-%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D">EJS 基础介绍</a>
+<ul>
+<li><a href="#%E6%A0%87%E7%AD%BE">标签</a></li>
+<li><a href="#%E5%8C%85%E5%90%AB">包含</a></li>
+<li><a href="#%E5%BE%AA%E7%8E%AF-%E5%92%8C-%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD">循环 和 条件判断</a></li>
+</ul>
+</li>
+<li><a href="#less-%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D">Less 基础介绍</a>
+<ul>
+<li><a href="#%E5%8F%98%E9%87%8F">变量</a></li>
+<li><a href="#%E5%B5%8C%E5%A5%97%E8%A7%84%E5%88%99">嵌套规则</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div> -->
+      </div>
+
+      
+    </div>
+
+    <div class="border-t border-gray-200 bg-white">
+  <div class="max-w-6xl flex md:justify-between flex-col md:flex-row items-center mx-auto py-24">
+    <form
+      class="flex items-center mb-0"
+      action="https://tinyletter.com/gridea"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://tinyletter.com/gridea', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+      <input class="border border-gray-200 w-full text-gray-700 h-10 py-2 px-2 focus:outline-none" placeholder="你的邮箱" type="text" name="email" id="tlemail" />
+      <input type="hidden" value="1" name="embed"/>
+      <button class="text-sm flex items-center flex-shrink-0 py-3 h-10 px-4 bg-gray-800 hover:bg-gray-900 text-white" type="submit">
+        <i class="ri-mail-line mr-2"></i>
+        订阅更新
+      </button>
+    </form>
+    <div class="text-gray-400 font-light my-8 md:my-0">
+      Powered by <a class="text-gray-800 font-normal" href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> · Made with ❤️ by <a class="text-gray-800 font-normal" href="https://github.com/EryouHao" target="_blank">EryouHao</a>
+    </div>
+    <div class="flex md:self-start justify-center">
+      <a href="https://github.com/getgridea/gridea" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center mr-3 hover:bg-gray-900 hover:text-white">
+        <i class="ri-github-line"></i>
+      </a>
+      <a href="https://twitter.com/EryouHao" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center mr-3 hover:bg-gray-900 hover:text-white">
+        <i class="ri-twitter-line"></i>
+      </a>
+      <a href="https://t.me/joinchat/AAAAAEj82_lma0Y1wmyqUQ" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center hover:bg-gray-900 hover:text-white">
+        <i class="ri-telegram-line"></i>
+      </a>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="/media/scripts/main.js"></script>
+  <script src="/media/prism.js"></script>
+  <script>
+    Prism.highlightAll()
+  </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Gridea | 一个静态博客写作客户端</title>
+<meta name="description" content="Gridea | 一个静态博客写作客户端 | 记录生活、心情、知识、笔记、创意..." />
+<link rel="shortcut icon" href="https://getgridea.github.io/favicon.ico">
+<link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
+<link rel="stylesheet" href="https://getgridea.github.io/media/tailwind.css">
+<link rel="stylesheet" href="https://getgridea.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Gridea | 一个静态博客写作客户端 - Atom Feed" href="https://getgridea.github.io/atom.xml">
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-113307620-2');
+  </script>
+    
+
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+    <header class=" border-gray-200 bg-white">
+  <div class="max-w-6xl mx-auto sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+    <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+      <a href="/" class="flex items-center">
+        <img class="h-8 mr-2" src="/media/gridea.png" alt="Gridea" style="transform: scale(1.2);"> <span class="font-medium text-xl">Gridea</span>
+      </a>
+      <div class="sm:hidden">
+        <button @click="isOpen = !isOpen" type="button" class="block text-gray-500 hover:text-gray-500 focus:text-gray-500 focus:outline-none">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <path v-if="isOpen" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+            <path v-if="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+      
+        <a href="/" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 ">
+          首页
+        </a>  
+      
+        <a href="/docs" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          文档
+        </a>  
+      
+        <a href="/themes" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          主题市场
+        </a>  
+      
+        <a href="/blog" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          博客
+        </a>  
+      
+    </nav>
+  </div>
+</header>
+
+
+    <div class="flex flex-1">
+      <div class="max-w-6xl px-8 py-24 w-full mx-auto lg:px-12 relative">
+        <div class="xl:ml-auto text-center">
+          <div class="text-center">
+            <!-- <img class="h-40 inline-block" src="/media/gridea.png" alt="Gridea"> -->
+          </div>
+          <h1 class="mt-6 text-5xl font-bold text-gray-900 leading-tight relative z-10">
+            可以，写博客的那个劲儿又回来了
+          </h1>
+          <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl font-thin">
+            记录生活、心情、知识、笔记、创意...
+          </p>
+          <div class="mt-16 flex justify-center">
+            <a :href="`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`" target="_blank" class="text-xl rounded-full w-10 h-10 text-center inline-flex items-center justify-center hover:bg-gray-200 hover:text-gray-900 mr-4">
+              <i class="ri-apple-line"></i>
+            </a>
+            <a :href="`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea.Setup.${version}.exe`" target="_blank" class="text-xl rounded-full w-10 h-10 text-center inline-flex items-center justify-center hover:bg-gray-200 hover:text-gray-900 mr-4">
+              <i class="ri-windows-line"></i>
+            </a>
+            <a href="https://github.com/getgridea/gridea/releases" target="_blank" class="text-xl rounded-full w-10 h-10 text-center inline-flex items-center justify-center hover:bg-gray-200 hover:text-gray-900">
+              <i class="ri-ubuntu-line"></i>
+            </a>
+          </div>
+          <div class="shadow-lg mb-4 mt-16 rounded-lg overflow-hidden border-2 border-gray-300">
+            <img src="/images/gridea.jpg" alt="">
+          </div>
+        </div>
+        <i class="ri-quill-pen-line absolute text-indigo-200 text-6xl breathing-left" style="top: 32px; left: 80px;"></i>
+        <i class="ri-pen-nib-line absolute text-purple-200 text-6xl breathing-right" style="top: 160px; right: 80px;"></i>
+      </div>
+    </div>
+    <div class="border-t border-gray-200 bg-white">
+  <div class="max-w-6xl flex md:justify-between flex-col md:flex-row items-center mx-auto py-24">
+    <form
+      class="flex items-center mb-0"
+      action="https://tinyletter.com/gridea"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://tinyletter.com/gridea', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+      <input class="border border-gray-200 w-full text-gray-700 h-10 py-2 px-2 focus:outline-none" placeholder="你的邮箱" type="text" name="email" id="tlemail" />
+      <input type="hidden" value="1" name="embed"/>
+      <button class="text-sm flex items-center flex-shrink-0 py-3 h-10 px-4 bg-gray-800 hover:bg-gray-900 text-white" type="submit">
+        <i class="ri-mail-line mr-2"></i>
+        订阅更新
+      </button>
+    </form>
+    <div class="text-gray-400 font-light my-8 md:my-0">
+      Powered by <a class="text-gray-800 font-normal" href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> · Made with ❤️ by <a class="text-gray-800 font-normal" href="https://github.com/EryouHao" target="_blank">EryouHao</a>
+    </div>
+    <div class="flex md:self-start justify-center">
+      <a href="https://github.com/getgridea/gridea" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center mr-3 hover:bg-gray-900 hover:text-white">
+        <i class="ri-github-line"></i>
+      </a>
+      <a href="https://twitter.com/EryouHao" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center mr-3 hover:bg-gray-900 hover:text-white">
+        <i class="ri-twitter-line"></i>
+      </a>
+      <a href="https://t.me/joinchat/AAAAAEj82_lma0Y1wmyqUQ" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center hover:bg-gray-900 hover:text-white">
+        <i class="ri-telegram-line"></i>
+      </a>
+    </div>
+  </div>
+</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="/media/scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<html lang="en">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>📚 主题目录结构与页面变量 | Gridea | 一个静态博客写作客户端</title>
+<meta name="description" content="Gridea | 一个静态博客写作客户端 | 记录生活、心情、知识、笔记、创意..." />
+<link rel="shortcut icon" href="https://getgridea.github.io/favicon.ico">
+<link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
+<link rel="stylesheet" href="https://getgridea.github.io/media/tailwind.css">
+<link rel="stylesheet" href="https://getgridea.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="📚 主题目录结构与页面变量 | Gridea | 一个静态博客写作客户端 - Atom Feed" href="https://getgridea.github.io/atom.xml">
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-113307620-2');
+  </script>
+    
+
+<body>
+  <div class="antialiased flex flex-col min-h-screen md:bg-gray-100" id="app">
+    <header class="border-b border-gray-200 bg-white">
+  <div class="max-w-6xl mx-auto sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+    <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+      <a href="/" class="flex items-center">
+        <img class="h-8 mr-2" src="/media/gridea.png" alt="Gridea" style="transform: scale(1.2);"> <span class="font-medium text-xl">Gridea</span>
+      </a>
+      <div class="sm:hidden">
+        <button @click="isOpen = !isOpen" type="button" class="block text-gray-500 hover:text-gray-500 focus:text-gray-500 focus:outline-none">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <path v-if="isOpen" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+            <path v-if="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+      
+        <a href="/" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 ">
+          首页
+        </a>  
+      
+        <a href="/docs" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          文档
+        </a>  
+      
+        <a href="/themes" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          主题市场
+        </a>  
+      
+        <a href="/blog" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          博客
+        </a>  
+      
+    </nav>
+  </div>
+</header>
+
+    <div class="max-w-6xl w-full mx-auto px-4 py-8 my-8 flex-1">
+
+      <h1 class="text-3xl text-center">📚 主题目录结构与页面变量</h1>
+      
+      
+
+      
+      
+      <div class="flex relative bg-white mt-8 md:mt-16 md:rounded md:shadow pb-24">
+        <div v-pre class="markdown mt-10 flex-1 w-full px-0 md:px-12">
+          <h2 id="结构">结构</h2>
+<p>主题有一些<strong>强约定</strong>的目录结构和可选的静态资源目录</p>
+<pre><code class="language-bash">fly - 主题文件夹名称 (建议用小写，中划线分隔)
+├── assets - 资源文件夹（必须，不可更名）
+│   ├── media - 主题静态资源存放目录（可选，不可更名）
+│   │   └── fonts - 字体图标文件夹（示例）
+│   │   │   ├── icomoon.ttf
+│   │   │   └── icomoon.woff
+│   │   └── images - 主题用图片文件（示例）
+│   └── styles - 样式文件夹（必须，不可更名）
+│       ├── _blocks - 样式模块文件夹（可选，可自定义命名）
+│       │   ├── footer.less
+│       │   ├── header.less
+│       │   └── tag.less
+│       ├── _core - 样式模块文件夹（可选，可自定义命名）
+│       │   ├── base.less
+│       │   ├── colors.less
+│       └── main.less - 主样式文件 (必须，不可更名)
+└── templates - 页面模版文件夹（必须，不可更名）
+│   ├── _blocks - 页面模版文件夹（可选，可自定义命名）
+│   │   ├── footer.ejs
+│   │   ├── head.ejs
+│   │   ├── header.ejs
+│   ├── index.ejs - 主页，列表页 (必须，不可更名)
+│   ├── post.ejs - 文章页 (必须，不可更名)
+│   ├── archives.ejs - 归档页 (必须，不可更名)
+│   ├── tags.ejs - 标签列表页 (必须，不可更名)
+│   ├── tag.ejs - 标签详情页 (必须，不可更名)
+│   └── friends.ejs - 自定义模版 (可选，任意命名)
+└── config.json - 主题配置文件 (可选，推荐)
+└── style-override.js - 主题样式自定义文件 (可选)
+</code></pre>
+<p>如你所见，<strong>必须</strong>文件只有 <strong>6</strong> 个，<code>main.less</code>, <code>index.ejs</code>, <code>post.ejs</code>, <code>archives.ejs</code>, <code>tags.ejs</code>, <code>tag.ejs</code> （需按照对应目录组织）</p>
+<h2 id="页面变量">页面变量</h2>
+<h3 id="indexejs">index.ejs</h3>
+<ul>
+<li><a href="#posts">posts</a></li>
+<li><a href="#menus">menus</a></li>
+<li><a href="#pagination">pagination</a></li>
+<li><a href="#themeconfig">themeConfig</a></li>
+<li><a href="#site">site</a></li>
+</ul>
+<h3 id="postejs">post.ejs</h3>
+<ul>
+<li><a href="#post">post</a></li>
+<li><a href="#commentsetting">commentSetting</a></li>
+<li><a href="#menus">menus</a></li>
+<li><a href="#themeconfig">themeConfig</a></li>
+<li><a href="#site">site</a></li>
+</ul>
+<h3 id="archivesejs">archives.ejs</h3>
+<ul>
+<li><a href="#posts">posts</a></li>
+<li><a href="#menus">menus</a></li>
+<li><a href="#pagination">pagination</a></li>
+<li><a href="#themeconfig">themeConfig</a></li>
+<li><a href="#site">site</a></li>
+</ul>
+<h3 id="tagsejs">tags.ejs</h3>
+<ul>
+<li><a href="#tags">tags</a></li>
+<li><a href="#menus">menus</a></li>
+<li><a href="#themeconfig">themeConfig</a></li>
+<li><a href="#site">site</a></li>
+</ul>
+<h3 id="tagejs">tag.ejs</h3>
+<ul>
+<li><a href="#tag">tag</a></li>
+<li><a href="#posts">posts</a></li>
+<li><a href="#menus">menus</a></li>
+<li><a href="#pagination">pagination</a></li>
+<li><a href="#themeconfig">themeConfig</a></li>
+<li><a href="#site">site</a></li>
+</ul>
+<h3 id="自定义模版">自定义模版</h3>
+<p>可以在 templates 文件夹创建自定义模版，例如 <code>friends.ejs</code>, <code>about.ejs</code>, <code>projects.ejs</code>, <code>404.ejs</code> 等等，最终生成的访问路径为 <code>http(s)://域名/friends</code>, <code>http(s)://域名/about</code>, <code>http(s)://域名/projects</code>, <code>http(s)://域名/404</code> 可使用的变量值如下：</p>
+<ul>
+<li><a href="#menus">menus</a></li>
+<li><a href="#themeconfig">themeConfig</a></li>
+<li><a href="#commentsetting">commentSetting</a></li>
+<li><a href="#site">site</a></li>
+</ul>
+<blockquote>
+<p>注：若主题包含自定义模版，且文章渲染选择了精简 URL，若产生 URL 冲突，自定义渲染模版优先级高于文章 URL。</p>
+</blockquote>
+<h3 id="变量值示例">变量值示例</h3>
+<blockquote>
+<p>@ 符号为引用其他字段标志，仅作为此文档字段说明使用</p>
+</blockquote>
+<h4 id="menus">menus</h4>
+<p>菜单数组，具体字段可见 <a href="#menu">menu</a></p>
+<pre><code class="language-javascript">menus: [@menu, @menu, @menu]
+</code></pre>
+<h4 id="posts">posts</h4>
+<p>文章数组，具体 Post 字段可见 <a href="#post">post</a></p>
+<pre><code class="language-javascript">posts: [@post, @post, @post]
+</code></pre>
+<h4 id="tags">tags</h4>
+<p>标签数组，具体 Post 字段可见 <a href="#post">post</a></p>
+<pre><code class="language-javascript">posts: [@post, @post, @post]
+</code></pre>
+<h4 id="pagination">pagination</h4>
+<p>文章列表的分页字段</p>
+<pre><code class="language-javascript">pagination: {
+    prev: '', // 上一页的链接
+    next: '', // 下一页的链接
+}
+</code></pre>
+<h4 id="themeconfig">themeConfig</h4>
+<p>主题配置字段</p>
+<pre><code class="language-javascript">themeConfig:{ 
+    archivesPageSize: 50,
+    archivesPath: &quot;archives&quot;, // 归档页路径前缀，应用内可自定义，例如 'blog', 'news' 等
+    dateFormat: &quot;YYYY-MM-DD&quot;,
+    feedCount: 10,
+    feedFullText: true,
+    footerInfo: &quot;Powered by &lt;a href=\&quot;https://github.com/getgridea/gridea\&quot; target=\&quot;_blank\&quot;&gt;Gridea&lt;/a&gt;&quot;,
+    postPageSize: 12,
+    postPath: &quot;post&quot;,
+    postUrlFormat: &quot;SLUG&quot;,
+    showFeatureImage: true,
+    siteDescription: &quot;Every 🐦 has an 🦅's dream.&quot;,
+    siteName: &quot;海岛心hey&quot;,
+    tagPath: &quot;tag&quot;,
+    tagUrlFormat: &quot;SHORT_ID&quot;,
+    themeName: &quot;tech&quot;
+}
+</code></pre>
+<h4 id="post">post</h4>
+<p>文章字段</p>
+<pre><code class="language-javascript">post: {
+    content: '&lt;p&gt;&lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端 &lt;!-- more --&gt;&lt;/p&gt;\n&lt;p&gt;👏 欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！  &lt;/p&gt;\n&lt;p&gt;🌈 &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... &lt;/p&gt;',
+    fileName: 'hello-gridea',
+    abstract: '&lt;p&gt;&lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端 &lt;/p&gt;\n',
+    description: '一个静态博客写作客户端 欢迎使用 Gridea！Gridea 一个静态博客写作客户端。你可以用它来记录你的生...', // 智能截取文章开始内容填充此字段，可用作未设置摘要时备用字段
+    title: 'Hello Gridea',
+    tags: [@tag, @tag, @tag], // 文章 tag 数组，具体可见下面 tag 字段
+    date: 'December 12o 2018, am',
+    dateFormat: '2018-12-12', // 依据 Gridea 应用内日期格式化后字段
+    feature: 'post-images/hello-gridea.png', // 若无封面图，则为 ''
+    link: 'https://xxx.com/post/hello-gridea',
+    stats: {
+        text: '3 min read',
+        time: 12000,
+        words: 3000,
+        minutes: 3
+    },
+    hideInList: false, // 仅对未设置标签文章生效
+    isTop: false, // 是否是置顶文章
+    toc: '&lt;ul class=&quot;markdownIt-TOC&quot;&gt;&lt;li&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;#demo&quot; class=&quot;&quot;&gt;DEMO&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;', // 文章目录字段
+    prevPost: @post, // 若是为第一篇文章，则无此字段
+    nextPost: @post, // 若是为最后一篇文章，则无此字段
+}
+</code></pre>
+<h4 id="tag">tag</h4>
+<p>标签字段</p>
+<pre><code class="language-javascript">tag: {
+  name: 'Gridea',
+  slug: 'gridea',
+  link: 'https://xxx.com/tag/gridea',
+},
+</code></pre>
+<h4 id="site">site</h4>
+<p>site 字段</p>
+<pre><code class="language-javascript">site: {
+  posts: @posts,
+  tags: @tags,
+  menus: @menus,
+  themeConfig: @themeConfig,
+  isHomepage: false, // 是否为首页，使用 index.ejs 渲染，且为第一页的时候为 true
+  customConfig: {}, // 主题自定义配置字段，若无则为 {}
+  utils: {
+      now: '1577006772710', // Date.now()
+      moment: Function // moment.js 对象
+  },
+},
+</code></pre>
+<h4 id="commentsetting">commentSetting</h4>
+<p>评论字段</p>
+<pre><code class="language-javascript">commentSetting: {
+  commentPlatform: 'disqus',
+  disqusSetting: {
+    api: '',
+    apikey: 'Dme6Hy8bOI2xxxxUtdY8V',
+    shortname: 'gridea',
+  },
+  gitalkSetting: {
+    clientId: 'd92dxxxxxxxxxx9b4',
+    clientSecret: '861947exxxx365d33',
+    owner: 'EryouHao',
+    repository: 'EryouHao.github.io'
+  },
+  showComment: false // 是否显示评论，可根据此字段进行评论的展示与否
+}
+</code></pre>
+<h2 id="其他">其他</h2>
+<h3 id="头像avatar">头像（Avatar）</h3>
+<pre><code class="language-html">&lt;img class=&quot;avatar&quot; src=&quot;&lt;%= themeConfig.domain %&gt;/images/avatar.png&quot; alt=&quot;&quot; width=&quot;32px&quot; height=&quot;32px&quot;&gt;
+</code></pre>
+<h3 id="网页图标favicon">网页图标（Favicon）</h3>
+<pre><code class="language-html">&lt;link rel=&quot;shortcut icon&quot; href=&quot;&lt;%= themeConfig.domain %&gt;/favicon.ico&quot;&gt;
+</code></pre>
+<h3 id="样式文件maincss">样式文件（main.css）</h3>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;%= themeConfig.domain %&gt;/styles/main.css&quot;&gt;
+</code></pre>
+<h3 id="如何查看主题在应用中的效果">如何查看主题在应用中的效果</h3>
+<p>你可以将开发好的主题文件夹，复制到博客源文件夹目录，默认是 <code>~/Documents/Gridea/themes</code></p>
+<p><strong>文档</strong>文件夹中有个 <code>/Gridea</code> 文件夹是使用应用时自动创建的应用文件夹，里面有<strong>Gridea</strong>提供的默认主题</p>
+<p>你可以将自己开发的主题或其他开发者开发的主题放入此文件夹中使用即可，配合应用中的预览功能可在本地预览效果，记得预览之前，将主题选择切换成新主题哦</p>
+
+        </div>
+        <!-- <div class="hidden md:block w-48 sticky top-0 pt-10 post-toc self-start">
+          <div class="uppercase py-4 font-normal text-gray-400 text-sm">On this page</div>
+          <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%BB%93%E6%9E%84">结构</a></li>
+<li><a href="#%E9%A1%B5%E9%9D%A2%E5%8F%98%E9%87%8F">页面变量</a>
+<ul>
+<li><a href="#indexejs">index.ejs</a></li>
+<li><a href="#postejs">post.ejs</a></li>
+<li><a href="#archivesejs">archives.ejs</a></li>
+<li><a href="#tagsejs">tags.ejs</a></li>
+<li><a href="#tagejs">tag.ejs</a></li>
+<li><a href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E7%89%88">自定义模版</a></li>
+<li><a href="#%E5%8F%98%E9%87%8F%E5%80%BC%E7%A4%BA%E4%BE%8B">变量值示例</a>
+<ul>
+<li><a href="#menus">menus</a></li>
+<li><a href="#posts">posts</a></li>
+<li><a href="#tags">tags</a></li>
+<li><a href="#pagination">pagination</a></li>
+<li><a href="#themeconfig">themeConfig</a></li>
+<li><a href="#post">post</a></li>
+<li><a href="#tag">tag</a></li>
+<li><a href="#site">site</a></li>
+<li><a href="#commentsetting">commentSetting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%85%B6%E4%BB%96">其他</a>
+<ul>
+<li><a href="#%E5%A4%B4%E5%83%8Favatar">头像（Avatar）</a></li>
+<li><a href="#%E7%BD%91%E9%A1%B5%E5%9B%BE%E6%A0%87favicon">网页图标（Favicon）</a></li>
+<li><a href="#%E6%A0%B7%E5%BC%8F%E6%96%87%E4%BB%B6maincss">样式文件（main.css）</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E4%B8%BB%E9%A2%98%E5%9C%A8%E5%BA%94%E7%94%A8%E4%B8%AD%E7%9A%84%E6%95%88%E6%9E%9C">如何查看主题在应用中的效果</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div> -->
+      </div>
+
+      
+    </div>
+
+    <div class="border-t border-gray-200 bg-white">
+  <div class="max-w-6xl flex md:justify-between flex-col md:flex-row items-center mx-auto py-24">
+    <form
+      class="flex items-center mb-0"
+      action="https://tinyletter.com/gridea"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://tinyletter.com/gridea', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+      <input class="border border-gray-200 w-full text-gray-700 h-10 py-2 px-2 focus:outline-none" placeholder="你的邮箱" type="text" name="email" id="tlemail" />
+      <input type="hidden" value="1" name="embed"/>
+      <button class="text-sm flex items-center flex-shrink-0 py-3 h-10 px-4 bg-gray-800 hover:bg-gray-900 text-white" type="submit">
+        <i class="ri-mail-line mr-2"></i>
+        订阅更新
+      </button>
+    </form>
+    <div class="text-gray-400 font-light my-8 md:my-0">
+      Powered by <a class="text-gray-800 font-normal" href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> · Made with ❤️ by <a class="text-gray-800 font-normal" href="https://github.com/EryouHao" target="_blank">EryouHao</a>
+    </div>
+    <div class="flex md:self-start justify-center">
+      <a href="https://github.com/getgridea/gridea" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center mr-3 hover:bg-gray-900 hover:text-white">
+        <i class="ri-github-line"></i>
+      </a>
+      <a href="https://twitter.com/EryouHao" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center mr-3 hover:bg-gray-900 hover:text-white">
+        <i class="ri-twitter-line"></i>
+      </a>
+      <a href="https://t.me/joinchat/AAAAAEj82_lma0Y1wmyqUQ" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center hover:bg-gray-900 hover:text-white">
+        <i class="ri-telegram-line"></i>
+      </a>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="/media/scripts/main.js"></script>
+  <script src="/media/prism.js"></script>
+  <script>
+    Prism.highlightAll()
+  </script>
+</body>
+</html>

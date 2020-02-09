@@ -1,0 +1,382 @@
+<html lang="en">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>🚁 主题自定义 | Gridea | 一个静态博客写作客户端</title>
+<meta name="description" content="Gridea | 一个静态博客写作客户端 | 记录生活、心情、知识、笔记、创意..." />
+<link rel="shortcut icon" href="https://getgridea.github.io/favicon.ico">
+<link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
+<link rel="stylesheet" href="https://getgridea.github.io/media/tailwind.css">
+<link rel="stylesheet" href="https://getgridea.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="🚁 主题自定义 | Gridea | 一个静态博客写作客户端 - Atom Feed" href="https://getgridea.github.io/atom.xml">
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-113307620-2');
+  </script>
+    
+
+<body>
+  <div class="antialiased flex flex-col min-h-screen md:bg-gray-100" id="app">
+    <header class="border-b border-gray-200 bg-white">
+  <div class="max-w-6xl mx-auto sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+    <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+      <a href="/" class="flex items-center">
+        <img class="h-8 mr-2" src="/media/gridea.png" alt="Gridea" style="transform: scale(1.2);"> <span class="font-medium text-xl">Gridea</span>
+      </a>
+      <div class="sm:hidden">
+        <button @click="isOpen = !isOpen" type="button" class="block text-gray-500 hover:text-gray-500 focus:text-gray-500 focus:outline-none">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <path v-if="isOpen" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+            <path v-if="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+      
+        <a href="/" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 ">
+          首页
+        </a>  
+      
+        <a href="/docs" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          文档
+        </a>  
+      
+        <a href="/themes" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          主题市场
+        </a>  
+      
+        <a href="/blog" class="block px-2 py-1 text-gray-500 font-semibold rounded hover:bg-gray-100 mt-1 sm:mt-0 sm:ml-2">
+          博客
+        </a>  
+      
+    </nav>
+  </div>
+</header>
+
+    <div class="max-w-6xl w-full mx-auto px-4 py-8 my-8 flex-1">
+
+      <h1 class="text-3xl text-center">🚁 主题自定义</h1>
+      
+      
+
+      
+      
+      <div class="flex relative bg-white mt-8 md:mt-16 md:rounded md:shadow pb-24">
+        <div v-pre class="markdown mt-10 flex-1 w-full px-0 md:px-12">
+          <p>Gridea 提供了强大的主题自定义能力，你可以自行设计自定义配置提供给主题使用者。</p>
+<p>每一个主题都可选地搭配一个 <code>config.json</code> 配置文件和一个 <code>style-override.js</code> 样式覆盖文件。<br>
+让我们先来看组示例:</p>
+<p><code>config.json</code></p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;Notes&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;author&quot;: &quot;EryouHao&quot;,
+  &quot;customConfig&quot;: [
+    {
+      &quot;name&quot;: &quot;skin&quot;,
+      &quot;label&quot;: &quot;皮肤&quot;,
+      &quot;group&quot;: &quot;皮肤&quot;,
+      &quot;value&quot;: &quot;white&quot;,
+      &quot;type&quot;: &quot;select&quot;,
+      &quot;options&quot;: [
+        {
+          &quot;label&quot;: &quot;简约白&quot;,
+          &quot;value&quot;: &quot;white&quot;
+        },
+        {
+          &quot;label&quot;: &quot;低调黑&quot;,
+          &quot;value&quot;: &quot;black&quot;
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;contentMaxWidth&quot;,
+      &quot;label&quot;: &quot;内容区最大宽度&quot;,
+      &quot;group&quot;: &quot;布局&quot;,
+      &quot;value&quot;: &quot;800px&quot;,
+      &quot;type&quot;: &quot;input&quot;,
+      &quot;note&quot;: &quot;可填像素类型（如：320px）或百分比类型（如：38.2%）&quot;
+    },
+    {
+      &quot;name&quot;: &quot;textSize&quot;,
+      &quot;label&quot;: &quot;正文内容文字大小&quot;,
+      &quot;group&quot;: &quot;布局&quot;,
+      &quot;value&quot;: &quot;16px&quot;,
+      &quot;type&quot;: &quot;input&quot;,
+      &quot;note&quot;: &quot;px 或 rem（如 16px 或 1rem）&quot;
+    },
+    {
+      &quot;name&quot;: &quot;pageBgColor&quot;,
+      &quot;label&quot;: &quot;网页背景色&quot;,
+      &quot;group&quot;: &quot;颜色&quot;,
+      &quot;value&quot;: &quot;#ffffff&quot;,
+      &quot;type&quot;: &quot;input&quot;,
+      &quot;card&quot;: &quot;color&quot;,
+      &quot;note&quot;: &quot;颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）&quot;
+    },
+    {
+      &quot;name&quot;: &quot;github&quot;,
+      &quot;label&quot;: &quot;Github&quot;,
+      &quot;group&quot;: &quot;社交&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;input&quot;,
+      &quot;note&quot;: &quot;链接地址&quot;
+    },
+    {
+      &quot;name&quot;: &quot;twitter&quot;,
+      &quot;label&quot;: &quot;Twitter&quot;,
+      &quot;group&quot;: &quot;社交&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;input&quot;,
+      &quot;note&quot;: &quot;链接地址&quot;
+    },
+    {
+      &quot;name&quot;: &quot;weibo&quot;,
+      &quot;label&quot;: &quot;微博&quot;,
+      &quot;group&quot;: &quot;社交&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;input&quot;,
+      &quot;note&quot;: &quot;链接地址&quot;
+    },
+    {
+      &quot;name&quot;: &quot;customCss&quot;,
+      &quot;label&quot;: &quot;自定义CSS&quot;,
+      &quot;group&quot;: &quot;自定义样式&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;textarea&quot;,
+      &quot;note&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;ga&quot;,
+      &quot;label&quot;: &quot;跟踪 ID&quot;,
+      &quot;group&quot;: &quot;谷歌统计&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;input&quot;,
+      &quot;note&quot;: &quot;UA-xxxxxxxxx-x&quot;
+    }
+  ]
+}
+
+</code></pre>
+<p><code>style-override.js</code></p>
+<pre><code class="language-javascript">const generateOverride = (params = {}) =&gt; {
+  let result = ''
+
+  // 暗黑皮肤
+  if (params.skin &amp;&amp; params.skin !== 'white') {
+    result += `
+      body {
+        color: #dee2e6;
+      }
+      a, .link {
+        color: #e9ecef;
+      }
+    `
+  }
+
+  // 内容区最大宽度 - contentMaxWidth
+  if (params.contentMaxWidth &amp;&amp; params.contentMaxWidth !== '800px') {
+    result += `
+      .main {
+        max-width: ${params.contentMaxWidth};
+      }
+    `
+  }
+
+  // 正文内容文字大小 - textSize
+  if (params.textSize &amp;&amp; params.textSize !== '16px') {
+    result += `
+      .post-detail .post .post-content p {
+        font-size: ${params.textSize};
+      }
+    `
+  }
+
+  // 网页背景色 - pageBgColor
+  if (params.pageBgColor &amp;&amp; params.pageBgColor !== '#ffffff') {
+    result += `
+      body {
+        background: ${params.pageBgColor};
+      }
+    `
+  }
+
+  // 文字颜色 - textColor
+  if (params.textColor &amp;&amp; params.textColor !== '#333333') {
+    result += `
+      body {
+        color: ${params.textColor};
+      }
+    `
+  }  
+
+  // 自定义 CSS - customCss
+  if (params.customCss) {
+    result += `
+      ${params.customCss}
+    `
+  }
+
+  return result
+}
+
+module.exports = generateOverride
+</code></pre>
+<p>是的，如你所见，自定义配置就是这么简单，清晰。下面让我们详细了解一下具体字段和使用方法：</p>
+<h3 id="configjson">config.json</h3>
+<p>每个主题的根目录可包含一个 <code>config.json</code> 的文件。此文件中包含了主题的基本信息如：<code>name</code>, <code>version</code>, <code>author</code>, <code>repository</code> 等，其中有一个特殊的字段 <strong><code>customConfig</code></strong>，这便是自定义配置字段了，类型为数组，每项元素的格式如下：</p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;字段变量名称，可在模版或样式覆盖文件中使用&quot;,
+  &quot;label&quot;: &quot;字段展示名称，在软件中显示的名称&quot;,
+  &quot;group&quot;: &quot;字段所属分组，在软件中显示的分组名称&quot;,
+  &quot;value&quot;: &quot;字段默认值&quot;,
+  &quot;type&quot;: &quot;字段输入类型，可选值：'input'，'select'，'textarea'，'radio', 'switch', 'picture-upload', 'markdown'（可提供一个 markdown 的输入框）, 'array'&quot;,
+  &quot;note&quot;: &quot;输入框 placeholder 提示文案，type 为 'input'，'textarea' 时可用，若为其他type 类型，则展示在表单空间下面&quot;,
+  &quot;card&quot;: &quot;字段附属 Card，可选值：'color'（提供一个推荐颜色卡片快捷选择），'post'（提供文章数据卡片提供选择），type 为 'input' 时可用&quot;,
+  &quot;options&quot;: { // type 为 'select'， 'radio' 时可用
+    {
+      &quot;label&quot;: &quot;选项显示名称&quot;,
+      &quot;value&quot;: &quot;选项对应值&quot;,
+    },
+  },
+}
+</code></pre>
+<h3 id="图片类型配置">图片类型配置</h3>
+<pre><code class="language-json">{
+    &quot;name&quot;: &quot;sidebarBgImage&quot;,
+    &quot;label&quot;: &quot;侧边栏背景图&quot;,
+    &quot;group&quot;: &quot;图片&quot;,
+    &quot;value&quot;: &quot;/media/images/sidebar-bg.jpg&quot;,
+    &quot;type&quot;: &quot;picture-upload&quot;,
+    &quot;note&quot;: &quot;&quot;
+}
+</code></pre>
+<h3 id="数组类型配置">数组类型配置</h3>
+<pre><code class="language-json">{
+    &quot;name&quot;: &quot;friends&quot;,
+    &quot;label&quot;: &quot;友链&quot;,
+    &quot;group&quot;: &quot;友链&quot;,
+    &quot;type&quot;: &quot;array&quot;,
+    &quot;value&quot;: [
+    {
+        &quot;siteName&quot;: &quot;海岛心hey&quot;,
+        &quot;siteLink&quot;: &quot;https://fehey.com&quot;,
+        &quot;siteLogo&quot;: &quot;&quot;,
+        &quot;description&quot;: &quot;一个前端，Gridea 作者&quot;
+    },
+    {
+        &quot;siteName&quot;: &quot;Gridea 官网&quot;,
+        &quot;siteLink&quot;: &quot;https://gridea.dev&quot;,
+        &quot;siteLogo&quot;: &quot;&quot;,
+        &quot;description&quot;: &quot;一个静态博客写作客户端&quot;
+    }
+    ], // 若无默认数据，可写成 []
+    &quot;arrayItems&quot;: [
+        { &quot;label&quot;: &quot;名称&quot;, &quot;name&quot;: &quot;siteName&quot;, &quot;type&quot;: &quot;input&quot;, &quot;value&quot;: &quot;&quot; },
+        { &quot;label&quot;: &quot;链接&quot;, &quot;name&quot;: &quot;siteLink&quot;, &quot;type&quot;: &quot;input&quot;, &quot;value&quot;: &quot;&quot; },
+        { &quot;label&quot;: &quot;Logo&quot;, &quot;name&quot;: &quot;siteLogo&quot;, &quot;type&quot;: &quot;picture-upload&quot;, &quot;value&quot;: &quot;&quot; },
+        { &quot;label&quot;: &quot;描述&quot;, &quot;name&quot;: &quot;description&quot;, &quot;type&quot;: &quot;textarea&quot;, &quot;value&quot;: &quot;&quot; }
+    ], // 数组中每一项数据对象的字段定义
+    &quot;note&quot;: &quot;&quot;
+},
+</code></pre>
+<p>大部分情况下，使用 input 类型的就够用了。<br>
+是的，这些字段都可以在模版中（对应：<code>site.customConfig.自定义字段</code>）或样式覆盖文件（对应：入参）中使用。</p>
+<p>在模版中使用时，你可以尽情发挥你的想象，社交、统计、友链、外链背景图、背景音乐...</p>
+<h3 id="提供样式覆盖文件-style-overridejs">提供样式覆盖文件 style-override.js</h3>
+<p>当然，在样式覆盖文件中也可以使用：</p>
+<pre><code class="language-javascript">const generateOverride = (params = {}) =&gt; {
+  // params 即自定义字段对象，可以根据字段值来添加自定义 css
+  let result = ''
+
+  // 正文内容文字大小 - textSize
+  if (params.textSize &amp;&amp; params.textSize !== '16px') {
+    result += `
+      body {
+        font-size: ${params.textSize};
+      }
+    `
+  }
+
+  // 最终结果会放在 `main.css` 的文件末尾
+  return result
+}
+module.exports = generateOverride
+</code></pre>
+<p>到这里，相信你已经搞清楚如何给主题增加自定义配置能力了，快去开发一个属于自己的主题吧，分享给他人更佳呦！</p>
+<p>若还是不清楚，可参考应用内置主题代码结构：<br>
+<a href="https://github.com/getgridea/gridea/tree/master/public/default-files/themes">Github themes folder</a></p>
+
+        </div>
+        <!-- <div class="hidden md:block w-48 sticky top-0 pt-10 post-toc self-start">
+          <div class="uppercase py-4 font-normal text-gray-400 text-sm">On this page</div>
+          <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#configjson">config.json</a></li>
+<li><a href="#%E5%9B%BE%E7%89%87%E7%B1%BB%E5%9E%8B%E9%85%8D%E7%BD%AE">图片类型配置</a></li>
+<li><a href="#%E6%95%B0%E7%BB%84%E7%B1%BB%E5%9E%8B%E9%85%8D%E7%BD%AE">数组类型配置</a></li>
+<li><a href="#%E6%8F%90%E4%BE%9B%E6%A0%B7%E5%BC%8F%E8%A6%86%E7%9B%96%E6%96%87%E4%BB%B6-style-overridejs">提供样式覆盖文件 style-override.js</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div> -->
+      </div>
+
+      
+    </div>
+
+    <div class="border-t border-gray-200 bg-white">
+  <div class="max-w-6xl flex md:justify-between flex-col md:flex-row items-center mx-auto py-24">
+    <form
+      class="flex items-center mb-0"
+      action="https://tinyletter.com/gridea"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://tinyletter.com/gridea', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+      <input class="border border-gray-200 w-full text-gray-700 h-10 py-2 px-2 focus:outline-none" placeholder="你的邮箱" type="text" name="email" id="tlemail" />
+      <input type="hidden" value="1" name="embed"/>
+      <button class="text-sm flex items-center flex-shrink-0 py-3 h-10 px-4 bg-gray-800 hover:bg-gray-900 text-white" type="submit">
+        <i class="ri-mail-line mr-2"></i>
+        订阅更新
+      </button>
+    </form>
+    <div class="text-gray-400 font-light my-8 md:my-0">
+      Powered by <a class="text-gray-800 font-normal" href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> · Made with ❤️ by <a class="text-gray-800 font-normal" href="https://github.com/EryouHao" target="_blank">EryouHao</a>
+    </div>
+    <div class="flex md:self-start justify-center">
+      <a href="https://github.com/getgridea/gridea" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center mr-3 hover:bg-gray-900 hover:text-white">
+        <i class="ri-github-line"></i>
+      </a>
+      <a href="https://twitter.com/EryouHao" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center mr-3 hover:bg-gray-900 hover:text-white">
+        <i class="ri-twitter-line"></i>
+      </a>
+      <a href="https://t.me/joinchat/AAAAAEj82_lma0Y1wmyqUQ" target="_blank" class="p-2 border border-gray-200 rounded-full w-10 h-10 text-center hover:bg-gray-900 hover:text-white">
+        <i class="ri-telegram-line"></i>
+      </a>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="/media/scripts/main.js"></script>
+  <script src="/media/prism.js"></script>
+  <script>
+    Prism.highlightAll()
+  </script>
+</body>
+</html>
