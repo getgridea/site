@@ -125,45 +125,7 @@ body {
     font-family: 'Inter var', Rubik, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 }
-.breathing-left {
-  animation: breathing-left 7s ease-out infinite normal;
-}
-.breathing-right {
-  animation: breathing-right 7s ease-out infinite normal;
-}
-@keyframes breathing-left {
-  0% {
-    transform: scale(0.9) rotateZ(-80deg);
-    opacity: 0.3;
-  }
-  25% {
-    transform: scale(1) rotateZ(-80deg);
-    opacity: 1;
-  }
-  60% {
-    transform: scale(0.9) rotateZ(-80deg);
-    opacity: 0.3;
-  }
-  100% {
-    transform: scale(0.9) rotateZ(-80deg);
-    opacity: 0.3;
-  }
-}
-@keyframes breathing-right {
-  0% {
-    transform: scale(0.9) rotateZ(-30deg);
-    opacity: 0.3;
-  }
-  25% {
-    transform: scale(1) rotateZ(-30deg);
-    opacity: 1;
-  }
-  60% {
-    transform: scale(0.9) rotateZ(-30deg);
-    opacity: 0.3;
-  }
-  100% {
-    transform: scale(0.9) rotateZ(-30deg);
-    opacity: 0.3;
-  }
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.03) 0px 2px 12px 0px;
+  border-color: rgba(83, 98, 124, 0.07);
 }
