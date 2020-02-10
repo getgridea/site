@@ -118,26 +118,27 @@
           </div>
         </div>
       </div>
+      <!-- 为什么你会喜欢使用 Gridea -->
       <div class="bg-white -mt-48 pt-48">
         <div class="max-w-6xl px-8 py-24 w-full mx-auto lg:px-12">
           <h2 class="text-center font-semibold text-4xl mb-24">
             <div class="inline-block">
-              为什么你会喜欢使用 Gridea<span class="text-purple-500">。</span>
+              为什么你会喜欢使用 Gridea<span class="text-purple-500 absolute">。</span>
               <div class="w-16 bg-purple-500 rounded-sm mt-2" style="height: 2px;"></div>
             </div>
           </h2>
-          <div class="flex justify-between">
-            <div class="text-center w-1/3 px-3">
+          <div class="flex justify-between flex-wrap">
+            <div class="text-center w-full md:w-1/3 px-3">
               <img src="/media/images/markdown.svg" class="w-32 h-32 inline-block">
               <div class="text-xl font-medium py-2">Markdown</div>
               <div class="text-sm text-gray-600">知道你钟爱 Markdown 写作，我们也是</div>
             </div>
-            <div class="text-center w-1/3 px-3">
+            <div class="text-center w-full md:w-1/3 px-3">
               <img src="/media/images/safe.svg" class="w-32 h-32 inline-block">
               <div class="text-xl font-medium py-2">快且安全</div>
               <div class="text-sm text-gray-600">Gridea 所有文件都在你的本地，构建为更快更安全的静态网站，无需管理数据库，向 Wordpress 说拜拜</div>
             </div>
-            <div class="text-center w-1/3 px-3">
+            <div class="text-center w-full md:w-1/3 px-3">
               <img src="/media/images/simple.svg" class="w-32 h-32 inline-block">
               <div class="text-xl font-medium py-2">简而不凡</div>
               <div class="text-sm text-gray-600">简单几步即可搭建网站。无论博客抑或企业站点，强大的自定义能力，轻松驾驭</div>
@@ -151,40 +152,45 @@
           </div>
         </div>
       </div>
+      <!-- 主题 -->
       <div class="bg-yellow-50">
         <div class="max-w-6xl px-8 py-24 w-full mx-auto lg:px-12">
           <h2 class="text-center font-semibold text-4xl mb-24">
             <div class="inline-block">
-              主 题<span class="text-pink-500">。</span>
+              主 题<span class="text-pink-500 absolute">。</span>
               <div class="w-16 bg-pink-500 rounded-sm mt-2" style="height: 2px;"></div>
             </div>
           </h2>
           <div class="mt-16">
             <div class="flex flex-wrap">
-              <div class="w-1/2 pb-8 px-8">
+              <div class="w-full md:w-1/2 pb-8 px-2 md:px-8">
                 <img src="/media/images/theme-walker.jpg" alt="" class="box-shadow rounded-sm transition duration-1000 transform hover:scale-110 hover:shadow-lg">
               </div>
-              <div class="w-1/2 pb-8 px-8">
+              <div class="w-full md:w-1/2 pb-8 px-2 md:px-8">
                 <img src="/media/images/theme-tech.jpg" alt="" class="box-shadow rounded-sm transition duration-1000 transform hover:scale-110 hover:shadow-lg">
               </div>
-              <div class="w-1/2 pb-8 px-8">
+              <div class="w-full md:w-1/2 pb-8 px-2 md:px-8">
                 <img src="/media/images/theme-rocky.jpg" alt="" class="box-shadow rounded-sm transition duration-1000 transform hover:scale-110 hover:shadow-lg">
               </div>
-              <div class="w-1/2 pb-8 px-8">
+              <div class="w-full md:w-1/2 pb-8 px-2 md:px-8">
                 <img src="/media/images/theme-line.jpg" alt="" class="box-shadow rounded-sm transition duration-1000 transform hover:scale-110 hover:shadow-lg">
               </div>
             </div>
             <div class="text-center mt-8">
-              <a href="/themes/" class="px-4 py-2 bg-pink-500 text-white inline-block mx-auto shadow-lg">浏览更多</a>
+              <a href="/themes/" class="px-4 py-2 bg-pink-500 text-white inline-block mx-auto shadow-lg inline-flex items-center">
+                <i class="ri-t-shirt-line mr-2"></i>
+                浏览更多
+              </a>
             </div>
           </div>
         </div>
       </div>
+      <!-- 更多人选择 -->
       <div>
         <div class="max-w-6xl px-8 py-24 w-full mx-auto lg:px-12">
           <h2 class="text-center font-semibold text-4xl mb-24">
             <div class="inline-block">
-              更多人选择<span class="text-orange-500">。</span>
+              更多人选择<span class="text-orange-500 absolute">。</span>
               <div class="w-16 bg-orange-500 rounded-sm mt-2" style="height: 2px;"></div>
             </div>
           </h2>
@@ -194,36 +200,41 @@
           <div class="text-center text-xs text-gray-600 mt-8">统计数据非实时更新。</div>
         </div>
       </div>
+      <!-- 选择你的版本 -->
       <div class="bg-yellow-50">
         <div class="max-w-6xl px-8 py-24 w-full mx-auto lg:px-12" id="started">
           <h2 class="text-center font-semibold text-4xl mb-24">
             <div class="inline-block">
-              选择你的版本<span class="text-green-500">。</span>
+              选择你的版本<span class="text-green-500 absolute">。</span>
               <div class="w-16 bg-green-500 rounded-sm mt-2" style="height: 2px;"></div>
             </div>
           </h2>
-          <div class="mt-16 flex justify-center">
+          <div class="mt-16 flex justify-center flex-col md:flex-row">
             <a
               :href="`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea-${version}.dmg`"
               target="_blank"
-              class="text-xl px-4 py-2 text-center inline-flex items-center item bg-black text-white hover:bg-white hover:text-black mx-4 shadow-lg transition duration-300"
+              class="text-xl px-4 py-2 text-center inline-flex items-center justify-center mb-8 md:mb-0 item bg-black text-white hover:bg-white hover:text-black mx-4 shadow-lg transition duration-300"
             >
               <i class="ri-apple-line mr-2"></i> Mac OS
             </a>
             <a
               :href="`https://github.com/getgridea/gridea/releases/download/v${version}/Gridea.Setup.${version}.exe`"
               target="_blank"
-              class="text-xl px-4 py-2 text-center inline-flex items-center justify-center bg-blue-500 text-white hover:bg-white hover:text-blue-500 mx-4 shadow-lg transition duration-300"
+              class="text-xl px-4 py-2 text-center inline-flex items-center justify-center mb-8 md:mb-0 bg-blue-500 text-white hover:bg-white hover:text-blue-500 mx-4 shadow-lg transition duration-300"
             >
               <i class="ri-windows-line mr-2"></i> Windows
             </a>
             <a
               href="https://github.com/getgridea/gridea/releases"
               target="_blank"
-              class="text-xl px-4 py-2 text-center inline-flex items-center justify-center bg-orange-500 text-white hover:bg-white hover:text-orange-500 mx-4 shadow-lg transition duration-300"
+              class="text-xl px-4 py-2 text-center inline-flex items-center justify-center mb-8 md:mb-0 bg-orange-500 text-white hover:bg-white hover:text-orange-500 mx-4 shadow-lg transition duration-300"
             >
               <i class="ri-ubuntu-line mr-2"></i> Linux
             </a>
+          </div>
+          <div class="flex justify-center items-center text-sm mt-8 text-gray-600">
+            当前版本: v{{ version }}
+            <a href="https://github.com/getgridea/gridea/releases" target="_blank" class="ml-2 text-blue-500">✨ What's new?</a>
           </div>
         </div>
       </div>
