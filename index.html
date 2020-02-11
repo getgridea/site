@@ -3,13 +3,11 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Gridea | 一个静态博客写作客户端</title>
-<meta name="description" content="Gridea | 一个静态博客写作客户端 | 记录生活、心情、知识、笔记、创意..." />
-<link rel="shortcut icon" href="https://getgridea.github.io/favicon.ico">
+<link rel="shortcut icon" href="https://gridea.dev/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://getgridea.github.io/media/tailwind.css">
-<link rel="stylesheet" href="https://getgridea.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Gridea | 一个静态博客写作客户端 - Atom Feed" href="https://getgridea.github.io/atom.xml">
+<link rel="stylesheet" href="https://gridea.dev/media/tailwind.css">
+<link rel="stylesheet" href="https://gridea.dev/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Gridea - Atom Feed" href="https://gridea.dev/atom.xml">
 
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-2"></script>
@@ -22,6 +20,8 @@
   </script>
     
 
+  <title>Gridea | 一个静态博客写作客户端</title>
+  <meta name="description" content="Gridea | 一个静态博客写作客户端 | 记录生活、心情、知识、笔记、创意..." />
 </head>
 <body>
   <div class="antialiased flex flex-col min-h-screen" id="app">
@@ -86,8 +86,8 @@
                 GitHub
               </a>
             </div>
-            <div class="shadow-lg mb-4 mt-16 rounded-lg overflow-hidden border-2 border-gray-300">
-              <img :src="`/media/images/${activeImage}.jpg`" alt="">
+            <div class="shadow-lg mb-4 mt-16 rounded-lg overflow-hidden border-2 border-gray-300 relative bg-yellow-50" style="padding-top: 66.42%;">
+              <img :src="`/media/images/${activeImage}.jpg`" alt="" class="absolute top-0 left-0">
             </div>
             <div class="flex justify-center">
               <div

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://getgridea.github.io</id>
-    <title>Gridea | 一个静态博客写作客户端</title>
-    <updated>2020-02-10T11:18:30.192Z</updated>
+    <id>https://gridea.dev</id>
+    <title>Gridea</title>
+    <updated>2020-02-11T01:49:15.191Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://getgridea.github.io"/>
-    <link rel="self" href="https://getgridea.github.io/atom.xml"/>
+    <link rel="alternate" href="https://gridea.dev"/>
+    <link rel="self" href="https://gridea.dev/atom.xml"/>
     <subtitle>Gridea | 一个静态博客写作客户端 | 记录生活、心情、知识、笔记、创意...</subtitle>
-    <logo>https://getgridea.github.io/images/avatar.png</logo>
-    <icon>https://getgridea.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea | 一个静态博客写作客户端</rights>
+    <logo>https://gridea.dev/images/avatar.png</logo>
+    <icon>https://gridea.dev/favicon.ico</icon>
+    <rights>All rights reserved 2020, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[Gridea v0.9.0｜可以，写博客的那个劲儿又回来了]]></title>
-        <id>https://getgridea.github.io/gridea-0.9.0/</id>
-        <link href="https://getgridea.github.io/gridea-0.9.0/">
+        <id>https://gridea.dev/gridea-0.9.0/</id>
+        <link href="https://gridea.dev/gridea-0.9.0/">
         </link>
         <updated>2019-12-25T09:56:43.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
