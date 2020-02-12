@@ -27,17 +27,17 @@ new Vue({
           isNew: true,
           price: '6'
         },
-        {
-          name: 'Tech',
-          github: 'https://github.com/EryouHao/gridea-theme-tech',
-          link: 'https://mianbaoduo.com/o/bread/mbd-ZZ2clA==',
-          demo: 'https://gridea-theme-tech.netlify.com',
-          image: '/media/images/theme-images/theme-tech.jpg',
-          include: false,
-          showDemo: true,
-          isNew: false,
-          price: '6'
-        },
+        // {
+        //   name: 'Tech',
+        //   github: 'https://github.com/EryouHao/gridea-theme-tech',
+        //   link: 'https://mianbaoduo.com/o/bread/mbd-ZZ2clA==',
+        //   demo: 'https://gridea-theme-tech.netlify.com',
+        //   image: '/media/images/theme-images/theme-tech.jpg',
+        //   include: false,
+        //   showDemo: true,
+        //   isNew: false,
+        //   price: '6'
+        // },
         {
           name: 'Walker',
           github: 'https://github.com/EryouHao/gridea-theme-walker',
