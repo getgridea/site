@@ -3,7 +3,7 @@ new Vue({
   data() {
     return {
       isOpen: false,
-      version: '0.9.1',
+      version: '0.9.2',
       themeList: [
         {
           name: 'Rocky',

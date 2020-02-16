@@ -1,5 +1,4 @@
 <html lang="en">
-<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,11 +19,22 @@
   </script>
     
 
-  <title>博客 | Gridea</title>
-  <meta name="description" content="从我们的博客，获取 Gridea 的更新动态，使用技巧，以及更多" />
-</head>
+  <title>Gridea v0.9.2 发布 | Gridea</title>
+  <meta name="description" content="
+终于不用安装 Git 也可以愉快地使用 Gridea 了。
+
+
+新增
+
+SFTP 增加 ssh 连接支持，感谢 @RookieZoe
+
+修复
+
+修复远程连接检测 bug
+修复由于 Coding 平台更新导致的部署问题
+修复文章 link ..." />
 <body>
-  <div class="antialiased flex flex-col min-h-screen" id="app">
+  <div class="antialiased flex flex-col min-h-screen md:bg-gray-100" id="app">
     <header class="border-b border-gray-200 bg-white">
   <div class="max-w-6xl mx-auto sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
     <div class="flex items-center justify-between px-4 py-3 sm:p-0">
@@ -62,40 +72,63 @@
   </div>
 </header>
 
-    
     <div class="max-w-6xl w-full mx-auto px-4 py-8 my-8 flex-1">
-      <div class="text-center p-10 mb-10">
-        <h2 class="text-3xl font-medium text-gray-800">从我们的博客</h2>
-        <p class="text-gray-500 mt-3">获取 Gridea 的更新动态，使用技巧，以及更多</p>
-      </div>
-      <div class="flex flex-wrap -m-4">
-        
-          <div class="sm:w-full md:w-1/2 lg:w-1/3 p-4 mb-2">
-            <a href="https://gridea.dev/gridea-0.9.2/" class="block w-full bg-cover rounded bg-yellow-100" style="padding-top: 56.25%; background-image: url('https://cdn.jsdelivr.net/gh/EryouHao/files@master/uPic/BDB453.jpg');"></a>
-            <div class="text-gray-400 text-sm font-thin mt-3 mb-2 flex items-center">
-              <i class="ri-timer-2-line mr-2"></i> 2020-02-16
-            </div>
-            <a href="https://gridea.dev/gridea-0.9.2/">
-              <h2 class="text-xl hover:text-gray-900">Gridea v0.9.2 发布</h2>
-            </a>
-            <div class="text-gray-500 mt-3"><blockquote>
+
+      <h1 class="text-3xl text-center">Gridea v0.9.2 发布</h1>
+      
+      
+        <div class="my-4 text-gray-400 flex justify-center">
+          <span class="flex items-center mr-4 text-sm"><i class="ri-timer-2-line mr-2"></i>2020-02-16</span>
+          <span class="flex items-center text-sm"><i class="ri-book-read-line mr-2"></i>1 min read</span> 
+        </div>
+      
+
+      
+        <img class="max-w-full mt-6 rounded" src="https://cdn.jsdelivr.net/gh/EryouHao/files@master/uPic/BDB453.jpg" alt="">
+      
+      
+      <div class="flex relative bg-white md:mx-32 mt-8 md:mt-16 md:rounded md:shadow pb-24">
+        <div v-pre class="markdown mt-10 flex-1 w-full px-0 md:px-12">
+          <blockquote>
 <p>终于不用安装 Git 也可以愉快地使用 Gridea 了。</p>
 </blockquote>
-</div>
-          </div>
-        
-          <div class="sm:w-full md:w-1/2 lg:w-1/3 p-4 mb-2">
-            <a href="https://gridea.dev/gridea-0.9.0/" class="block w-full bg-cover rounded bg-yellow-100" style="padding-top: 56.25%; background-image: url('https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/BDp6Dy.jpg');"></a>
-            <div class="text-gray-400 text-sm font-thin mt-3 mb-2 flex items-center">
-              <i class="ri-timer-2-line mr-2"></i> 2019-12-25
-            </div>
-            <a href="https://gridea.dev/gridea-0.9.0/">
-              <h2 class="text-xl hover:text-gray-900">Gridea v0.9.0｜可以，写博客的那个劲儿又回来了</h2>
-            </a>
-            <div class="text-gray-500 mt-3"></div>
-          </div>
-        
+<!-- more -->
+<h2 id="新增">新增</h2>
+<ul>
+<li>SFTP 增加 ssh 连接支持，感谢 <a href="https://github.com/RookieZoe"><strong>@RookieZoe</strong></a></li>
+</ul>
+<h2 id="修复">修复</h2>
+<ul>
+<li>修复远程连接检测 bug</li>
+<li>修复由于 Coding 平台更新导致的部署问题</li>
+<li>修复文章 link 301 跳转问题</li>
+<li>修复 应用 icon cdn 地址更新导致的显示问题</li>
+</ul>
+<h2 id="优化">优化</h2>
+<ul>
+<li>更换 Git 部署模块，本地不需要安装 Git 也可以畅快使用 Gridea 啦</li>
+</ul>
+<p>Made with ❤️</p>
+<hr>
+<p><a href="https://gridea.dev">立即下载</a></p>
+
+        </div>
+        <!-- <div class="hidden md:block w-48 sticky top-0 pt-10 post-toc self-start">
+          <div class="uppercase py-4 font-normal text-gray-400 text-sm">On this page</div>
+          <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%96%B0%E5%A2%9E">新增</a></li>
+<li><a href="#%E4%BF%AE%E5%A4%8D">修复</a></li>
+<li><a href="#%E4%BC%98%E5%8C%96">优化</a></li>
+</ul>
+</li>
+</ul>
+
+        </div> -->
       </div>
+
+      
     </div>
 
     <div class="border-t border-gray-200 bg-white">
@@ -133,5 +166,9 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="/media/scripts/main.js"></script>
+  <script src="/media/prism.js"></script>
+  <script>
+    Prism.highlightAll()
+  </script>
 </body>
 </html>

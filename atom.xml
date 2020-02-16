@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gridea.dev</id>
     <title>Gridea</title>
-    <updated>2020-02-12T13:05:58.452Z</updated>
+    <updated>2020-02-16T06:43:05.490Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gridea.dev"/>
     <link rel="self" href="https://gridea.dev/atom.xml"/>
@@ -10,6 +10,40 @@
     <logo>https://gridea.dev/images/avatar.png</logo>
     <icon>https://gridea.dev/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Gridea v0.9.2 发布]]></title>
+        <id>https://gridea.dev/gridea-0.9.2/</id>
+        <link href="https://gridea.dev/gridea-0.9.2/">
+        </link>
+        <updated>2020-02-16T06:04:50.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>终于不用安装 Git 也可以愉快地使用 Gridea 了。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>终于不用安装 Git 也可以愉快地使用 Gridea 了。</p>
+</blockquote>
+<!-- more -->
+<h2 id="新增">新增</h2>
+<ul>
+<li>SFTP 增加 ssh 连接支持，感谢 <a href="https://github.com/RookieZoe"><strong>@RookieZoe</strong></a></li>
+</ul>
+<h2 id="修复">修复</h2>
+<ul>
+<li>修复远程连接检测 bug</li>
+<li>修复由于 Coding 平台更新导致的部署问题</li>
+<li>修复文章 link 301 跳转问题</li>
+<li>修复 应用 icon cdn 地址更新导致的显示问题</li>
+</ul>
+<h2 id="优化">优化</h2>
+<ul>
+<li>更换 Git 部署模块，本地不需要安装 Git 也可以畅快使用 Gridea 啦</li>
+</ul>
+<p>Made with ❤️</p>
+<hr>
+<p><a href="https://gridea.dev">立即下载</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Gridea v0.9.0｜可以，写博客的那个劲儿又回来了]]></title>
         <id>https://gridea.dev/gridea-0.9.0/</id>
