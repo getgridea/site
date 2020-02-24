@@ -26,11 +26,10 @@
 如何同步博客文件（如何多设备管理博客）
 如何将 Hexo 文章导入 Gridea
 文章如何设置摘要（abstract）
-Windows 检测远程失败怎么办
 网页样式显示异常怎么办
-Mac 检测远程失败怎么办
 同步失败怎么办？
-Gita..." />
+Gitalk 提示 Error: Not Found
+如何使用非内置主题..." />
 <body>
   <div class="antialiased flex flex-col min-h-screen md:bg-gray-100" id="app">
     <header class="border-b border-gray-200 bg-white">
@@ -86,9 +85,7 @@ Gita..." />
 <li><a href="#%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%E5%8D%9A%E5%AE%A2%E6%96%87%E4%BB%B6%E5%A6%82%E4%BD%95%E5%A4%9A%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%8D%9A%E5%AE%A2">如何同步博客文件（如何多设备管理博客）</a></li>
 <li><a href="#%E5%A6%82%E4%BD%95%E5%B0%86-hexo-%E6%96%87%E7%AB%A0%E5%AF%BC%E5%85%A5-gridea">如何将 Hexo 文章导入 Gridea</a></li>
 <li><a href="#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E6%91%98%E8%A6%81abstract">文章如何设置摘要（abstract）</a></li>
-<li><a href="#windows-%E6%A3%80%E6%B5%8B%E8%BF%9C%E7%A8%8B%E5%A4%B1%E8%B4%A5%E6%80%8E%E4%B9%88%E5%8A%9E">Windows 检测远程失败怎么办</a></li>
 <li><a href="#%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E6%98%BE%E7%A4%BA%E5%BC%82%E5%B8%B8%E6%80%8E%E4%B9%88%E5%8A%9E">网页样式显示异常怎么办</a></li>
-<li><a href="#mac-%E6%A3%80%E6%B5%8B%E8%BF%9C%E7%A8%8B%E5%A4%B1%E8%B4%A5%E6%80%8E%E4%B9%88%E5%8A%9E">Mac 检测远程失败怎么办</a></li>
 <li><a href="#%E5%90%8C%E6%AD%A5%E5%A4%B1%E8%B4%A5%E6%80%8E%E4%B9%88%E5%8A%9E">同步失败怎么办？</a></li>
 <li><a href="#gitalk-%E6%8F%90%E7%A4%BA-error-not-found">Gitalk 提示 Error: Not Found</a></li>
 <li><a href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E9%9D%9E%E5%86%85%E7%BD%AE%E4%B8%BB%E9%A2%98">如何使用非内置主题</a></li>
@@ -110,26 +107,8 @@ Gita..." />
 :::</p>
 <h2 id="文章如何设置摘要abstract">文章如何设置摘要（abstract）</h2>
 <p>和 <strong>Hexo</strong> 的文章编辑体验一样，在文章中插入单行 <code>&lt;!-- more --&gt;</code> ，上面内容则是摘要</p>
-<h2 id="windows-检测远程失败怎么办">Windows 检测远程失败怎么办</h2>
-<p>点击应用菜单栏 Edit -&gt; Toggle Developer Tools，然后切换到开发者工具的 Console 栏，再次点击检测远程连接，看是否有报错信息。</p>
-<p>若出现 <code>Error: spawn git ENOENT ... at Process.ChildProces...ickCallbak</code> 的错误提示，则可通过设置环境变量解决。</p>
-<p>解决办法：</p>
-<ol>
-<li>开始安装git（比如：我把git装在了D盘中Git文件夹中）,然后跟着上面的默认设置，一路next，直至安装完成。</li>
-<li>右键“此电脑”-&gt;“属性”-&gt;“高级系统设置”-&gt;“环境变量”-&gt;在下方的“用户变量”中找到“path”-&gt;选中“path”并选择“编辑”-&gt;将;D:\Git\bin;D:\Git\libexec\git-core（注意：里面的D:\Git是我的git安装路径，如果你的和我的不一样，自行换成你的）复制到其中-&gt;保存并退出</li>
-<li>重启电脑打开即可</li>
-</ol>
 <h2 id="网页样式显示异常怎么办">网页样式显示异常怎么办</h2>
-<p>这是由于域名设置的时候未添加 <code>https</code> 或 <code>http</code>（自定义域名且无证书时填 <code>http</code>），添加后保存，重新同步一下就好了</p>
-<h2 id="mac-检测远程失败怎么办">Mac 检测远程失败怎么办</h2>
-<ul>
-<li>首先确保您已经安装了 git</li>
-<li>若还是不行，点击应用菜单栏 Edit -&gt; Toggle Developer Tools，然后切换到开发者工具的 Console 栏，再次点击检测远程连接，看是否有报错信息。<br>
-若出现以下提示，则打开 Terminal，执行 <code>xcode-select --install</code> 之后，再使用即可。</li>
-</ul>
-<pre><code class="language-bash">xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools),
-missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
-</code></pre>
+<p>这是由于域名设置的时候所选 <code>https</code> 或 <code>http</code> 错误（自定义域名且无证书时填 <code>http</code>），添加后保存，重新同步一下就好了</p>
 <h2 id="同步失败怎么办">同步失败怎么办？</h2>
 <p>点击菜单栏 编辑 -&gt; 开发者工具，然后切换到 Console 栏，点击同步，查看报错信息解决。</p>
 <h2 id="gitalk-提示-error-not-found">Gitalk 提示 Error: Not Found</h2>
@@ -152,9 +131,7 @@ missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
 <li><a href="#%E5%A6%82%E4%BD%95%E5%90%8C%E6%AD%A5%E5%8D%9A%E5%AE%A2%E6%96%87%E4%BB%B6%E5%A6%82%E4%BD%95%E5%A4%9A%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%8D%9A%E5%AE%A2">如何同步博客文件（如何多设备管理博客）</a></li>
 <li><a href="#%E5%A6%82%E4%BD%95%E5%B0%86-hexo-%E6%96%87%E7%AB%A0%E5%AF%BC%E5%85%A5-gridea">如何将 Hexo 文章导入 Gridea</a></li>
 <li><a href="#%E6%96%87%E7%AB%A0%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E6%91%98%E8%A6%81abstract">文章如何设置摘要（abstract）</a></li>
-<li><a href="#windows-%E6%A3%80%E6%B5%8B%E8%BF%9C%E7%A8%8B%E5%A4%B1%E8%B4%A5%E6%80%8E%E4%B9%88%E5%8A%9E">Windows 检测远程失败怎么办</a></li>
 <li><a href="#%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E6%98%BE%E7%A4%BA%E5%BC%82%E5%B8%B8%E6%80%8E%E4%B9%88%E5%8A%9E">网页样式显示异常怎么办</a></li>
-<li><a href="#mac-%E6%A3%80%E6%B5%8B%E8%BF%9C%E7%A8%8B%E5%A4%B1%E8%B4%A5%E6%80%8E%E4%B9%88%E5%8A%9E">Mac 检测远程失败怎么办</a></li>
 <li><a href="#%E5%90%8C%E6%AD%A5%E5%A4%B1%E8%B4%A5%E6%80%8E%E4%B9%88%E5%8A%9E">同步失败怎么办？</a></li>
 <li><a href="#gitalk-%E6%8F%90%E7%A4%BA-error-not-found">Gitalk 提示 Error: Not Found</a></li>
 <li><a href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E9%9D%9E%E5%86%85%E7%BD%AE%E4%B8%BB%E9%A2%98">如何使用非内置主题</a></li>
