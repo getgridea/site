@@ -308,7 +308,15 @@ new Vue({
     } 
   },
   methods: {
-    oepnUrl(url) {
+    openUrl(url) {
+      window.open(url, '_blank')
+    },
+    downloadApp(url, gaInfo) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){
+        dataLayer.push(arguments);
+      }
+      gtag('event', 'download-app', gaInfo);
       window.open(url, '_blank')
     },
   },

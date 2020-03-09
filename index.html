@@ -195,7 +195,7 @@
             </div>
           </h2>
           <div class="text-center text-xl">
-            已经有超过 <span class="text-3xl text-orange-500">4,335</span> 位小伙伴使用 Gridea 成功搭建了自己的站点
+            已经有超过 <span class="text-3xl text-orange-500">5,123</span> 位小伙伴使用 Gridea 成功搭建了自己的站点
           </div>
           <div class="text-center text-xs text-gray-600 mt-8">统计数据非实时更新。</div>
         </div>
@@ -235,6 +235,12 @@
           <div class="flex justify-center items-center text-sm mt-8 text-gray-600">
             当前版本: v{{ version }}
             <a href="https://github.com/getgridea/gridea/releases" target="_blank" class="ml-2 text-blue-500">✨ What's new?</a>
+          </div>
+          <div class="text-center my-8">国内 Gitee 下载源</div>
+          <div class="flex justify-center flex-col md:flex-row">
+              <div class="mx-2 text-blue-500 cursor-pointer" @click="downloadApp('https://gitee.com/fehey/gridea/releases/v0.9.2', { version, download_platform: 'gitee', platform: 'mac' })">Mac OS</div>
+              <div class="mx-2 text-blue-500 cursor-pointer" @click="downloadApp('https://gitee.com/fehey/gridea/releases/v0.9.2', { version, download_platform: 'gitee', platform: 'windows' })">Windows</div>
+              <div class="mx-2 text-blue-500 cursor-pointer" @click="downloadApp('https://gitee.com/fehey/gridea/releases/v0.9.2', { version, download_platform: 'gitee', platform: 'linux' })">Linux</div>
           </div>
         </div>
       </div>
