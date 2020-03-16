@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gridea.dev</id>
     <title>Gridea</title>
-    <updated>2020-03-09T10:48:03.250Z</updated>
+    <updated>2020-03-16T13:26:12.024Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gridea.dev"/>
     <link rel="self" href="https://gridea.dev/atom.xml"/>
