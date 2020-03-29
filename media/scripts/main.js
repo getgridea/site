@@ -51,7 +51,7 @@ new Vue({
         {
           name: 'InlineAMP',
           github: 'https://github.com/jiansing/gridea-theme-inlineamp',
-          demo: 'http://gridea.cplayer.tk/demo/cplayer-gallery/',
+          demo: 'https://blog.ofo.moe/',
           image: '/media/images/theme-images/theme-inlineamp.jpg',
           include: false,
           isNew: true,
