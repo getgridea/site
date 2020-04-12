@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gridea.dev</id>
     <title>Gridea</title>
-    <updated>2020-04-05T14:57:36.900Z</updated>
+    <updated>2020-04-12T04:11:46.232Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gridea.dev"/>
     <link rel="self" href="https://gridea.dev/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://gridea.dev/images/avatar.png</logo>
     <icon>https://gridea.dev/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Markdown Tips 之有序列表]]></title>
+        <id>https://gridea.dev/markdown-tips-orderlist/</id>
+        <link href="https://gridea.dev/markdown-tips-orderlist/">
+        </link>
+        <updated>2020-04-12T04:03:52.000Z</updated>
+        <content type="html"><![CDATA[<p>为每一项元素使用 <code>1</code> 来进行有序列表标号，当调整元素个数或顺序时，无需重写数字</p>
+<h2 id="把大象装冰箱分几步">把大象装冰箱分几步？</h2>
+<pre><code class="language-bash">1. 打开冰箱门
+1. 把大象装冰箱
+1. 关上冰箱门
+</code></pre>
+<ol>
+<li>打开冰箱门</li>
+<li>把大象装冰箱</li>
+<li>关上冰箱门</li>
+</ol>
+<blockquote>
+<p>虽然 Gridea 编辑器可以在调整元素个数或顺序时自动修正 😜</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Gridea v0.9.2 发布]]></title>
         <id>https://gridea.dev/gridea-0.9.2/</id>
