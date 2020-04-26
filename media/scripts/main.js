@@ -49,6 +49,14 @@ new Vue({
           price: '6'
         },
         {
+          name: 'Vant',
+          github: 'https://github.com/insdram/gridea-theme-vant',
+          demo: 'https://nuoea.com/',
+          image: '/media/images/theme-images/theme-vant.jpg',
+          include: false,
+          showDemo: true,
+        },
+        {
           name: 'InlineAMP',
           github: 'https://github.com/jiansing/gridea-theme-inlineamp',
           demo: 'https://blog.ofo.moe/',
