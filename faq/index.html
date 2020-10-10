@@ -92,6 +92,8 @@ Gitalk 提示 Error: Not Found
 <li><a href="#%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0-valine-%E8%AF%84%E8%AE%BA">如何添加 Valine 评论</a></li>
 <li><a href="#%E4%BB%93%E5%BA%93%E5%B1%95%E7%A4%BA%E5%86%85%E5%AE%B9%E4%B8%BA-documentsgrideaoutput-%E6%96%87%E4%BB%B6%E5%A4%B9%E6%80%8E%E4%B9%88%E5%8A%9E">仓库展示内容为 Documents/Gridea/output 文件夹怎么办？</a></li>
 <li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%89%93%E5%BC%80%E8%BD%AF%E4%BB%B6%E6%96%87%E7%AB%A0%E7%AA%81%E7%84%B6%E5%85%A8%E4%B8%8D%E8%A7%81%E4%BA%86">为什么打开软件文章突然全不见了</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E4%B8%80%E8%B5%B7%E5%90%8C%E6%AD%A5%E8%87%AA%E5%B7%B1%E7%9A%84%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6">如何一起同步自己的静态文件</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E5%9C%A8%E6%96%87%E7%AB%A0%E5%86%85%E6%B7%BB%E5%8A%A0%E7%9B%AE%E5%BD%95">如何在文章内添加目录</a></li>
 </ul>
 </li>
 </ul>
@@ -124,6 +126,10 @@ Gitalk 提示 Error: Not Found
 <p>这是由于 output 文件夹外层有 .git 文件夹，将外层的 .git 文件夹移除即可（记得看下是什么 repo 使用了 git）</p>
 <h2 id="为什么打开软件文章突然全不见了">为什么打开软件文章突然全不见了</h2>
 <p>请检查是否有手动导入过文章到 posts 文件夹或手动改动过配置的 json 文件等。多半是此类操作导致的 Gridea 解析失败</p>
+<h2 id="如何一起同步自己的静态文件">如何一起同步自己的静态文件</h2>
+<p>手动复制文件到博客源文件夹的 <code>static</code> 文件夹，构建时会直接复制到 <code>output</code> 文件夹</p>
+<h2 id="如何在文章内添加目录">如何在文章内添加目录</h2>
+<p>文章内输入 <code>@[toc]</code></p>
 
         </div>
         <!-- <div class="hidden md:block w-48 sticky top-0 pt-10 post-toc self-start">
@@ -141,6 +147,8 @@ Gitalk 提示 Error: Not Found
 <li><a href="#%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0-valine-%E8%AF%84%E8%AE%BA">如何添加 Valine 评论</a></li>
 <li><a href="#%E4%BB%93%E5%BA%93%E5%B1%95%E7%A4%BA%E5%86%85%E5%AE%B9%E4%B8%BA-documentsgrideaoutput-%E6%96%87%E4%BB%B6%E5%A4%B9%E6%80%8E%E4%B9%88%E5%8A%9E">仓库展示内容为 Documents/Gridea/output 文件夹怎么办？</a></li>
 <li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%89%93%E5%BC%80%E8%BD%AF%E4%BB%B6%E6%96%87%E7%AB%A0%E7%AA%81%E7%84%B6%E5%85%A8%E4%B8%8D%E8%A7%81%E4%BA%86">为什么打开软件文章突然全不见了</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E4%B8%80%E8%B5%B7%E5%90%8C%E6%AD%A5%E8%87%AA%E5%B7%B1%E7%9A%84%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6">如何一起同步自己的静态文件</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E5%9C%A8%E6%96%87%E7%AB%A0%E5%86%85%E6%B7%BB%E5%8A%A0%E7%9B%AE%E5%BD%95">如何在文章内添加目录</a></li>
 </ul>
 </li>
 </ul>
